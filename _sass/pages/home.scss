@@ -1,0 +1,126 @@
+// Masthead
+.masthead {
+    margin: 75px auto;
+
+    @include tablet {
+        margin-bottom: 125px;
+        max-width: 750px;
+    }
+    @include laptop {
+        // height: 50vh;
+        margin-bottom: 100px;
+        max-width: 950px;
+    }
+    @include desktop {
+        max-width: 1150px;
+    }
+    @include widescreen {
+        height: 35vh;
+        margin-bottom: 60px;
+        max-width: 1325px;
+    }
+
+}
+
+// Intro Content
+.intro_content {
+    margin-bottom: 55px;
+
+    .intro_item {
+        margin-bottom: 50px;
+
+        @include tablet {
+            margin-bottom: 0;
+            margin-top: 75px;
+            width: 45%;
+        }
+
+    }
+
+    .intro_title {
+        font-family: $font-1;
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing: 1.42px;
+        line-height: 34px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 1.4;
+        }
+
+    }
+    .intro_text {
+        // font-family: $font-2;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        line-height: 28px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 1.4;
+        }
+    }
+}
+// Highlight Content
+.highlight_content {
+    border: 9px solid $bluegreen;
+    margin-bottom: 150px;
+
+    @include tablet {
+        width: 40%;
+        height: 48vh;
+    }
+    @include widescreen {
+        max-width: 300px;
+    }
+
+    .highlight_title {
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: $muli-black;
+        line-height: 30px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .highlight_img {
+        margin-bottom: 40px;
+
+        img {
+            width: 75px;
+        }
+    }
+}
+
+// Sponsors
+.sponsor_content {
+    margin-bottom: 150px;
+
+    .sponsor_title {
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: $muli-black;
+        margin: 30px 0 75px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include tablet {
+            margin-top: 60px;
+        }
+    }
+    .sponsor_item {
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+
+        @include tablet {
+            width: 22%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
