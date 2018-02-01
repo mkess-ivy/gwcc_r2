@@ -195,40 +195,6 @@
 
 }
 
-// Full Width Video
-.bronzey {
-    background-image: url('/assets/img/learn_gwcc.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 40vh;
-    left: 50%;
-    margin-left: -50vw;
-    position: relative;
-    transition: 0.5s;
-    width: 100vw;
-
-    @include tablet {
-        height: 60vh;
-    }
-
-    .bronzey_alpha {
-        color: $white;
-        // font-family: $font-1;
-        font-size: 20px;
-        font-weight: $font-bold;
-        letter-spacing: 0.33px;
-        margin-bottom: 35px;
-        text-transform: uppercase;
-
-        @include tablet {
-            font-size: 32px;
-        }
-    }
-    .bronzey_play {
-        text-align: center;
-    }
-}
 
 // Highlight Short Content
 .highlight_short {
@@ -523,5 +489,52 @@
     }
     .contact_highlight {
         font-weight: $font-bold;
+    }
+}
+
+// 013118
+// Video
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  object-fit: cover;
+}
+
+// Full Width Video
+.bronzey {
+    background-image: url('/assets/img/learn_gwcc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    left: 50%;
+    margin-left: -50vw;
+    position: relative;
+    transition: 0.5s;
+    width: 100vw;
+
+    @include tablet {
+        height: 60vh;
+    }
+
+    .bronzey_alpha {
+        color: $white;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin-top: 35px;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 32px;
+        }
+    }
+    .bronzey_play {
+        text-align: center;
     }
 }

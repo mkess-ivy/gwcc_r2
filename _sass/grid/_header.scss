@@ -1,0 +1,204 @@
+/* - Overlay Responsive Menu */
+.menu-btn {
+	@include laptop {
+		display: none;
+	}
+}
+.menu_desktop {
+	@include laptop {
+		height: 106px;
+	}
+	ul {
+		display: none;
+
+		@include laptop {
+			display: block;
+		}
+	}
+
+	li {
+		display: inline-block;
+		font-size: 20px;
+		padding-right: 15px;
+		font-weight: bold;
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			&:hover {
+				border-bottom: 3px solid;
+				padding-bottom: 3px;
+			}
+		}
+	}
+}
+#menu-container {
+	height: 50px;
+	position: relative;
+	width: 50px;
+    //
+	// @include palm {
+	// 	width: 50px;
+	// }
+}
+.menuButton {
+	background: transparent !important;
+	border: none !important;
+	height: 100% !important;
+	position: relative !important;
+    text-align: right;
+	width: 100% !important;
+	-webkit-font-smoothing: antialiased;
+    width: 50px;
+}
+.menuButton:active {
+	position: relative;
+	top: 1px;
+}
+.menuButton:hover {
+	-o-transition:.75s;
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
+    transition:.75s;
+}
+.overlay {
+	background-color: #ffffff;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+}
+.overlay nav {
+	position: relative;
+}
+.overlay ul {
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+	padding: 0;
+	position: relative;
+
+	@include tablet {
+		margin-left: 50px;
+	}
+	@include desktop {
+		margin-left: 100px;
+	}
+}
+.overlay ul li {
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 36px;
+	margin:0;
+	margin-bottom: 10px;
+	padding: 0;
+	text-transform: uppercase;
+	width: 100%;
+
+	@include small {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 25px;
+	}
+
+	@include tablet {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	@include laptop {
+		font-size: 70px;
+		line-height: 70px;
+	}
+
+	@include desktop {
+		font-size: 90px;
+		line-height: 80px;
+	}
+}
+.overlay ul li a {
+	color: $black;;
+	text-decoration: none;
+}
+.overlay ul li a:hover {
+	color: $grey !important;
+	@extend %hover;
+}
+.overlay-close {
+	background: url('/assets/img/icon_menu_close_v2.png') no-repeat center center !important;
+	background-size: contain !important;
+	border: none !important;
+	color: transparent !important;
+	float: right;
+	height: 35px !important;
+	outline: none;
+	overflow: hidden !important;
+	// position: absolute !important;
+	// right: 7px !important;
+	margin-right: 7px !important;
+	text-indent: 200% !important;
+	top: 7px !important;
+	margin-top: 7px !important;
+	width: 35px !important;
+	z-index: 100 !important;
+
+	@include laptop {
+		// right: 23px !important;
+		// top: 21px !important;
+	}
+}
+.overlay-data {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-open {
+	opacity: 1;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	visibility: visible;
+}
+.menu-content {
+	bottom: 40px;
+	font-size: 19px;
+	font-weight: bold;
+	opacity: 0.7;
+	position: fixed;
+	width: 88% !important;
+
+	@include tablet {
+		width: 40% !important;
+	}
+
+	@include desktop {
+		width: 30% !important;
+	}
+}
+
+// Header
+.site_header {
+    .logo_img {
+        width: 50px;
+
+		@include tablet {
+			width: 65px;
+		}
+    }
+    .menu_img {
+        width: 35px;
+    }
+}
+.logo {
+	position: relative;
+	z-index: 600;
+}

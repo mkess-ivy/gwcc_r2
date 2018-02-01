@@ -21,6 +21,48 @@
     }
 
 }
+.home_masthead {
+    margin: 100px auto 150px;
+    text-align: center;
+    color: $white;
+
+    .home_masthead_title {
+        font-size: 38px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        text-transform: uppercase;
+        line-height:1;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    .home_masthead_subtitle {
+        font-weight: $font-bold;
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+    .home_masthead_small_group {
+        position: relative;
+
+        .small_circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: -0.9em;
+            left: 0.2em;
+            z-index:1;
+        }
+        .small_circle.color {
+            background-color: $bluegreen;
+        }
+        .small_text {
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
 
 // Intro Content
 .intro_content {
