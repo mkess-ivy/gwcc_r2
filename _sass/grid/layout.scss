@@ -275,6 +275,10 @@ body.noScroll { /* ...or body.dialogShowing */
 // Grid
 .grid {
 	margin: 0 10px;
+
+	@include small {
+		margin: 0 25px;
+	}
 }
 
 // Misc

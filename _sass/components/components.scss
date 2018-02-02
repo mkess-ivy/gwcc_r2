@@ -506,13 +506,13 @@
   object-fit: cover;
 }
 
-// Full Width Video
+// Bronzey - Full Width Video
 .bronzey {
     background-image: url('/assets/img/learn_gwcc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 50vh;
     left: 50%;
     margin-left: -50vw;
     position: relative;
@@ -536,5 +536,70 @@
     }
     .bronzey_play {
         text-align: center;
+    }
+}
+
+// Goldie - Featured Content Home
+.goldie {
+    margin: 100px auto 150px;
+    color: $white;
+    width: 75%;
+
+    .single {
+        margin-bottom: 75px;
+
+        .goldie_title {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .goldie_text {
+            border: 7px solid $bluegreen;
+            padding: 15px;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+        .goldie_cta {
+            div {
+                border: 4px solid;
+                width: 130px;
+                padding: 5px;
+                margin-top: 20px;
+
+                &:hover {
+                    border-color: $bluegreen;
+                    -webkit-transition: 0.5s ease-in-out;
+                    -moz-transition: 0.5s ease-in-out;
+                    -o-transition: 0.5s ease-in-out;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// Sponsors
+.sponsors {
+    color: $white;
+    margin-bottom: 40px;
+
+    .sponsors_title {
+        text-align: center;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-bottom: 30px;
+    }
+
+    .sponsors_group {
+        ul {
+            li {
+                width: 24%;
+                display: inline-block;
+            }
+        }
     }
 }

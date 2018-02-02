@@ -22,9 +22,10 @@
 
 }
 .home_masthead {
-    margin: 100px auto 150px;
+    // margin: 100px auto 150px;
     text-align: center;
     color: $white;
+    height: 75vh;
 
     .home_masthead_title {
         font-size: 38px;
@@ -34,11 +35,22 @@
         line-height:1;
         letter-spacing: 1px;
         margin-bottom: 40px;
+
+        @include small {
+            font-size: 46px;
+        }
+        @include palm {
+            font-size: 60px;
+        }
     }
     .home_masthead_subtitle {
         font-weight: $font-bold;
         font-size: 20px;
-        margin-bottom: 45px;
+        margin-bottom: 75px;
+
+        @include palm {
+            font-size: 28px;
+        }
     }
     .home_masthead_small_group {
         position: relative;
@@ -60,6 +72,10 @@
             letter-spacing: 1.2px;
             position: relative;
             z-index: 2;
+
+            @include palm {
+                font-size: 18px;
+            }
         }
     }
 }

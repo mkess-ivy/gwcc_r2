@@ -23,11 +23,10 @@ dl, dd, ol, ul, figure {
  */
 body {
     font-family: $font-2;
-    // font-size: $base-font-size;
-    // line-height: $base-line-height;
     font-weight: 400;
     color: $black;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 
