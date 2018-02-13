@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    // DelayReveal
+    // $(function(){
+    //     setTimeout(function(){
+    //         $("#delayReveal").show();
+    //     }, 1500);
+    // });
+
     // Smooth Scroll
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -13,6 +20,9 @@ $(document).ready(function(){
           window.location.hash = target;
         });
     });
+
+    // Delay reveal
+    // $("#delayReveal").delay(2000).fadeIn(500);
 
     // site preloader
     $(window).load(function(){
@@ -31,16 +41,16 @@ $(document).ready(function(){
     });
 
     // News Slider
-    $('#js_news_slider').slick({
-        arrows: true,
-        autoplay: false,
-        cssEase: 'linear',
-        dots: false,
-        fade: true,
-        infinite: false,
-        prevArrow: '<img src="/assets/img/left_caret.png" class="prevArrow" />',
-        nextArrow: '<img src="/assets/img/right_caret.png" class="nextArrow" />',
-        speed: 500
-    });
+    // $('#js_news_slider').slick({
+    //     arrows: true,
+    //     autoplay: false,
+    //     cssEase: 'linear',
+    //     dots: false,
+    //     fade: true,
+    //     infinite: false,
+    //     prevArrow: '<img src="/assets/img/left_caret.png" class="prevArrow" />',
+    //     nextArrow: '<img src="/assets/img/right_caret.png" class="nextArrow" />',
+    //     speed: 500
+    // });
 
 }); // Close of jQuery

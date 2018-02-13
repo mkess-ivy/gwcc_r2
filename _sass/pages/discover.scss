@@ -1,0 +1,108 @@
+// Community Options Content
+.community_options_content {
+    .section_icon {
+        margin: 0 auto 50px;
+        text-align: center;
+
+        @include laptop {
+            margin-bottom: 100px;
+        }
+        img {
+            width: 50px;
+        }
+    }
+    .options_wrapper {
+        margin-bottom: 75px;
+
+        @include tablet {
+            margin: 0 auto 75px;
+            width: 70%;
+        }
+        @include laptop {
+            margin-bottom: 100px;
+        }
+        @include desktop {
+            max-width: 700px;
+        }
+    }
+    .options_title {
+        font-family: $font-1;
+        font-size: 26px;
+        font-weight: $muli-black;
+        letter-spacing: 0.24px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include palm {
+            font-size: 34px;
+        }
+        @include tablet {
+            font-size: 36px;
+            margin: 0 auto 40px;
+            width: 80%;
+        }
+        @include laptop {
+            font-size: 44px;
+        }
+        @include widescreen {
+            font-size: 46px;
+            margin: 0 auto 50px;
+        }
+    }
+    .options_text {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+
+        @include widescreen {
+            font-size: 26px;
+            line-height: 1.4;
+        }
+    }
+}
+.options_item {
+    margin-bottom: 75px;
+    text-align: center;
+
+    @include tablet {
+        width: 43%;
+    }
+    @include widescreen {
+        max-width: 400px;
+    }
+
+    .options_img {
+        margin-bottom: 25px;
+
+
+        img {
+            width: 85px;
+
+            @include laptop {
+                width: 125px;
+            }
+        }
+    }
+    .options_headline {
+        font-size: 26px;
+        $font-family: $font-1;
+        font-weight: $muli-black;
+        margin-bottom: 15px;
+
+        @include tablet {
+            height: 65px;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+    }
+    .options_subhead {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+    }
+}

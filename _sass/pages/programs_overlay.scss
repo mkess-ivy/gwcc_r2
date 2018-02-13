@@ -1,0 +1,69 @@
+#programs_menu_container {
+	height: 50px;
+	position: relative;
+	width: 50px;
+}
+.programs_menu_button {
+	background: transparent !important;
+	border: none !important;
+	height: 100% !important;
+	position: relative !important;
+    text-align: right;
+	width: 100% !important;
+	-webkit-font-smoothing: antialiased;
+    width: 50px;
+}
+.programs_menu_button:active {
+	position: relative;
+	top: 1px;
+}
+.programs_menu_button:hover {
+	-o-transition:.75s;
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
+    transition:.75s;
+}
+.programs_menu_btn {
+	@include laptop {
+		display: none;
+	}
+}
+.programs_overlay {
+	background-color: $bluegreen;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+	overflow: scroll;
+}
+.programs_overlay_close {
+	background: url('/assets/img/icon_menu_close_v2.png') no-repeat center center !important;
+	background-size: contain !important;
+	border: none !important;
+	color: transparent !important;
+	float: right;
+	height: 35px !important;
+	outline: none;
+	overflow: hidden !important;
+	margin-right: 7px !important;
+	text-indent: 200% !important;
+	top: 7px !important;
+	margin-top: 7px !important;
+	width: 35px !important;
+	z-index: 100 !important;
+}
+.programs_overlay_data {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.programs_overlay_open {
+	opacity: 1;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	visibility: visible;
+}

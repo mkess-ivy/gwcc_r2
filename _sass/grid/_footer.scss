@@ -1,229 +1,300 @@
 .site_footer {
-    // background-image: url('/assets/img/bg_dots.jpg');
-    background-image: url('/assets/img/bg_map.jpg');
+    background-color: #e5dede;
     background-repeat: no-repeat;
     background-position: 2% 7%;
     background-size: cover;
+    padding-top: 50px;
+
+    @include tablet {
+        padding-top: 0;
+    }
 }
-.medium_footer {
-    margin-bottom: 125px;
+.footer_grid {
+    margin: 0 15px;
+    @include small {
+        margin: 0 50px;
+    }
     @include palm {
-        width: 450px;
-        margin: 0 auto 125px;
+        width: 65%;
+        margin: auto;
+        max-width: 350px;
     }
-
+    @include tablet {
+        width: 100%;
+        max-width: 675px;
+        padding: 50px 0 0;
+    }
     @include laptop {
-        margin-bottom: 30px;
-        padding-bottom: 0 !important;
-        width: 100%;
+        max-width: 900px;
     }
-
-    .medium_title {
-        font-family: $font-1;
-        font-size: 22px;
-        font-weight: $muli-black;
-        letter-spacing: 1.47px;
-        line-height: 1;
-        margin: 75px 0 25px;
-
-        @include laptop {
-            font-size: 30px;
-            line-height: 1.2;
-            margin: 0 0 45px;
-        }
+    @include desktop {
+        max-width: 1180px;
     }
-
-    .medium_item {
-        @include laptop {
-            width: 47%;
-            max-width: 450px;
-        }
-
-    }
-
-    .social {
-        width: 80%;
-
-        .social_icon {
-            margin-right: 20px;
-            display: inline;
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            a i {
-                color: $black;
-
-                &:hover {
-                    @extend %hover;
-                }
-            }
-        }
+    @include widescreen {
+        max-width: none;
+        padding: 50px 25px 0;
     }
 }
-.short_footer {
-    padding: 0 50px 20px;
+.footer_logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 
-    .short_item {
-        font-family: $font-1;
-        font-size: 14px;
-        font-weight: $font-bold;
-        margin-bottom: 15px;
-        text-align: center;
-        width: 100%;
+    @include tablet {
+        width: 75px;
+        margin: 0 auto 50px;
+    }
+    @include desktop {
+        width: 5%;
+    }
 
-        &:nth-child(2) {
-            @include tablet {
-                padding-right: 25px;
-                text-align: right;
-                width: 52%;
-            }
-            @include desktop {
-                width: 56%;
-            }
-        }
-        &:first-child {
-            @include tablet {
-                width: 40%;
-                text-align: left;
-            }
-        }
-
-        ul li {
-            display: inline;
-            padding-right: 10px;
-
-
-            a {
-                color: $black;
-                text-decoration: none;
-                // font-size: 17px;
-
-                &:hover {
-                    @extend %hover;
-                }
-            }
-
-            &::after {
-                content: '|';
-                display: inline-block;
-                padding-left: 10px;
-                width: 2px;
-            }
-            &:last-child::after {
-                content: none;
-            }
-            &:last-child {
-
-            }
-        }
+    .footer_logo_img {
+        width: 65px;
     }
 }
-
+.footer_all {
+    @include laptop {
+        width: 85%;
+    }
+    @include desktop {
+        width: 93%;
+    }
+}
 .footer_column {
     width: 100%;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
 
     &:last-child {
         margin-bottom:0;
     }
-    .footer_logo {
-        width: 100%;
-        text-align: center;
-        margin: 50px auto;
-
-        img {
-            width: 75px;
-        }
+    @include tablet {
+        margin-bottom: 0;
     }
 
-    .footer_alpha_title {
-        font-family: $font-1;
-        font-weight: $muli-black;
-        font-size: 24px;
-        text-transform: uppercase;
-        margin-bottom: 30px;
+    &.left {
+        @include tablet {
+            width: 47%;
+        }
+        @include laptop {
+            width: 45%;
+        }
+
     }
 
-    .footer_content {
-        .footer_content_title {
-            font-family: $font-1;
-            font-weight: $muli-black;
-            font-size: 24px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            line-height: 1;
-            margin-bottom: 25px;
+    &.right {
+        @include tablet {
+            width: 43%;
         }
-        .footer_content_subtitle {
-            font-size: 20px;
-            line-height: 1;
-            letter-spacing: 0.75px;
-            margin-bottom: 25px;
-
-            span {
-                font-size: 16px;
-            }
+        @include laptop {
+            width: 40%;
+            max-width: 375px;
         }
-        .footer_content_section {
-            .footer_content_header {
-                font-family: $font-1;
-                font-weight: $muli-black;
-                text-transform: uppercase;
-                padding-bottom: 10px;
-            }
-            .icon {
-                display: inline-block;
-                vertical-align: top;
-                padding-right: 15px;
-            }
-            .footer_content_meta {
-                display: inline-block;
-                width: 70%;
-            }
-            .footer_content_single {
-                margin-bottom: 25px;
-            }
-        }
-    }
-
-    .footer_menu {
-        width: 100%;
-
-        li {
-            width: 100%;
-            font-size: 20px;
-            font-weight: $font-bold;
-            text-transform: uppercase;
-            letter-spacing: 0.75px;
-            margin-bottom: 7px;
-
-            a {
-                color: $black;
-                text-decoration: none;
-            }
+        @include desktop {
+            max-width: none;
+            width: 52%;
         }
     }
 }
 
+.footer_content {
+    width: 100%;
+    @include tablet {
+        // width: 71%;
+    }
+    @include laptop {
+        width: 75%;
+    }
+    @include desktop {
+        width: 48%;
+    }
+
+    &.left {
+        @include desktop {
+            width: 40%;
+        }
+
+    }
+    &.right {
+        @include desktop {
+            width: 51%;
+        }
+    }
+
+    .footer_content_title {
+        font-family: $font-1;
+        font-weight: $muli-black;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        line-height: 1;
+        margin-bottom: 25px;
+
+        @include tablet {
+            font-size: 20px;
+            width: 75%;
+        }
+        @include desktop {
+            margin-bottom: 15px;
+        }
+        @include tv {
+            width: 55%;
+        }
+
+        // @include desktop {
+        //     font-size: 26px;
+        //     width: 250px;
+        // }
+    }
+    .footer_content_subtitle {
+        line-height: 1;
+        letter-spacing: 0.75px;
+        margin-bottom: 25px;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-size: 12px;
+
+            // @include tablet {
+            //     font-size: 12px;
+            // }
+        }
+    }
+    .footer_content_section {
+        .footer_content_header {
+            font-family: $font-1;
+            font-weight: $muli-black;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+
+            @include tablet {
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 15px;
+        }
+        .footer_content_meta {
+            display: inline-block;
+            width: 70%;
+
+            @include palm {
+                width: 80%;
+            }
+            @include tablet {
+                font-size: 14px;
+                width: 60%;
+            }
+
+            @include desktop {
+                width: 210px;
+            }
+        }
+        .footer_content_single {
+            margin-bottom: 25px;
+
+            @include tablet {
+                margin-bottom: 15px;
+            }
+            &:last-child {
+                @include tv {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+.footer_alpha_title {
+    font-family: $font-1;
+    font-weight: $muli-black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+}
+.footer_menu {
+    width: 100%;
+
+    @include palm {
+        width: 50%;
+    }
+
+    @include laptop {
+        width: 35%;
+        margin-right: 50px;
+    }
+    @include tv {
+        margin-right: 30px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    li {
+        width: 100%;
+        font-size: 16px;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        margin-bottom: 7px;
+
+        // @include tv {
+        //     font-size: 16px;
+        // }
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
 .social {
     margin-top: 100px;
     text-align: center;
+    width: 100%;
+
+    @include tablet {
+        margin-top: 25px;
+        text-align: left;
+    }
+    @include desktop {
+        width: 45%;
+        margin-top: 0;
+        vertical-align: top;
+    }
+    // @include tv {
+    //     margin-top: 25px;
+    // }
 
     .social_title {
         font-family: $font-1;
         font-weight: $muli-black;
         text-transform: uppercase;
         font-size: 18px;
+
+        @include tablet {
+            text-align: left;
+            font-size: 14px;
+        }
     }
     .social_group {
         ul {
-            margin-top: 15px;
+            margin: 15px auto 0;
 
             li {
                 display: inline-block;
-                margin-right: 25px;
+                margin-right: 15px;
+
+                // &:first-child {
+                //     @include tablet {
+                //         margin-left: -55px;
+                //     }
+                // }
 
                 a {
                     color: $black;
@@ -235,23 +306,41 @@
 .site_footer_mini {
     margin-top: 15px;
 
+    @include tablet {
+        padding-bottom: 25px;
+    }
+    @include desktop {
+        margin-top: 0;
+    }
+    // @include laptop {
+    //     margin-top: 0;
+    // }
+
     .backtotop {
         width: 75px;
-        margin: 50px auto 75px;
+        margin: 50px auto 25px;
         text-align: center;
         position: relative;
 
-        &:hover {
-            top: -10px;
-            -webkit-transition: 0.5s ease-in;
-            -moz-transition: 0.5s ease-in;
-            -o-transition: 0.5s ease-in;
-            transition: 0.5s ease-in;
+        @include tablet {
+            margin: auto;
         }
 
         a {
             color: $black;
             text-decoration: none;
+        }
+
+        .icon {
+            position: relative;
+
+            &:hover {
+                // top: -10px;
+                -webkit-transition: 0.5s ease-in;
+                -moz-transition: 0.5s ease-in;
+                -o-transition: 0.5s ease-in;
+                transition: 0.5s ease-in;
+            }
         }
     }
     .copyright {
@@ -263,6 +352,20 @@
         letter-spacing: 0.75px;
         font-weight: $font-bold;
         font-size: 10px;
+        position: relative;
+
+        @include tablet {
+            width: 90%;
+            text-align: right;
+        }
+
+        div {
+            @include tablet {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
     }
     .icon_text {
         font-weight: $font-bold;
@@ -272,7 +375,12 @@
         margin-top: 6px;
     }
 }
-.footer_grid {
-    width: 75%;
-    margin: auto;
+
+
+.links_group {
+    width: 100%;
+
+    @include desktop {
+        width: 50%;
+    }
 }
