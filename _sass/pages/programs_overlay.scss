@@ -17,12 +17,22 @@
     width: 110px;
     padding: 0 !important;
 
+	@include laptop {
+		width: 120px;
+	}
+
     li {
         letter-spacing: 0.75px;
         -webkit-font-smoothing: antialiased;
 
 		@include tablet {
 			width: 130px !important;
+		}
+
+		@include laptop {
+			color: $white;
+			text-transform: uppercase;
+			font-size: 18px;
 		}
     }
 }
@@ -66,6 +76,10 @@
 			max-width: 900px;
 		}
 
+		@include desktop {
+			max-width: 1100px;
+		}
+
 		.programs_content_single {
 			padding-bottom: 50px;
 			width: 100%;
@@ -79,6 +93,10 @@
 				font-weight: $muli-black;
 				font-size: 40px;
 				padding-bottom: 10px;
+
+				@include desktop {
+					font-size: 48px;
+				}
 			}
 			.programs_content_subtitle {
 				font-family: $font-1;
@@ -86,10 +104,18 @@
 				font-size: 20px;
 				text-transform: uppercase;
 				padding-bottom: 15px;
+
+				@include desktop {
+					font-size: 22px;
+				}
 			}
 			.programs_content_summary {
 				font-size: 20px;
 				line-height: 1.4;
+
+				@include desktop {
+					font-size: 24px;
+				}
 
 				span {
 					font-weight: $font-bold;
@@ -98,7 +124,8 @@
 		}
 	}
 }
-.programs_overlay_close {
+.programs_overlay_close,
+.programs_overlay_close_desktop {
 	background: url('/assets/img/icon_menu_close_v3.png') no-repeat center center !important;
 	background-size: contain !important;
 	border: none !important;
@@ -120,7 +147,8 @@
 	transition: opacity 0.5s, visibility 0s 0.5s;
 	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
 }
-.programs_overlay_open {
+.programs_overlay_open,
+.programs_overlay_open_desktop {
 	opacity: 1;
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;

@@ -40,7 +40,7 @@ $(document).ready(function(){
         $('body').removeClass("noScroll");
     });
 
-    // Programs Overlay Menu Functionality
+    // Programs Overlay Menu Functionality - Mobile
     $("#js_programs_overlay_menu").click(function() {
         $(".programs_overlay").addClass("programs_overlay_open");
         $('body').addClass("noScroll");
@@ -48,6 +48,17 @@ $(document).ready(function(){
 
 	$(".programs_overlay_close").click(function() {
         $(".programs_overlay").removeClass("programs_overlay_open");
+        $('body').removeClass("noScroll");
+    });
+
+    // Programs Overlay Menu Functionality - Desktop
+    $("#js_programs_overlay_menu_desktop").click(function() {
+        $(".programs_overlay").addClass("programs_overlay_open_desktop");
+        $('body').addClass("noScroll");
+    });
+
+	$(".programs_overlay_close_desktop").click(function() {
+        $(".programs_overlay").removeClass("programs_overlay_open_desktop");
         $('body').removeClass("noScroll");
     });
 

@@ -1392,12 +1392,20 @@ body.noScroll {
   -webkit-font-smoothing: antialiased;
   width: 110px;
   padding: 0 !important; }
+  @media screen and (min-width: 992px) {
+    .programs_menu_button {
+      width: 120px; } }
   .programs_menu_button li {
     letter-spacing: 0.75px;
     -webkit-font-smoothing: antialiased; }
     @media screen and (min-width: 768px) {
       .programs_menu_button li {
         width: 130px !important; } }
+    @media screen and (min-width: 992px) {
+      .programs_menu_button li {
+        color: #f7f7f7;
+        text-transform: uppercase;
+        font-size: 18px; } }
 
 .programs_menu_button:active {
   position: relative;
@@ -1428,6 +1436,9 @@ body.noScroll {
     @media screen and (min-width: 992px) {
       .programs_overlay .programs_content_group {
         max-width: 900px; } }
+    @media screen and (min-width: 1200px) {
+      .programs_overlay .programs_content_group {
+        max-width: 1100px; } }
     .programs_overlay .programs_content_group .programs_content_single {
       padding-bottom: 50px;
       width: 100%; }
@@ -1439,19 +1450,29 @@ body.noScroll {
         font-weight: 900;
         font-size: 40px;
         padding-bottom: 10px; }
+        @media screen and (min-width: 1200px) {
+          .programs_overlay .programs_content_group .programs_content_single .programs_content_title {
+            font-size: 48px; } }
       .programs_overlay .programs_content_group .programs_content_single .programs_content_subtitle {
         font-family: "Muli", sans-serif;
         font-weight: 900;
         font-size: 20px;
         text-transform: uppercase;
         padding-bottom: 15px; }
+        @media screen and (min-width: 1200px) {
+          .programs_overlay .programs_content_group .programs_content_single .programs_content_subtitle {
+            font-size: 22px; } }
       .programs_overlay .programs_content_group .programs_content_single .programs_content_summary {
         font-size: 20px;
         line-height: 1.4; }
+        @media screen and (min-width: 1200px) {
+          .programs_overlay .programs_content_group .programs_content_single .programs_content_summary {
+            font-size: 24px; } }
         .programs_overlay .programs_content_group .programs_content_single .programs_content_summary span {
           font-weight: 700; }
 
-.programs_overlay_close {
+.programs_overlay_close,
+.programs_overlay_close_desktop {
   background: url("/assets/img/icon_menu_close_v3.png") no-repeat center center !important;
   background-size: contain !important;
   border: none !important;
@@ -1473,7 +1494,8 @@ body.noScroll {
   transition: opacity 0.5s, visibility 0s 0.5s;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s; }
 
-.programs_overlay_open {
+.programs_overlay_open,
+.programs_overlay_open_desktop {
   opacity: 1;
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
