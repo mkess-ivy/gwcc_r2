@@ -1,17 +1,30 @@
 #programs_menu_container {
 	height: 50px;
 	position: relative;
-	width: 50px;
+	width: 130px;
+
+	@include laptop {
+		display: inline;
+		margin-right: 25px;
+	}
 }
 .programs_menu_button {
 	background: transparent !important;
 	border: none !important;
 	height: 100% !important;
 	position: relative !important;
-    text-align: right;
-	width: 100% !important;
 	-webkit-font-smoothing: antialiased;
-    width: 50px;
+    width: 110px;
+    padding: 0 !important;
+
+    li {
+        letter-spacing: 0.75px;
+        -webkit-font-smoothing: antialiased;
+
+		@include tablet {
+			width: 130px !important;
+		}
+    }
 }
 .programs_menu_button:active {
 	position: relative;
@@ -25,9 +38,9 @@
     transition:.75s;
 }
 .programs_menu_btn {
-	@include laptop {
-		display: none;
-	}
+	// @include laptop {
+	// 	display: none;
+	// }
 }
 .programs_overlay {
 	background-color: $bluegreen;
@@ -38,9 +51,55 @@
 	width: 100%;
 	z-index: 500;
 	overflow: scroll;
+
+	// Programs Content
+	.programs_content_group {
+	    @extend %clearfix;
+	    padding: 100px 25px 50px;
+
+		@include palm {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		@include laptop {
+			max-width: 900px;
+		}
+
+		.programs_content_single {
+			padding-bottom: 50px;
+			width: 100%;
+
+			@include laptop {
+				width: 45%;
+			}
+
+			.programs_content_title {
+				font-family: $font-1;
+				font-weight: $muli-black;
+				font-size: 40px;
+				padding-bottom: 10px;
+			}
+			.programs_content_subtitle {
+				font-family: $font-1;
+				font-weight: $muli-black;
+				font-size: 20px;
+				text-transform: uppercase;
+				padding-bottom: 15px;
+			}
+			.programs_content_summary {
+				font-size: 20px;
+				line-height: 1.4;
+
+				span {
+					font-weight: $font-bold;
+				}
+			}
+		}
+	}
 }
 .programs_overlay_close {
-	background: url('/assets/img/icon_menu_close_v2.png') no-repeat center center !important;
+	background: url('/assets/img/icon_menu_close_v3.png') no-repeat center center !important;
 	background-size: contain !important;
 	border: none !important;
 	color: transparent !important;

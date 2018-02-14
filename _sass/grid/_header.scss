@@ -18,6 +18,8 @@
 // Overlay Logo Img
 .overlay_logo_img {
 	width: 45px;
+    position: relative;
+    z-index: 1000;
 
 	@include tablet {
 		width: 63px;

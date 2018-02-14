@@ -16,3 +16,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Setup Collections
+collections:
+  programs:
+    output: false

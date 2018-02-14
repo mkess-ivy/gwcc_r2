@@ -40,17 +40,15 @@ $(document).ready(function(){
         $('body').removeClass("noScroll");
     });
 
-    // News Slider
-    // $('#js_news_slider').slick({
-    //     arrows: true,
-    //     autoplay: false,
-    //     cssEase: 'linear',
-    //     dots: false,
-    //     fade: true,
-    //     infinite: false,
-    //     prevArrow: '<img src="/assets/img/left_caret.png" class="prevArrow" />',
-    //     nextArrow: '<img src="/assets/img/right_caret.png" class="nextArrow" />',
-    //     speed: 500
-    // });
+    // Programs Overlay Menu Functionality
+    $("#js_programs_overlay_menu").click(function() {
+        $(".programs_overlay").addClass("programs_overlay_open");
+        $('body').addClass("noScroll");
+    });
+
+	$(".programs_overlay_close").click(function() {
+        $(".programs_overlay").removeClass("programs_overlay_open");
+        $('body').removeClass("noScroll");
+    });
 
 }); // Close of jQuery
