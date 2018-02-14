@@ -80,6 +80,10 @@
 			max-width: 1100px;
 		}
 
+		@include tv {
+			max-width: 1400px;
+		}
+
 		.programs_content_single {
 			padding-bottom: 50px;
 			width: 100%;
