@@ -103,18 +103,37 @@
 			}
 
             &.box div {
-    			border: 2px solid #fff;
+    			border: 2px solid $bluegreen;
     			padding: 3px 5px;
+                background: $bluegreen;
 
     			&:hover {
-    				background: $white;
-                    border-bottom: 0;
+    				// background: $white;
 
-                    color: #d0987e;
+                    border: 2px solid $white;
     			}
     		}
+            &.box.black_menu div {
+                background: $bluegreen;
+                border: 2px solid $bluegreen;
+
+                &:hover {
+                    border-color: $black;
+                    color: $black;
+                    // color: $white;
+                }
+            }
 		}
 	}
+}
+.menu_desktop.black_menu {
+    ul {
+        li {
+            a {
+                color: $black;
+            }
+        }
+    }
 }
 #menu-container {
 	height: 50px;

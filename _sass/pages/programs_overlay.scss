@@ -48,6 +48,11 @@
 		}
     }
 }
+.programs_menu_button.black_menu {
+	li {
+		color: $black;
+	}
+}
 .programs_menu_button:active {
 	position: relative;
 	top: 1px;

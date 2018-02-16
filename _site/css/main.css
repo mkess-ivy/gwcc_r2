@@ -3,7 +3,7 @@
   transition: 0.5s; }
 
 .discover_prime_group .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image {
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -272,7 +272,7 @@ img {
   transition: 0.5s; }
 
 .discover_prime_group .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image {
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -281,8 +281,7 @@ img {
   background-repeat: no-repeat;
   background-position: 2% 7%;
   background-size: cover;
-  padding-top: 50px;
-  margin-top: 200px; }
+  padding-top: 50px; }
   @media screen and (min-width: 768px) {
     .site_footer {
       padding-top: 0; } }
@@ -330,7 +329,8 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     width: 65px;
-    height: 110px; }
+    height: 110px;
+    margin: auto; }
     .footer_logo .footer_logo_img:hover {
       background-image: url("/assets/img/gwcc_logo.gif");
       width: 65px;
@@ -640,12 +640,20 @@ img {
       border-bottom: 3px solid;
       padding-bottom: 3px; }
     .menu_desktop li a.box div {
-      border: 2px solid #fff;
-      padding: 3px 5px; }
+      border: 2px solid #47E7CE;
+      padding: 3px 5px;
+      background: #47E7CE; }
       .menu_desktop li a.box div:hover {
-        background: #f7f7f7;
-        border-bottom: 0;
-        color: #d0987e; }
+        border: 2px solid #f7f7f7; }
+    .menu_desktop li a.box.black_menu div {
+      background: #47E7CE;
+      border: 2px solid #47E7CE; }
+      .menu_desktop li a.box.black_menu div:hover {
+        border-color: #070707;
+        color: #070707; }
+
+.menu_desktop.black_menu ul li a {
+  color: #070707; }
 
 #menu-container {
   height: 50px;
@@ -782,17 +790,7 @@ body.noScroll {
   padding: 12px; }
   @media screen and (min-width: 375px) {
     .inner_wrapper, .news_wrapper {
-      margin: 0 auto;
-      max-width: 375px; } }
-  @media screen and (min-width: 768px) {
-    .inner_wrapper, .news_wrapper {
-      max-width: 750px; } }
-  @media screen and (min-width: 992px) {
-    .inner_wrapper, .news_wrapper {
-      max-width: 950px; } }
-  @media screen and (min-width: 1366px) {
-    .inner_wrapper, .news_wrapper {
-      max-width: 1125px; } }
+      margin: 0 auto; } }
 
 .outer_wrapper {
   position: relative;
@@ -890,7 +888,7 @@ body.noScroll {
     display: inline-block;
     height: 75px;
     width: 75px; }
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1200px) {
       .page_title_content .circle {
         height: 100px;
         width: 100px; } }
@@ -903,7 +901,7 @@ body.noScroll {
     margin-top: 15px;
     text-transform: uppercase;
     vertical-align: top; }
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1200px) {
       .page_title_content .page_title {
         font-size: 50px;
         margin-top: 20px; } }
@@ -1010,9 +1008,8 @@ body.noScroll {
 .bold {
   font-weight: 700; }
 
-@media screen and (min-width: 992px) {
-  .vertical-align {
-    align-items: start !important; } }
+.vertical-align {
+  align-items: start !important; }
 
 .masthead {
   margin: 75px auto; }
@@ -1413,6 +1410,23 @@ body.noScroll {
         font-size: 22px;
         line-height: 1.4; } }
 
+@media screen and (min-width: 768px) {
+  .discover_grid, .inner_wrapper, .news_wrapper {
+    max-width: 700px;
+    margin: auto; } }
+@media screen and (min-width: 992px) {
+  .discover_grid, .inner_wrapper, .news_wrapper {
+    max-width: 950px; } }
+@media screen and (min-width: 1200px) {
+  .discover_grid, .inner_wrapper, .news_wrapper {
+    max-width: 1150px; } }
+@media screen and (min-width: 1366px) {
+  .discover_grid, .inner_wrapper, .news_wrapper {
+    max-width: 1280px; } }
+@media screen and (min-width: 1650px) {
+  .discover_grid, .inner_wrapper, .news_wrapper {
+    max-width: 1500px; } }
+
 .mission_group {
   background-image: url("/assets/img/penn_station_team.jpg");
   background-position: center center;
@@ -1428,13 +1442,15 @@ body.noScroll {
     @media screen and (min-width: 500px) {
       .mission_group .mission_meta {
         max-width: 450px;
-        margin: auto; } }
+        margin: auto;
+        width: 100%; } }
     @media screen and (min-width: 768px) {
       .mission_group .mission_meta {
-        padding: 125px 0; } }
-    @media screen and (min-width: 992px) {
+        padding: 125px 0;
+        max-width: none; } }
+    @media screen and (min-width: 1200px) {
       .mission_group .mission_meta {
-        max-width: 950px; } }
+        padding: 175px 0; } }
   .mission_group .mission_single {
     margin: 0 20px 100px;
     color: #f7f7f7; }
@@ -1444,18 +1460,33 @@ body.noScroll {
       .mission_group .mission_single {
         width: 45%;
         margin: 0; } }
+    @media screen and (min-width: 1366px) {
+      .mission_group .mission_single {
+        width: 40%; } }
     .mission_group .mission_single .mission_title {
       font-family: "Muli", sans-serif;
       text-transform: uppercase;
       font-size: 45px;
       font-weight: 900;
       margin-bottom: 20px; }
+      @media screen and (min-width: 768px) {
+        .mission_group .mission_single .mission_title {
+          font-size: 55px; } }
+      @media screen and (min-width: 1200px) {
+        .mission_group .mission_single .mission_title {
+          font-size: 65px; } }
     .mission_group .mission_single .mission_summary {
       font-size: 20px;
       margin-left: 40px; }
+      @media screen and (min-width: 768px) {
+        .mission_group .mission_single .mission_summary {
+          font-size: 23px; } }
       @media screen and (min-width: 992px) {
         .mission_group .mission_single .mission_summary {
           margin-left: 75px; } }
+      @media screen and (min-width: 1200px) {
+        .mission_group .mission_single .mission_summary {
+          font-size: 26px; } }
 
 .color_overlay:before {
   position: absolute;
@@ -1473,7 +1504,10 @@ body.noScroll {
   position: relative; }
 
 .discover_prime_group {
-  margin-top: 200px; }
+  margin: 150px 0; }
+  @media screen and (min-width: 992px) {
+    .discover_prime_group {
+      margin: 150px 0 200px; } }
   .discover_prime_group .discover_prime_single {
     margin-bottom: 125px;
     position: relative; }
@@ -1493,7 +1527,7 @@ body.noScroll {
       margin: 25px 15px 0; }
       @media screen and (min-width: 500px) {
         .discover_prime_group .discover_prime_single .discover_prime_meta {
-          max-width: 450px;
+          width: 100%;
           margin: 25px 50px 0; } }
       @media screen and (min-width: 768px) {
         .discover_prime_group .discover_prime_single .discover_prime_meta {
@@ -1509,11 +1543,20 @@ body.noScroll {
       text-transform: uppercase;
       font-weight: 900;
       margin-bottom: 20px; }
+      @media screen and (min-width: 1200px) {
+        .discover_prime_group .discover_prime_single .discover_prime_title {
+          font-size: 36px; } }
     .discover_prime_group .discover_prime_single .discover_prime_summary {
       font-size: 20px;
       margin-bottom: 30px;
       letter-spacing: 0.75px;
       line-height: 1.2; }
+      @media screen and (min-width: 500px) {
+        .discover_prime_group .discover_prime_single .discover_prime_summary {
+          max-width: 450px; } }
+      @media screen and (min-width: 1200px) {
+        .discover_prime_group .discover_prime_single .discover_prime_summary {
+          font-size: 24px; } }
 
 .discover_overlay:before {
   position: absolute;
@@ -1527,11 +1570,11 @@ body.noScroll {
   background-color: rgba(71, 231, 206, 0.45); }
 
 .discover_alt_group {
-  margin: 0 15px; }
+  margin: 0 15px 75px; }
   @media screen and (min-width: 375px) {
     .discover_alt_group {
       max-width: 300px;
-      margin: auto; } }
+      margin: 0 auto 75px; } }
   @media screen and (min-width: 500px) {
     .discover_alt_group {
       max-width: 450px; } }
@@ -1545,6 +1588,11 @@ body.noScroll {
       .discover_alt_group .discover_alt_single {
         width: 30%;
         margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .discover_alt_group .discover_alt_single {
+        width: 28%; } }
+    .discover_alt_group .discover_alt_single:last-child {
+      margin-bottom: 0; }
     .discover_alt_group .discover_alt_single .discover_img_group {
       margin-bottom: 50px;
       position: relative; }
@@ -1557,6 +1605,9 @@ body.noScroll {
         @media screen and (min-width: 992px) {
           .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image {
             height: 40vh; } }
+        @media screen and (min-width: 1366px) {
+          .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image {
+            height: 45vh; } }
       .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_solid {
         height: 30vh;
         width: 100%;
@@ -1571,6 +1622,9 @@ body.noScroll {
         @media screen and (min-width: 992px) {
           .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_solid {
             height: 40vh; } }
+        @media screen and (min-width: 1366px) {
+          .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_solid {
+            height: 45vh; } }
     .discover_alt_group .discover_alt_single .discover_alt_title {
       font-size: 24px;
       font-family: "Muli", sans-serif;
@@ -1586,14 +1640,6 @@ body.noScroll {
       @media screen and (min-width: 500px) {
         .discover_alt_group .discover_alt_single .discover_alt_summary {
           margin: 0 45px 15px; } }
-
-@media screen and (min-width: 768px) {
-  .discover_grid {
-    max-width: 700px;
-    margin: auto; } }
-@media screen and (min-width: 992px) {
-  .discover_grid {
-    max-width: 950px; } }
 
 #programs_menu_container {
   height: 50px;
@@ -1633,6 +1679,9 @@ body.noScroll {
         color: #f7f7f7;
         text-transform: uppercase;
         font-size: 18px !important; } }
+
+.programs_menu_button.black_menu li {
+  color: #070707; }
 
 .programs_menu_button:active {
   position: relative;

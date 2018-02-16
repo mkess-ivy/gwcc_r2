@@ -4,7 +4,7 @@
     background-position: 2% 7%;
     background-size: cover;
     padding-top: 50px;
-    margin-top: 200px;
+    // margin-top: 200px;
 
     @include tablet {
         padding-top: 0;
@@ -56,6 +56,7 @@
         background-size: contain;
         width: 65px;
         height: 110px;
+        margin: auto;
 
         &:hover {
             background-image: url('/assets/img/gwcc_logo.gif');

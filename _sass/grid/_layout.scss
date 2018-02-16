@@ -21,20 +21,24 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 .inner_wrapper {
 	padding: 12px;
+	@extend .discover_grid;
 
 	@include small {
 		margin: 0 auto;
-		max-width: 375px;
+		// max-width: 375px;
 	}
-	@include tablet {
-		max-width: 750px;
-	}
-	@include laptop {
-		max-width: 950px;
-	}
-	@include widescreen {
-		max-width: 1125px;
-	}
+	// @include tablet {
+	// 	max-width: 750px;
+	// }
+	// @include laptop {
+	// 	max-width: 950px;
+	// }
+	// @include desktop {
+	// 	max-width: 1150px;
+	// }
+	// @include widescreen {
+	// 	max-width: 1125px;
+	// }
 }
 .outer_wrapper {
 	position: relative;
@@ -170,7 +174,7 @@ body.noScroll { /* ...or body.dialogShowing */
 		height: 75px;
 		width: 75px;
 
-		@include widescreen {
+		@include desktop {
 			height: 100px;
 			width: 100px;
 		}
@@ -185,7 +189,7 @@ body.noScroll { /* ...or body.dialogShowing */
 		text-transform: uppercase;
 		vertical-align: top;
 
-		@include widescreen {
+		@include desktop {
 			font-size: 50px;
 			margin-top: 20px;
 		}
@@ -332,7 +336,5 @@ body.noScroll { /* ...or body.dialogShowing */
 	font-weight: 700;
 }
 .vertical-align {
-	@include laptop {
-		align-items: start !important;
-	}
+	align-items: start !important;
 }

@@ -1,114 +1,24 @@
-// Community Options Content
-// .community_options_content {
-//     .section_icon {
-//         margin: 0 auto 50px;
-//         text-align: center;
-//
-//         @include laptop {
-//             margin-bottom: 100px;
-//         }
-//         img {
-//             width: 50px;
-//         }
-//     }
-//     .options_wrapper {
-//         margin-bottom: 75px;
-//
-//         @include tablet {
-//             margin: 0 auto 75px;
-//             width: 70%;
-//         }
-//         @include laptop {
-//             margin-bottom: 100px;
-//         }
-//         @include desktop {
-//             max-width: 700px;
-//         }
-//     }
-//     .options_title {
-//         font-family: $font-1;
-//         font-size: 26px;
-//         font-weight: $muli-black;
-//         letter-spacing: 0.24px;
-//         margin-bottom: 30px;
-//         text-align: center;
-//
-//         @include palm {
-//             font-size: 34px;
-//         }
-//         @include tablet {
-//             font-size: 36px;
-//             margin: 0 auto 40px;
-//             width: 80%;
-//         }
-//         @include laptop {
-//             font-size: 44px;
-//         }
-//         @include widescreen {
-//             font-size: 46px;
-//             margin: 0 auto 50px;
-//         }
-//     }
-//     .options_text {
-//         font-size: 20px;
-//         line-height: 28px;
-//         text-align: center;
-//
-//         @include widescreen {
-//             font-size: 26px;
-//             line-height: 1.4;
-//         }
-//     }
-// }
-// .options_item {
-//     margin-bottom: 75px;
-//     text-align: center;
-//
-//     @include tablet {
-//         width: 43%;
-//     }
-//     @include widescreen {
-//         max-width: 400px;
-//     }
-//
-//     .options_img {
-//         margin-bottom: 25px;
-//
-//
-//         img {
-//             width: 85px;
-//
-//             @include laptop {
-//                 width: 125px;
-//             }
-//         }
-//     }
-//     .options_headline {
-//         font-size: 26px;
-//         $font-family: $font-1;
-//         font-weight: $muli-black;
-//         margin-bottom: 15px;
-//
-//         @include tablet {
-//             height: 65px;
-//             font-size: 28px;
-//             margin-bottom: 30px;
-//         }
-//     }
-//     .options_subhead {
-//         font-size: 18px;
-//         line-height: 28px;
-//         margin-bottom: 30px;
-//
-//         @include tablet {
-//             font-size: 22px;
-//             line-height: 1.4;
-//         }
-//     }
-// }
+.discover_grid {
+    @include tablet {
+        max-width: 700px;
+        margin: auto;
+    }
+    @include laptop {
+        max-width: 950px;
+    }
+    @include desktop {
+        max-width: 1150px;
+    }
+    @include widescreen {
+        max-width: 1280px;
+    }
+    @include tv {
+        max-width: 1500px;
+    }
+}
+
 
 // Mission Group
-
 .mission_group {
     background-image: url('/assets/img/penn_station_team.jpg');
     background-position: center center;
@@ -126,12 +36,14 @@
         @include palm {
             max-width: 450px;
             margin: auto;
+            width: 100%;
         }
         @include tablet {
             padding: 125px 0;
+            max-width: none;
         }
-        @include laptop {
-            max-width: 950px;
+        @include desktop {
+            padding: 175px 0;
         }
     }
     .mission_single {
@@ -147,19 +59,37 @@
             margin: 0;
         }
 
+        @include widescreen {
+            width: 40%;
+        }
+
         .mission_title {
             font-family: $font-1;
             text-transform: uppercase;
             font-size: 45px;
             font-weight: $muli-black;
             margin-bottom: 20px;
+
+            @include tablet {
+                font-size: 55px;
+            }
+
+            @include desktop {
+                font-size: 65px;
+            }
         }
         .mission_summary {
             font-size: 20px;
             margin-left: 40px;
 
+            @include tablet {
+                font-size: 23px;
+            }
             @include laptop {
                 margin-left: 75px;
+            }
+            @include desktop {
+                font-size: 26px;
             }
         }
     }
@@ -176,7 +106,11 @@
 
 // Discover Groups
 .discover_prime_group {
-    margin-top: 200px;
+    margin: 150px 0;
+
+    @include laptop {
+        margin: 150px 0 200px;
+    }
 
     .discover_prime_single {
         margin-bottom: 125px;
@@ -204,7 +138,7 @@
             margin: 25px 15px 0;
 
             @include palm {
-                max-width: 450px;
+                width: 100%;
                 margin: 25px 50px 0;
             }
             @include tablet {
@@ -224,12 +158,23 @@
             text-transform: uppercase;
             font-weight: $muli-black;
             margin-bottom: 20px;
+
+            @include desktop {
+                font-size: 36px;
+            }
         }
         .discover_prime_summary {
             font-size: 20px;
             margin-bottom: 30px;
             letter-spacing: 0.75px;
             line-height: 1.2;
+
+            @include palm {
+                max-width: 450px;
+            }
+            @include desktop {
+                font-size: 24px;
+            }
         }
     }
 }
@@ -238,11 +183,11 @@
 }
 
 .discover_alt_group {
-    margin: 0 15px;
+    margin: 0 15px 75px;
 
     @include small {
         max-width: 300px;
-        margin: auto;
+        margin: 0 auto 75px;
     }
 
     @include palm {
@@ -262,6 +207,13 @@
             margin-bottom: 0;
         }
 
+        @include widescreen {
+            width: 28%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
         .discover_img_group {
             margin-bottom: 50px;
             position: relative;
@@ -277,6 +229,10 @@
 
                 @include laptop {
                     height: 40vh;
+                }
+
+                @include widescreen {
+                    height: 45vh;
                 }
             }
             .discover_alt_solid {
@@ -294,6 +250,9 @@
 
                 @include laptop {
                     height: 40vh;
+                }
+                @include widescreen {
+                    height: 45vh;
                 }
             }
         }
@@ -317,14 +276,4 @@
             }
         }
     }
-}
-.discover_grid {
-    @include tablet {
-        max-width: 700px;
-        margin: auto;
-    }
-    @include laptop {
-        max-width: 950px;
-    }
-
 }
