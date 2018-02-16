@@ -19,89 +19,70 @@
 
 
 // Mission Group
-.mission_group {
-    background-image: url('/assets/img/penn_station_team.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    vertical-align: top;
 
-    .mission_meta {
-        padding: 75px 0;
 
-        @include palm {
-            max-width: 450px;
-            margin: auto;
-            width: 100%;
-        }
+.mission_meta {
+    padding: 75px 0;
+
+    @include palm {
+        max-width: 450px;
+        margin: auto;
+        width: 100%;
+    }
+    @include tablet {
+        padding: 125px 0;
+        max-width: none;
+    }
+    @include desktop {
+        padding: 175px 0;
+    }
+}
+.mission_single {
+    margin: 0 20px 100px;
+    color: $white;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include laptop {
+        width: 45%;
+        margin: 0;
+    }
+
+    @include widescreen {
+        width: 40%;
+    }
+
+    .mission_title {
+        font-family: $font-1;
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: $muli-black;
+        margin-bottom: 20px;
+
         @include tablet {
-            padding: 125px 0;
-            max-width: none;
+            font-size: 55px;
+        }
+
+        @include desktop {
+            font-size: 65px;
+        }
+    }
+    .mission_summary {
+        font-size: 20px;
+        margin-left: 40px;
+
+        @include tablet {
+            font-size: 23px;
+        }
+        @include laptop {
+            margin-left: 75px;
         }
         @include desktop {
-            padding: 175px 0;
+            font-size: 26px;
         }
     }
-    .mission_single {
-        margin: 0 20px 100px;
-        color: $white;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        @include laptop {
-            width: 45%;
-            margin: 0;
-        }
-
-        @include widescreen {
-            width: 40%;
-        }
-
-        .mission_title {
-            font-family: $font-1;
-            text-transform: uppercase;
-            font-size: 45px;
-            font-weight: $muli-black;
-            margin-bottom: 20px;
-
-            @include tablet {
-                font-size: 55px;
-            }
-
-            @include desktop {
-                font-size: 65px;
-            }
-        }
-        .mission_summary {
-            font-size: 20px;
-            margin-left: 40px;
-
-            @include tablet {
-                font-size: 23px;
-            }
-            @include laptop {
-                margin-left: 75px;
-            }
-            @include desktop {
-                font-size: 26px;
-            }
-        }
-    }
-}
-.color_overlay:before{
-  @include color_overlay($orange, 0.75);
-}
-
-// Overlay Hacks
-.mission_group *,
-.discover_prime_image * {
-    position: relative;
 }
 
 // Discover Groups

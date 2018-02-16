@@ -5,15 +5,9 @@ permalink: /discover/
 
 [//]: # Page Header
 circle: "#47E7CE"
-
-[//]: # Discover Prime Groups
-discover_prime_img1:
-discover_prime_img2:
-discover_prime_img3:
-discover_prime_img4:
 ---
 
-<div class="mission_group color_overlay">
+<div class="mission_group color_overlay" style="background-image:url('/assets/img/penn_station_team.jpg')">
     <div class="discover_grid">
         <div class="mission_meta">
             <div class="frow justify-between">

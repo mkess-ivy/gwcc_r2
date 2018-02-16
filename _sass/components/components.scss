@@ -164,3 +164,90 @@
         text-align: center;
     }
 }
+
+// Full-width Image + Color Overlays
+.mission_group {
+    @extend %bg_props;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    vertical-align: top;
+}
+
+.color_overlay:before{
+  @include color_overlay($orange, 0.45);
+}
+
+// Overlay Hacks
+.mission_group *,
+.discover_prime_image *,
+.history_group * {
+    position: relative;
+}
+
+// History
+.history_group {
+    @extend .mission_group;
+    height: 60vh;
+
+    @include palm {
+        height: 75vh;
+    }
+}
+.history_meta {
+    margin: 50px 15px;
+
+    @include small {
+        margin: 75px 20px;
+    }
+
+    @include palm {
+        margin: 75px 50px;
+    }
+
+    @include laptop {
+        margin: 100px 50px;
+    }
+
+    @include desktop {
+        max-width: 1000px;
+        margin: 100px auto;
+    }
+
+    @include tv {
+        max-width: 1200px;
+    }
+
+    .history_title {
+        font-size: 24px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        line-height: 1.2;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 30px;
+        }
+
+        @include laptop {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+    .history_summary {
+        font-size: 18px;
+        line-height: 1.4;
+
+        @include tablet {
+            font-size: 20px;
+        }
+        @include laptop {
+            font-size: 22px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}

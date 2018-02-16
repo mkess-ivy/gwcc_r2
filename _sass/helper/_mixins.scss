@@ -2,7 +2,9 @@
 
 // Hover for Links
 %hover {
-    color: $orange;
+    // color: $orange;
+    background: $bluegreen;
+    border-color: $bluegreen;
     transition: 0.5s;
 }
 
