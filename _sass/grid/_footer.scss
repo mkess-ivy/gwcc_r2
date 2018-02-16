@@ -1,9 +1,10 @@
 .site_footer {
-    background-color: #e5dede;
+    background-color: $white;
     background-repeat: no-repeat;
     background-position: 2% 7%;
     background-size: cover;
     padding-top: 50px;
+    margin-top: 200px;
 
     @include tablet {
         padding-top: 0;
@@ -49,7 +50,18 @@
     }
 
     .footer_logo_img {
+        background-image: url('/assets/img/gwcc-logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         width: 65px;
+        height: 110px;
+
+        &:hover {
+            background-image: url('/assets/img/gwcc_logo.gif');
+            width: 65px;
+            height: 110px;
+        }
     }
 }
 .footer_all {

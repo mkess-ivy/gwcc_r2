@@ -91,16 +91,17 @@ body.noScroll { /* ...or body.dialogShowing */
 
 // CTAs
 .brand_cta {
-	border: 2px solid;
-	border-radius: 20px;
+	border: 3px solid;
+	// border-radius: 20px;
 	color: $black;
 	display: block;
 	font-weight: bold;
-	margin: auto;
+	// margin: auto;
 	padding: 5px 10px;
 	text-align: center;
 	text-decoration: none;
-	width: 130px;
+	width: 150px;
+	cursor: pointer;
 
 	@include tablet {
 		width: 160px;
@@ -113,10 +114,37 @@ body.noScroll { /* ...or body.dialogShowing */
 	}
 }
 
+.brand_cta_v2 div {
+	border: 3px solid;
+	// border-radius: 20px;
+	color: $black;
+	// display: block;
+	font-weight: bold;
+	// margin: auto;
+	padding: 5px 25px;
+	text-align: center;
+	text-decoration: none;
+	width: fit-content;
+	cursor: pointer;
+
+	@include tablet {
+		// width: 160px;
+		padding: 7px 25px;
+		font-size: 18px;
+	}
+
+	&:hover {
+		@extend %hover;
+	}
+}
+.margin_center {
+	margin: auto;
+}
+
 // Gold Layout
 // -- Page Masthead
 .page_masthead {
-	@extend .site_footer;
+	// @extend .site_footer;
 }
 // -- Page Header
 .page_header_content {
@@ -302,4 +330,9 @@ body.noScroll { /* ...or body.dialogShowing */
 // Misc
 .bold {
 	font-weight: 700;
+}
+.vertical-align {
+	@include laptop {
+		align-items: start !important;
+	}
 }

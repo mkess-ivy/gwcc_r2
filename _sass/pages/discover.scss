@@ -1,108 +1,330 @@
 // Community Options Content
-.community_options_content {
-    .section_icon {
-        margin: 0 auto 50px;
-        text-align: center;
+// .community_options_content {
+//     .section_icon {
+//         margin: 0 auto 50px;
+//         text-align: center;
+//
+//         @include laptop {
+//             margin-bottom: 100px;
+//         }
+//         img {
+//             width: 50px;
+//         }
+//     }
+//     .options_wrapper {
+//         margin-bottom: 75px;
+//
+//         @include tablet {
+//             margin: 0 auto 75px;
+//             width: 70%;
+//         }
+//         @include laptop {
+//             margin-bottom: 100px;
+//         }
+//         @include desktop {
+//             max-width: 700px;
+//         }
+//     }
+//     .options_title {
+//         font-family: $font-1;
+//         font-size: 26px;
+//         font-weight: $muli-black;
+//         letter-spacing: 0.24px;
+//         margin-bottom: 30px;
+//         text-align: center;
+//
+//         @include palm {
+//             font-size: 34px;
+//         }
+//         @include tablet {
+//             font-size: 36px;
+//             margin: 0 auto 40px;
+//             width: 80%;
+//         }
+//         @include laptop {
+//             font-size: 44px;
+//         }
+//         @include widescreen {
+//             font-size: 46px;
+//             margin: 0 auto 50px;
+//         }
+//     }
+//     .options_text {
+//         font-size: 20px;
+//         line-height: 28px;
+//         text-align: center;
+//
+//         @include widescreen {
+//             font-size: 26px;
+//             line-height: 1.4;
+//         }
+//     }
+// }
+// .options_item {
+//     margin-bottom: 75px;
+//     text-align: center;
+//
+//     @include tablet {
+//         width: 43%;
+//     }
+//     @include widescreen {
+//         max-width: 400px;
+//     }
+//
+//     .options_img {
+//         margin-bottom: 25px;
+//
+//
+//         img {
+//             width: 85px;
+//
+//             @include laptop {
+//                 width: 125px;
+//             }
+//         }
+//     }
+//     .options_headline {
+//         font-size: 26px;
+//         $font-family: $font-1;
+//         font-weight: $muli-black;
+//         margin-bottom: 15px;
+//
+//         @include tablet {
+//             height: 65px;
+//             font-size: 28px;
+//             margin-bottom: 30px;
+//         }
+//     }
+//     .options_subhead {
+//         font-size: 18px;
+//         line-height: 28px;
+//         margin-bottom: 30px;
+//
+//         @include tablet {
+//             font-size: 22px;
+//             line-height: 1.4;
+//         }
+//     }
+// }
 
-        @include laptop {
-            margin-bottom: 100px;
-        }
-        img {
-            width: 50px;
-        }
-    }
-    .options_wrapper {
-        margin-bottom: 75px;
+// Mission Group
 
-        @include tablet {
-            margin: 0 auto 75px;
-            width: 70%;
-        }
-        @include laptop {
-            margin-bottom: 100px;
-        }
-        @include desktop {
-            max-width: 700px;
-        }
-    }
-    .options_title {
-        font-family: $font-1;
-        font-size: 26px;
-        font-weight: $muli-black;
-        letter-spacing: 0.24px;
-        margin-bottom: 30px;
-        text-align: center;
+.mission_group {
+    background-image: url('/assets/img/penn_station_team.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    vertical-align: top;
+
+    .mission_meta {
+        padding: 75px 0;
 
         @include palm {
-            font-size: 34px;
+            max-width: 450px;
+            margin: auto;
         }
         @include tablet {
-            font-size: 36px;
-            margin: 0 auto 40px;
-            width: 80%;
+            padding: 125px 0;
         }
         @include laptop {
-            font-size: 44px;
-        }
-        @include widescreen {
-            font-size: 46px;
-            margin: 0 auto 50px;
+            max-width: 950px;
         }
     }
-    .options_text {
-        font-size: 20px;
-        line-height: 28px;
-        text-align: center;
+    .mission_single {
+        margin: 0 20px 100px;
+        color: $white;
 
-        @include widescreen {
-            font-size: 26px;
-            line-height: 1.4;
+        &:last-child {
+            margin-bottom: 0;
         }
-    }
-}
-.options_item {
-    margin-bottom: 75px;
-    text-align: center;
 
-    @include tablet {
-        width: 43%;
-    }
-    @include widescreen {
-        max-width: 400px;
-    }
+        @include laptop {
+            width: 45%;
+            margin: 0;
+        }
 
-    .options_img {
-        margin-bottom: 25px;
-
-
-        img {
-            width: 85px;
+        .mission_title {
+            font-family: $font-1;
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: $muli-black;
+            margin-bottom: 20px;
+        }
+        .mission_summary {
+            font-size: 20px;
+            margin-left: 40px;
 
             @include laptop {
-                width: 125px;
+                margin-left: 75px;
             }
         }
     }
-    .options_headline {
-        font-size: 26px;
-        $font-family: $font-1;
-        font-weight: $muli-black;
-        margin-bottom: 15px;
+}
+.color_overlay:before{
+  @include color_overlay($orange, 0.75);
+}
 
-        @include tablet {
-            height: 65px;
-            font-size: 28px;
+// Overlay Hacks
+.mission_group *,
+.discover_prime_image * {
+    position: relative;
+}
+
+// Discover Groups
+.discover_prime_group {
+    margin-top: 200px;
+
+    .discover_prime_single {
+        margin-bottom: 125px;
+        position: relative;
+
+        .discover_prime_image {
+            @extend %bg_props;
+            // background-image: url('/assets/img/gwcc_art_class.jpg');
+            width: 100%;
+            height: 40vh;
+            display: block;
+            position: relative;
+            vertical-align: top;
+
+            @include palm {
+                height: 60vh;
+            }
+
+            @include laptop {
+                width: 70%;
+            }
+        }
+
+        .discover_prime_meta {
+            margin: 25px 15px 0;
+
+            @include palm {
+                max-width: 450px;
+                margin: 25px 50px 0;
+            }
+            @include tablet {
+                margin: 25px 0 0;
+            }
+
+            @include laptop {
+                max-width: none;
+                margin: 0;
+                width: 28%;
+            }
+        }
+
+        .discover_prime_title {
+            font-size: 30px;
+            font-family: $font-1;
+            text-transform: uppercase;
+            font-weight: $muli-black;
+            margin-bottom: 20px;
+        }
+        .discover_prime_summary {
+            font-size: 20px;
             margin-bottom: 30px;
+            letter-spacing: 0.75px;
+            line-height: 1.2;
         }
     }
-    .options_subhead {
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 30px;
+}
+.discover_overlay:before{
+  @include color_overlay($bluegreen, 0.45);
+}
 
-        @include tablet {
-            font-size: 22px;
-            line-height: 1.4;
+.discover_alt_group {
+    margin: 0 15px;
+
+    @include small {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    @include palm {
+        max-width: 450px;
+    }
+
+    @include laptop {
+        max-width: none;
+        width: 100%;
+    }
+
+    .discover_alt_single {
+        margin-bottom: 75px;
+
+        @include laptop {
+            width: 30%;
+            margin-bottom: 0;
+        }
+
+        .discover_img_group {
+            margin-bottom: 50px;
+            position: relative;
+
+            .discover_alt_image {
+                width: 100%;
+                height: 30vh;
+                @extend %bg_props;
+
+                @include palm {
+                    height: 50vh;
+                }
+
+                @include laptop {
+                    height: 40vh;
+                }
+            }
+            .discover_alt_solid {
+                height: 30vh;
+                width: 100%;
+                background: $bluegreen;
+                position: absolute;
+                top: 0.5em;
+                left: 0.5em;
+                z-index: -1;
+
+                @include palm {
+                    height: 50vh;
+                }
+
+                @include laptop {
+                    height: 40vh;
+                }
+            }
+        }
+
+        .discover_alt_title {
+            font-size: 24px;
+            font-family: $font-1;
+            text-transform: uppercase;
+            font-weight: $muli-black;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .discover_alt_summary {
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 15px;
+
+            @include palm {
+                margin: 0 45px 15px;
+            }
         }
     }
+}
+.discover_grid {
+    @include tablet {
+        max-width: 700px;
+        margin: auto;
+    }
+    @include laptop {
+        max-width: 950px;
+    }
+
 }

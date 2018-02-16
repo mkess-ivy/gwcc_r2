@@ -25,6 +25,7 @@
                         </div>
 
                     </div>
+
                     <div class="overlay_menu_group">
 
                         <nav>
@@ -83,22 +84,17 @@
                     </div>
                 </div>
             </div>
-            <div class="menu_desktop">
-                <!-- <div class="frow centered"> -->
-                    <ul>
-                        {% include components/programs_overlay_desktop.html %}
-                        <!-- <li><a href="">programs</a></li> -->
-                        <li><a href="">discover</a></li>
-                        <li><a href="">community</a></li>
-                        <li><a href="">highlights</a></li>
-                        <li><a href="">bus stop buddies</a></li>
-                        <li class="box"><a href="">give</a></li>
-                    </ul>
-                <!-- </div> -->
 
+            <div class="menu_desktop">
+                <ul>
+                    {% include components/programs_overlay_desktop.html %}
+                    <li><a href="{{ site.baseurl }}/discover">discover</a></li>
+                    <li><a href="">community</a></li>
+                    <li><a href="">highlights</a></li>
+                    <li><a href="">bus stop buddies</a></li>
+                    <li><a href="" class="box"><div>give</div></a></li>
+                </ul>
             </div>
         </div>
-
-    </div>
-
-</header> <!-- Header -->
+    </div><!-- FROW -->
+</header>

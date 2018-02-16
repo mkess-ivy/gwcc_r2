@@ -14,16 +14,27 @@
 	height: 100% !important;
 	position: relative !important;
 	-webkit-font-smoothing: antialiased;
-    width: 110px;
+    width: 130px;
     padding: 0 !important;
+	cursor: pointer;
+	font-family: $font-1;
+	font-size: inherit;
 
 	@include laptop {
 		width: 120px;
 	}
 
+	&:hover {
+		@include laptop {
+			border-bottom: 3px solid;
+			padding-bottom: 3px;
+		}
+	}
+
     li {
-        letter-spacing: 0.75px;
+        // letter-spacing: 0.75px;
         -webkit-font-smoothing: antialiased;
+		font-size: 22px !important;
 
 		@include tablet {
 			width: 130px !important;
@@ -32,7 +43,8 @@
 		@include laptop {
 			color: $white;
 			text-transform: uppercase;
-			font-size: 18px;
+			font-size: 18px !important;
+			// width: 135px !important;
 		}
     }
 }
@@ -48,9 +60,7 @@
     transition:.75s;
 }
 .programs_menu_btn {
-	// @include laptop {
-	// 	display: none;
-	// }
+
 }
 .programs_overlay {
 	background-color: $bluegreen;

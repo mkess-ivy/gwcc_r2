@@ -17,7 +17,7 @@
 
 // Overlay Logo Img
 .overlay_logo_img {
-	width: 45px;
+	width: 50px;
     position: relative;
     z-index: 1000;
 
@@ -101,23 +101,18 @@
 				border-bottom: 3px solid;
 				padding-bottom: 3px;
 			}
-		}
 
-		&.box {
-			border: 2px solid #fff;
-			padding: 3px 5px;
+            &.box div {
+    			border: 2px solid #fff;
+    			padding: 3px 5px;
 
-			&:hover {
-				background: $white;
-			}
+    			&:hover {
+    				background: $white;
+                    border-bottom: 0;
 
-			a {
-				&:hover {
-					border-bottom: 0;
-					padding-bottom: 0;
-					color: #d0987e;
-				}
-			}
+                    color: #d0987e;
+    			}
+    		}
 		}
 	}
 }

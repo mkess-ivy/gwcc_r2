@@ -2,6 +2,26 @@
 
 // Hover for Links
 %hover {
-    color: $red;
+    color: $orange;
     transition: 0.5s;
+}
+
+// Background Properties
+%bg_props {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Color Overlay for Images
+@mixin color_overlay($color, $opacity) {
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+    background-color: rgba($color,$opacity);
 }
