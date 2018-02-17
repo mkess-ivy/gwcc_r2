@@ -8,6 +8,17 @@
     transition: 0.5s;
 }
 
+%featured_hover {
+    background: $orange;
+    border-color: $orange;
+    transition: 0.5s;
+}
+%highlights_hover {
+    color: $orange;
+    background: transparent;
+    border-color: $orange;
+}
+
 // Background Properties
 %bg_props {
     background-position: top center;

@@ -101,7 +101,7 @@ circle: "#47E7CE"
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
                 <a class="brand_cta_v2"><div class="margin_center">
-                    + Sign Up
+                    + Learn More
                 </div></a>
             </div>
             <div class="discover_alt_single">
@@ -118,7 +118,7 @@ circle: "#47E7CE"
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
                 <a class="brand_cta_v2"><div class="margin_center">
-                    + Support Us
+                    + Take Action
                 </div></a>
             </div>
             <div class="discover_alt_single">

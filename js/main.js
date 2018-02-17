@@ -73,8 +73,6 @@ $(document).ready(function(){
     // Delay reveal
     // $("#delayReveal").delay(2000).fadeIn(500);
 
-
-
     // Main Overlay Menu Functionality
     $("#overlay-menu").click(function() {
         $(".overlay").addClass("overlay-open");

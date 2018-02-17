@@ -1,0 +1,168 @@
+// Accordion
+@function random-color($min: 0, $max: 255, $alpha: 1) {
+	@if $min < 0 {
+		$min: -1;
+	} @else {
+		$min: $min - 1;
+	}
+	@if $max > 255 {
+		$max: 256;
+	} @else {
+		$max: $max + 1;
+	}
+	$red: random($max) + $min;
+	$green: random($max) + $min;
+	$blue: random($max) + $min;
+	@return rgba($red, $green, $blue, $alpha);
+}
+
+$ultralight: #fefefe;
+$primary: random-color($min: 100, $max: 100);
+$primary-light: mix(#ffffff, $primary, 25%);
+$primary-dark: mix(#000000, $primary, 25%);
+
+//  Accordion
+.accordion {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    position: relative;
+
+	@include laptop {
+		margin-bottom: 30px;
+	}
+
+    &.active {
+        .heading {
+            color: $black;
+        }
+
+        .icon {
+            background: $ultralight;
+
+            &:before {
+                background: $primary-light;
+            }
+
+            &:after {
+                width: 0;
+            }
+        }
+    }
+
+    .heading {
+        display: block;
+        text-transform: initial;
+        text-decoration: none;
+        color: $black;
+		font-family: $font-1;
+        font-weight: $muli-black;
+        font-size: 20px;
+		line-height: 1.4;
+        position: relative;
+        padding: 1.5rem 0.5rem 1.5rem 3.5rem;
+        transition: 0.3s ease-in-out;
+
+        @include palm {
+            font-size: 22px;
+        }
+
+		@include tablet {
+			font-size: 24px;
+		}
+
+		@include desktop {
+			font-size: 28px;
+		}
+
+        &:hover {
+            color: $bluegreen;
+
+            .icon {
+                &:before,
+                &:after {
+                    background: $bluegreen;
+                }
+            }
+        }
+    }
+	.content {
+        display: none;
+
+		@include tablet {
+			margin-left: 4em;
+		}
+
+		@include laptop {
+			padding: 30px 0;
+		}
+
+        p {
+            margin-top: 0;
+            font-size: 18px;
+			line-height: 1.4;
+			color: $black;
+
+			@include palm {
+				font-size: 18px;
+			}
+
+			@include tablet {
+                font-size: 20px;
+            }
+
+			@include laptop {
+                font-size: 22px;
+            }
+
+			@include desktop {
+				font-size: 24px;
+			}
+
+			span {
+				text-decoration: underline;
+			}
+        }
+
+        @include laptop {
+            line-height: 1.75;
+        }
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid $ultralight;
+        border-radius: 3px;
+        transform: translateY(-50%);
+
+        &:before,
+        &:after {
+            content: '';
+            width: 1.25rem;
+            height: 0.25rem;
+            background: $black;
+            position: absolute;
+            border-radius: 3px;
+            left: 50%;
+            top: 50%;
+            transition: 0.3s ease-in-out;
+            transform: translate(-50%, -50%);
+        }
+
+        &:after {
+            transform: translate(-50%, -50%)
+                       rotate(90deg);
+            z-index: -1;
+        }
+    }
+
+
+}

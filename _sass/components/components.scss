@@ -251,3 +251,13 @@
         }
     }
 }
+
+// Accordion
+.accordion_meta {
+    @extend .history_meta;
+
+    @include desktop {
+        max-width: 1000px !important;
+        margin: 100px 0 100px 100px;
+    }
+}

@@ -137,6 +137,22 @@ body.noScroll { /* ...or body.dialogShowing */
 		font-size: 18px;
 	}
 
+	&.featured_cta {
+		color: $white;
+
+		&:hover {
+			@extend %featured_hover;
+		}
+	}
+
+	&.highlights_cta {
+		color: $black;
+
+		&:hover {
+			@extend %highlights_hover;
+		}
+	}
+
 	&:hover {
 		@extend %hover;
 	}
