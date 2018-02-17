@@ -12,6 +12,28 @@ Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress 
 
 <div class="highlight_quote_group">
     <div class="highlight_quote">
+        Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.
+        <div class="author">
+            - Chris Davis
+        </div>
     </div>
     <div class="highlight_quote_bottom"></div>
 </div>
+
+
+<div class="highlights_interview_excerpt">
+    <div class="time">At 1:06 mark &mdash;</div>
+    <div class="host">Host: How do you think your community sees you?</div>
+    <div class="copy">Chris: Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.  Kale chips banh mi kickstarter readymade tumblr chia.</div>
+</div>
+
+<div class="highlights_interview_excerpt">
+    <div class="time">At 2:15 mark &mdash;</div>
+    <div class="host">Host: Why should people your age start thinking about their plan for the future?</div>
+    <div class="copy">Chris: Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.  Kale chips banh mi kickstarter readymade tumblr chia.</div>
+</div>
+
+{% include components/bronzey.html
+    background="/assets/img/penn_station_team_v3.jpg"
+    text="Peek Inside GWCC"
+%}

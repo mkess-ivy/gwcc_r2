@@ -86,7 +86,7 @@ img {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #babcbb; }
+      background: #c5cbab; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -371,6 +371,40 @@ img {
   .accordion_meta {
     max-width: 1000px !important;
     margin: 100px 0 100px 100px; } }
+
+.pagination_wrapper {
+  margin: 50px 25px; }
+  .pagination_wrapper a {
+    color: #070707;
+    text-decoration: none; }
+    .pagination_wrapper a div {
+      color: #070707;
+      font-size: 18px;
+      font-family: "Muli", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase; }
+      .pagination_wrapper a div:hover {
+        color: #47E7CE; }
+    .pagination_wrapper a:hover {
+      color: #47E7CE; }
+  .pagination_wrapper .next_post_group {
+    margin: 50px 0 25px;
+    position: relative; }
+    .pagination_wrapper .next_post_group .next_post {
+      font-size: 22px;
+      font-weight: 900;
+      font-family: "Muli", sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+      border: 5px solid #47E7CE; }
+    .pagination_wrapper .next_post_group .next_post_bottom {
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      background: #47E7CE;
+      height: 100%;
+      width: 100%;
+      z-index: -1; }
 
 /* Fullscreen Section */
 .gwcc_video_player {
@@ -1575,7 +1609,45 @@ body.noScroll {
   margin-bottom: 25px; }
 .highlights_single_meta p {
   font-size: 18px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  margin-bottom: 45px; }
+.highlights_single_meta .highlight_quote_group {
+  position: relative;
+  margin: 50px 0 75px; }
+  .highlights_single_meta .highlight_quote_group .highlight_quote {
+    font-size: 20px;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    border: 4px solid #47E7CE;
+    padding: 15px;
+    background: #f7f7f7; }
+  .highlights_single_meta .highlight_quote_group .author {
+    font-size: 16px;
+    padding-top: 25px;
+    text-align: right; }
+  .highlights_single_meta .highlight_quote_group .highlight_quote_bottom {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    width: 100%;
+    height: 100%;
+    background: #47E7CE;
+    z-index: -1; }
+
+.highlights_interview_excerpt {
+  margin-bottom: 50px; }
+  .highlights_interview_excerpt .time {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .highlights_interview_excerpt .host {
+    font-size: 20px;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 10px; }
+  .highlights_interview_excerpt .copy {
+    font-size: 18px;
+    line-height: 1.1; }
 
 .masthead {
   margin: 75px auto; }

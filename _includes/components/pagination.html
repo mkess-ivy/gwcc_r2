@@ -1,0 +1,46 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+{% if page.collection %}
+    {% assign  document = site[the_collection]  %}
+{% endif %}
+
+{% for links in document  %}
+    {% if links.title == page.title %}
+        {% unless forloop.first %}
+            {% assign prevurl = prev.url %}
+        {% endunless %}
+
+        {% unless forloop.last %}
+            {% assign next = document[forloop.index] %}
+            {% assign nexturl = next.url %}
+        {% endunless %}
+    {% endif %}
+    {% assign prev = links %}
+{% endfor %}
+
+<script>
+document.body.onkeyup = function(e){
+if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+};
+</script>
+<div class="pagination_wrapper">
+    <div class="frow justify-between">
+
+    {% if nexturl %}
+        <a href="{{nexturl}}" class="nxt pagination_links">
+            <i class="fas fa-caret-right fa-5x"></i>
+            <div>
+                Next Highlight
+            </div>
+        </a>
+        <div class="next_post_group">
+            <div class="next_post">
+                Listen to GW Podcast #001
+            </div>
+            <div class="next_post_bottom">
+
+            </div>
+        </div>
+    {% endif %}
+    </div>
+</div>

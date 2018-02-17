@@ -261,3 +261,51 @@
         margin: 100px 0 100px 100px;
     }
 }
+
+// Pagination
+.pagination_wrapper {
+    margin: 50px 25px;
+
+    a {
+        color: $black;
+        text-decoration: none;
+
+        div {
+            color: $black;
+            font-size: 18px;
+            font-family: $font-1;
+            font-weight: $muli-black;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $bluegreen;
+            }
+        }
+
+        &:hover {
+            color: $bluegreen;
+        }
+    }
+    .next_post_group {
+        margin: 50px 0 25px;
+        position: relative;
+
+        .next_post {
+            font-size: 22px;
+            font-weight: $muli-black;
+            font-family: $font-1;
+            background: $white;
+            padding: 20px;
+            border: 5px solid $bluegreen;
+        }
+        .next_post_bottom {
+            position: absolute;
+            top: 0.25em;
+            left: 0.25em;
+            background: $bluegreen;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}

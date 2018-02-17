@@ -1,12 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-17T00:10:47-05:00</updated><id>http://localhost:4000/</id><title type="html">GWCC</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-17T01:14:55-05:00</updated><id>http://localhost:4000/</id><title type="html">GWCC</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </subtitle><entry><title type="html">Super Heroes</title><link href="http://localhost:4000/2018/01/22/super-heroes.html" rel="alternate" type="text/html" title="Super Heroes" /><published>2018-01-22T00:00:00-05:00</published><updated>2018-01-22T00:00:00-05:00</updated><id>http://localhost:4000/2018/01/22/super-heroes</id><content type="html" xml:base="http://localhost:4000/2018/01/22/super-heroes.html">&lt;h1 id=&quot;important-talking-points-from-the-youth-check-it-out-below&quot;&gt;Important talking points from the youth, check it out below:&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon. Kale chips banh mi kickstarter readymade tumblr chia. Pinterest asymmetrical portland live-edge jianbing hella. Succulents offal bitters, waistcoat freegan tousled kale chips banjo ugh kombucha gastropub iPhone next level banh mi. Offal mumblecore chia put a bird on it. Craft beer man braid fanny pack, knausgaard raclette brooklyn slow-carb humblebrag asymmetrical fam iceland.&lt;/p&gt;
 
 &lt;div class=&quot;highlight_quote_group&quot;&gt;
     &lt;div class=&quot;highlight_quote&quot;&gt;
+        Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.
+        &lt;div class=&quot;author&quot;&gt;
+            - Chris Davis
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;highlight_quote_bottom&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlights_interview_excerpt&quot;&gt;
+    &lt;div class=&quot;time&quot;&gt;At 1:06 mark &amp;mdash;&lt;/div&gt;
+    &lt;div class=&quot;host&quot;&gt;Host: How do you think your community sees you?&lt;/div&gt;
+    &lt;div class=&quot;copy&quot;&gt;Chris: Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.  Kale chips banh mi kickstarter readymade tumblr chia.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlights_interview_excerpt&quot;&gt;
+    &lt;div class=&quot;time&quot;&gt;At 2:15 mark &amp;mdash;&lt;/div&gt;
+    &lt;div class=&quot;host&quot;&gt;Host: Why should people your age start thinking about their plan for the future?&lt;/div&gt;
+    &lt;div class=&quot;copy&quot;&gt;Chris: Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon.  Kale chips banh mi kickstarter readymade tumblr chia.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bronzey&quot; style=&quot;background-image:url('/assets/img/penn_station_team_v3.jpg');&quot;&gt;
+    &lt;div class=&quot;frow centered&quot;&gt;
+        &lt;div&gt;
+
+            &lt;!-- Vimeo onClick --&gt;
+            &lt;div class=&quot;gwcc_video_overlay&quot;&gt;
+                &lt;div class=&quot;gwcc-video-container&quot;&gt;
+
+                    &lt;!-- SVG Close (X) Icon --&gt;
+                    &lt;svg class=&quot;gwcc_close&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;39.2 22.3 25 24.5&quot;&gt;&lt;path d=&quot;M39.5,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l10.3-10.3L62,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4c0.5-0.5,0.5-1.3,0-1.8L53.5,34.3l9.8-9.8c0.5-0.5,0.5-1.3,0-1.8c-0.5-0.5-1.3-0.5-1.8,0l-9.8,9.8l-9.8-9.8c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l9.8,9.8L39.5,44.6C39,45.1,39,45.9,39.5,46.4z&quot; /&gt;&lt;/svg&gt;
+
+
+                    &lt;!-- Embedded video --&gt;
+                    &lt;iframe id=&quot;video&quot; src=&quot;https://player.vimeo.com/video/242342417?api=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;gwcc_video_player&quot;&gt;
+                &lt;div&gt;
+                    &lt;span class=&quot;gwcc_play&quot;&gt;Play&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bronzey_alpha&quot;&gt;
+                Peek Inside GWCC
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</content><author><name></name></author><summary type="html">Important talking points from the youth, check it out below:</summary></entry><entry><title type="html">GWCC Youth to unveil photo + film exhibit, Life + Times</title><link href="http://localhost:4000/2018/01/20/gw-podcast-4.html" rel="alternate" type="text/html" title="GWCC Youth to unveil photo + film exhibit, Life + Times" /><published>2018-01-20T00:00:00-05:00</published><updated>2018-01-20T00:00:00-05:00</updated><id>http://localhost:4000/2018/01/20/gw-podcast-4</id><content type="html" xml:base="http://localhost:4000/2018/01/20/gw-podcast-4.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
