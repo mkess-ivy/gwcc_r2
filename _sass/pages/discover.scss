@@ -131,6 +131,10 @@
                 margin: 0;
                 width: 28%;
             }
+
+            a {
+                text-decoration: none;
+            }
         }
 
         .discover_prime_title {
@@ -194,6 +198,10 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
         }
         .discover_img_group {
             margin-bottom: 50px;

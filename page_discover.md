@@ -50,7 +50,7 @@ circle: "#47E7CE"
                         <div class="discover_prime_summary">
                             {{ item.summary }}
                         </div>
-                        <a class="brand_cta_v2">
+                        <a class="brand_cta_v2" href="{{ item.url }}">
                             <div>
                                 + {{ item.cta_text }}
                             </div>
@@ -72,7 +72,7 @@ circle: "#47E7CE"
                         <div class="discover_prime_summary">
                             {{ item.summary }}
                         </div>
-                        <a class="brand_cta_v2">
+                        <a class="brand_cta_v2" href="{{ item.url }}">
                             <div>
                                 + {{ item.cta_text }}
                             </div>
@@ -100,7 +100,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
-                <a class="brand_cta_v2"><div class="margin_center">
+                <a class="brand_cta_v2" href="/volunteer/"><div class="margin_center">
                     + Learn More
                 </div></a>
             </div>
@@ -108,7 +108,6 @@ circle: "#47E7CE"
                 <div class="discover_img_group">
                     <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_donate.jpg');"></div>
                     <div class="discover_alt_solid">
-
                     </div>
                 </div>
                 <div class="discover_alt_title">
@@ -117,7 +116,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
-                <a class="brand_cta_v2"><div class="margin_center">
+                <a class="brand_cta_v2" href="/donate/"><div class="margin_center">
                     + Take Action
                 </div></a>
             </div>
@@ -134,7 +133,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
-                <a class="brand_cta_v2"><div class="margin_center">
+                <a class="brand_cta_v2" href="/space-use-rental"><div class="margin_center">
                     + Learn More
                 </div></a>
             </div>

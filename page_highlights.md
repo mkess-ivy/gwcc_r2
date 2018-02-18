@@ -44,9 +44,9 @@ circle: "#FC6805"
             {% assign my_non_featured_post = site.posts | where: "featured", false %}
             {% for post in my_non_featured_post reversed %}
             <div class="highlights_item">
-                <a href=""><div class="highlights_item_cover highlights_overlay" style="background-image:url('{{ post.cover }}');"></div></a>
+                <a href="{{ post.url }}"><div class="highlights_item_cover highlights_overlay" style="background-image:url('{{ post.cover }}');"></div></a>
                 <div class="highlights_item_title">
-                    <a href="#">{{ post.title }}</a>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                 </div>
                 <div class="highlights_item_summary">
                     {{ post.highlight_summary }}

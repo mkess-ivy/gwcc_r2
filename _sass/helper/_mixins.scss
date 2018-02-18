@@ -18,6 +18,10 @@
     background: transparent;
     border-color: $orange;
 }
+%underline_hover {
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
 
 // Background Properties
 %bg_props {

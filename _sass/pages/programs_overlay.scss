@@ -116,6 +116,14 @@
 				@include desktop {
 					font-size: 48px;
 				}
+
+				a {
+					color: $black;
+
+					&:hover {
+						@extend %underline_hover;
+					}
+				}
 			}
 			.programs_content_subtitle {
 				font-family: $font-1;

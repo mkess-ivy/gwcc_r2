@@ -24,18 +24,19 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 };
 </script>
 <div class="pagination_wrapper">
-    <div class="frow justify-between">
+    <div>
 
     {% if nexturl %}
         <a href="{{nexturl}}" class="nxt pagination_links">
-            <i class="fas fa-caret-right fa-5x"></i>
             <div>
+                <i class="fas fa-caret-right fa-5x"></i><br/>
                 Next Highlight
             </div>
         </a>
         <div class="next_post_group">
             <div class="next_post">
-                Listen to GW Podcast #001
+                <!-- Listen to GW Podcast #001 -->
+                {{ next.title }}
             </div>
             <div class="next_post_bottom">
 

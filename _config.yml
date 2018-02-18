@@ -11,6 +11,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: /highlights/:title/
+
 gems:
   - jekyll-feed
 exclude:
@@ -20,4 +22,5 @@ exclude:
 # Setup Collections
 collections:
   programs:
-    output: false
+    output: true
+    permalink: /programs/:name/

@@ -12,7 +12,7 @@
             {% for item in site.programs %}
             <div class="programs_content_single">
                 <div class="programs_content_title">
-                    {{ item.title }}
+                    <a href="{{ item.url }}">{{ item.title }}</a>
                 </div>
                 <div class="programs_content_subtitle">
                     ({{ item.subtitle }})

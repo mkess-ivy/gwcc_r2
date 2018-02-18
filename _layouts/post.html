@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
     {% include head.html %}
@@ -23,7 +23,7 @@
                                 <div class="featured_summary">
                                     {{ page.highlight_summary }}
                                 </div>
-                                <a class="brand_cta_v2" href="{{ post.url }}"><div class="featured_cta">
+                                <a class="brand_cta_v2" href="#content"><div class="featured_cta">
                                     + Scroll Down
                                 </div></a>
                             </div>
@@ -35,15 +35,15 @@
 
         <div class="discover_grid">
             <div class="highlights_single_meta">
+                <div id="content"></div>
+
                 {{ content }}
 
                 {% include components/pagination.html %}
             </div>
         </div>
 
-
         {% include footer_test.html %}
-
 
   </body>
 
