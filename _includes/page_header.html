@@ -1,6 +1,6 @@
 <div class="page_header_content inner_wrapper">
     <div class="page_title_content">
-        <div class="circle" style="background: {% unless page.layout == "programs" %}{{ page.circle }}{% endunless %}{% if page.layout == "programs" %}#47e7ce{% endif %}"></div>
-        <div class="page_title">{% unless page.layout == "programs" %}{{ page.title }}{% endunless %}{% if page.layout == "programs" %}Programs{% endif %}</div>
+        <div class="circle" style="background: {% unless page.layout == "programs" or page.layout == "people" %}{{ page.circle }}{% endunless %}{% if page.layout == "programs" %}#47e7ce{% endif %}{% if page.layout == "people" %}#47e7ce{% endif %}"></div>
+        <div class="page_title">{% unless page.layout == "programs" or page.layout == "people" %}{{ page.title }}{% endunless %}{% if page.layout == "programs" %}Programs{% endif %}{% if page.layout == "people" %}People{% endif %}</div>
     </div>
 </div>

@@ -23,4 +23,11 @@ exclude:
 collections:
   programs:
     output: true
-    permalink: /programs/:name/
+    permalink: /programs/:title/
+
+  people:
+    output: true
+    permalink: /people/:title
+
+  team:
+    output: false

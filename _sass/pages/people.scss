@@ -1,0 +1,85 @@
+.people_content_group {
+    width: 100%;
+
+    @include tablet {
+        margin-top: 50px;
+    }
+
+    @include laptop {
+        width: 650px;
+        margin-top: 0;
+    }
+
+    @include desktop {
+        width: 750px;
+    }
+
+    @include tv {
+        width: 950px;
+    }
+}
+.people_content_meta {
+    width:80%;
+    margin: 0 auto 100px;
+
+    @include palm {
+        width: 375px;
+    }
+    @include tablet {
+        width: 100%;
+    }
+}
+.people_single {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @include tablet {
+        width: 45%;
+        margin-bottom: 75px;
+    }
+
+    .people_single_avatar {
+        @extend %bg_props;
+        height: 30vh;
+        margin-bottom: 20px;
+
+        @include palm {
+            height: 37vh;
+        }
+
+        @include tv {
+            height: 43vh;
+        }
+    }
+    .people_single_name {
+        font-family: $font-1;
+        font-weight: $muli-black;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .people_single_title {
+        font-family: $font-1;
+        font-weight: $muli-black;
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .people_single_summary {
+        line-height: 1.2;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+.team_social {
+    span {
+        margin-right: 10px;
+    }
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $bluegreen;
+        }
+    }
+}

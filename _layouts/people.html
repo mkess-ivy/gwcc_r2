@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <div class="page_masthead">
+            {% include header.html %}
+            {% include page_header.html %}
+        </div>
+
+        <div class="discover_grid">
+            <div class="programs_group">
+                <div class="frow justify-between">
+                    <div class="programs_menu">
+                        <ul>
+                            {% assign ordered_people = site.people | sort: 'order' %}
+                            {% for item in ordered_people %}
+                            {% if page.url == item.url %}
+                            <li class="active">
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                            {% else %}
+                            <li>
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="people_content_group">
+
+                        <div class="people_content_meta">
+                            <div class="frow justify-between">
+                                {% if page.title == "Staff" %}
+                                {% assign staff_team = site.team | where: "team", "staff" | sort: "order" %}
+                                {% for item in staff_team %}
+
+                                {% include components/team_members.html %}
+
+                                {% endfor %}
+                                {% elsif page.title == "Partners" %}
+                                {% assign partners_team = site.team | where: "team", "partners" | sort: "order" %}
+                                {% for item in partners_team %}
+
+                                {% include components/team_members.html %}
+
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        {% include footer_test.html %}
+
+
+  </body>
+
+</html>

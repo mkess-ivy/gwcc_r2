@@ -92,80 +92,80 @@
     @include laptop {
         margin: 150px 0 200px;
     }
+}
+.discover_prime_single {
+    margin-bottom: 125px;
+    position: relative;
 
-    .discover_prime_single {
-        margin-bottom: 125px;
+    .discover_prime_image {
+        @extend %bg_props;
+        // background-image: url('/assets/img/gwcc_art_class.jpg');
+        width: 100%;
+        height: 40vh;
+        display: block;
         position: relative;
+        vertical-align: top;
 
-        .discover_prime_image {
-            @extend %bg_props;
-            // background-image: url('/assets/img/gwcc_art_class.jpg');
+        @include palm {
+            height: 60vh;
+        }
+
+        @include laptop {
+            width: 70%;
+        }
+    }
+
+    .discover_prime_meta {
+        margin: 25px 15px 0;
+
+        @include palm {
             width: 100%;
-            height: 40vh;
-            display: block;
-            position: relative;
-            vertical-align: top;
-
-            @include palm {
-                height: 60vh;
-            }
-
-            @include laptop {
-                width: 70%;
-            }
+            margin: 25px 50px 0;
+        }
+        @include tablet {
+            margin: 25px 0 0;
         }
 
-        .discover_prime_meta {
-            margin: 25px 15px 0;
-
-            @include palm {
-                width: 100%;
-                margin: 25px 50px 0;
-            }
-            @include tablet {
-                margin: 25px 0 0;
-            }
-
-            @include laptop {
-                max-width: none;
-                margin: 0;
-                width: 28%;
-            }
-
-            a {
-                text-decoration: none;
-            }
+        @include laptop {
+            max-width: none;
+            margin: 0;
+            width: 28%;
         }
 
-        .discover_prime_title {
-            font-size: 30px;
-            font-family: $font-1;
-            text-transform: uppercase;
-            font-weight: $muli-black;
-            margin-bottom: 20px;
-
-            @include desktop {
-                font-size: 36px;
-            }
+        a {
+            text-decoration: none;
         }
-        .discover_prime_summary {
-            font-size: 20px;
-            margin-bottom: 30px;
-            letter-spacing: 0.75px;
-            line-height: 1.2;
+    }
 
-            @include palm {
-                max-width: 450px;
-            }
-            @include desktop {
-                font-size: 24px;
-            }
+    .discover_prime_title {
+        font-size: 30px;
+        font-family: $font-1;
+        text-transform: uppercase;
+        font-weight: $muli-black;
+        margin-bottom: 20px;
+
+        @include desktop {
+            font-size: 36px;
+        }
+    }
+    .discover_prime_summary {
+        font-size: 20px;
+        margin-bottom: 30px;
+        letter-spacing: 0.75px;
+        line-height: 1.2;
+
+        @include palm {
+            max-width: 450px;
+        }
+        @include desktop {
+            font-size: 24px;
         }
     }
 }
 .discover_overlay:before{
   @include color_overlay($bluegreen, 0.45);
 }
+
 
 .discover_alt_group {
     margin: 0 15px 75px;

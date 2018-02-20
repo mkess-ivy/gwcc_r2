@@ -17,7 +17,7 @@
   border-bottom: 3px solid;
   padding-bottom: 2px; }
 
-.mission_group, .history_group, .highlights_group, .discover_prime_group .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image, .highlights_items_meta .highlights_item .highlights_item_cover, .highlights_single_meta .highlights_item .highlights_item_cover, .highlight_video, .programs_content_alpha, .instructors_avatar_group .instructors_avatar {
+.mission_group, .history_group, .highlights_group, .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image, .highlights_items_meta .highlights_item .highlights_item_cover, .highlights_single_meta .highlights_item .highlights_item_cover, .highlight_video, .people_single .people_single_avatar, .programs_content_alpha, .instructors_avatar_group .instructors_avatar {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -93,7 +93,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #c6b3b9; }
+      background: #9591c9; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -419,6 +419,79 @@ a {
       width: 100%;
       z-index: -1; }
 
+.give_meta {
+  width: 90%;
+  margin: auto; }
+
+.give_quote_group {
+  position: relative;
+  margin: 50px 0 75px; }
+  @media screen and (min-width: 768px) {
+    .give_quote_group {
+      max-width: 600px;
+      margin: 50px auto 75px; } }
+  @media screen and (min-width: 992px) {
+    .give_quote_group {
+      max-width: 750px; } }
+  @media screen and (min-width: 1200px) {
+    .give_quote_group {
+      margin: 100px auto; } }
+  @media screen and (min-width: 1366px) {
+    .give_quote_group {
+      max-width: 900px; } }
+  .give_quote_group .give_quote {
+    font-size: 20px;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    border: 4px solid #47E7CE;
+    padding: 15px;
+    background: #f7f7f7;
+    line-height: 1.2; }
+    @media screen and (min-width: 768px) {
+      .give_quote_group .give_quote {
+        font-size: 32px;
+        padding: 35px; } }
+    @media screen and (min-width: 1366px) {
+      .give_quote_group .give_quote {
+        font-size: 36px; } }
+  .give_quote_group .author {
+    font-size: 14px;
+    padding-top: 25px;
+    text-align: right; }
+    @media screen and (min-width: 768px) {
+      .give_quote_group .author {
+        padding-top: 35px;
+        font-size: 18px; } }
+    @media screen and (min-width: 1650px) {
+      .give_quote_group .author {
+        font-size: 22px; } }
+  .give_quote_group .highlight_quote_bottom {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    width: 100%;
+    height: 100%;
+    background: #47E7CE;
+    z-index: -1; }
+
+.give_alt_group {
+  margin: 150px 15px !important; }
+  @media screen and (min-width: 375px) {
+    .give_alt_group {
+      margin: 150px auto !important; } }
+  @media screen and (min-width: 992px) {
+    .give_alt_group {
+      max-width: 750px !important; } }
+  @media screen and (min-width: 1200px) {
+    .give_alt_group {
+      max-width: 950px !important; } }
+  @media screen and (min-width: 1650px) {
+    .give_alt_group {
+      max-width: 1050px !important; } }
+  @media screen and (min-width: 992px) {
+    .give_alt_group .give_alt_single {
+      width: 45% !important; } }
+
 /* Fullscreen Section */
 .gwcc_video_player {
   width: 100%;
@@ -519,7 +592,7 @@ a {
   border-bottom: 3px solid;
   padding-bottom: 2px; }
 
-.mission_group, .history_group, .highlights_group, .discover_prime_group .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image, .highlights_items_meta .highlights_item .highlights_item_cover, .highlights_single_meta .highlights_item .highlights_item_cover, .highlight_video, .programs_content_alpha, .instructors_avatar_group .instructors_avatar {
+.mission_group, .history_group, .highlights_group, .discover_prime_single .discover_prime_image, .discover_alt_group .discover_alt_single .discover_img_group .discover_alt_image, .highlights_items_meta .highlights_item .highlights_item_cover, .highlights_single_meta .highlights_item .highlights_item_cover, .highlight_video, .people_single .people_single_avatar, .programs_content_alpha, .instructors_avatar_group .instructors_avatar {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1337,57 +1410,58 @@ body.noScroll {
   @media screen and (min-width: 992px) {
     .discover_prime_group {
       margin: 150px 0 200px; } }
-  .discover_prime_group .discover_prime_single {
-    margin-bottom: 125px;
-    position: relative; }
-    .discover_prime_group .discover_prime_single .discover_prime_image {
-      width: 100%;
-      height: 40vh;
-      display: block;
-      position: relative;
-      vertical-align: top; }
-      @media screen and (min-width: 500px) {
-        .discover_prime_group .discover_prime_single .discover_prime_image {
-          height: 60vh; } }
-      @media screen and (min-width: 992px) {
-        .discover_prime_group .discover_prime_single .discover_prime_image {
-          width: 70%; } }
-    .discover_prime_group .discover_prime_single .discover_prime_meta {
-      margin: 25px 15px 0; }
-      @media screen and (min-width: 500px) {
-        .discover_prime_group .discover_prime_single .discover_prime_meta {
-          width: 100%;
-          margin: 25px 50px 0; } }
-      @media screen and (min-width: 768px) {
-        .discover_prime_group .discover_prime_single .discover_prime_meta {
-          margin: 25px 0 0; } }
-      @media screen and (min-width: 992px) {
-        .discover_prime_group .discover_prime_single .discover_prime_meta {
-          max-width: none;
-          margin: 0;
-          width: 28%; } }
-      .discover_prime_group .discover_prime_single .discover_prime_meta a {
-        text-decoration: none; }
-    .discover_prime_group .discover_prime_single .discover_prime_title {
-      font-size: 30px;
-      font-family: "Muli", sans-serif;
-      text-transform: uppercase;
-      font-weight: 900;
-      margin-bottom: 20px; }
-      @media screen and (min-width: 1200px) {
-        .discover_prime_group .discover_prime_single .discover_prime_title {
-          font-size: 36px; } }
-    .discover_prime_group .discover_prime_single .discover_prime_summary {
-      font-size: 20px;
-      margin-bottom: 30px;
-      letter-spacing: 0.75px;
-      line-height: 1.2; }
-      @media screen and (min-width: 500px) {
-        .discover_prime_group .discover_prime_single .discover_prime_summary {
-          max-width: 450px; } }
-      @media screen and (min-width: 1200px) {
-        .discover_prime_group .discover_prime_single .discover_prime_summary {
-          font-size: 24px; } }
+
+.discover_prime_single {
+  margin-bottom: 125px;
+  position: relative; }
+  .discover_prime_single .discover_prime_image {
+    width: 100%;
+    height: 40vh;
+    display: block;
+    position: relative;
+    vertical-align: top; }
+    @media screen and (min-width: 500px) {
+      .discover_prime_single .discover_prime_image {
+        height: 60vh; } }
+    @media screen and (min-width: 992px) {
+      .discover_prime_single .discover_prime_image {
+        width: 70%; } }
+  .discover_prime_single .discover_prime_meta {
+    margin: 25px 15px 0; }
+    @media screen and (min-width: 500px) {
+      .discover_prime_single .discover_prime_meta {
+        width: 100%;
+        margin: 25px 50px 0; } }
+    @media screen and (min-width: 768px) {
+      .discover_prime_single .discover_prime_meta {
+        margin: 25px 0 0; } }
+    @media screen and (min-width: 992px) {
+      .discover_prime_single .discover_prime_meta {
+        max-width: none;
+        margin: 0;
+        width: 28%; } }
+    .discover_prime_single .discover_prime_meta a {
+      text-decoration: none; }
+  .discover_prime_single .discover_prime_title {
+    font-size: 30px;
+    font-family: "Muli", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 1200px) {
+      .discover_prime_single .discover_prime_title {
+        font-size: 36px; } }
+  .discover_prime_single .discover_prime_summary {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.75px;
+    line-height: 1.2; }
+    @media screen and (min-width: 500px) {
+      .discover_prime_single .discover_prime_summary {
+        max-width: 450px; } }
+    @media screen and (min-width: 1200px) {
+      .discover_prime_single .discover_prime_summary {
+        font-size: 24px; } }
 
 .discover_overlay:before {
   position: absolute;
@@ -1648,17 +1722,18 @@ body.noScroll {
   @media screen and (min-width: 768px) {
     .highlights_single_meta p {
       font-size: 20px; } }
-.highlights_single_meta .highlight_quote_group {
+
+.highlight_quote_group {
   position: relative;
   margin: 50px 0 75px; }
   @media screen and (min-width: 768px) {
-    .highlights_single_meta .highlight_quote_group {
+    .highlight_quote_group {
       max-width: 600px;
       margin: 50px auto 75px; } }
   @media screen and (min-width: 1200px) {
-    .highlights_single_meta .highlight_quote_group {
+    .highlight_quote_group {
       margin: 100px auto; } }
-  .highlights_single_meta .highlight_quote_group .highlight_quote {
+  .highlight_quote_group .highlight_quote {
     font-size: 20px;
     font-family: "Muli", sans-serif;
     font-weight: 900;
@@ -1667,18 +1742,18 @@ body.noScroll {
     background: #f7f7f7;
     line-height: 1.2; }
     @media screen and (min-width: 768px) {
-      .highlights_single_meta .highlight_quote_group .highlight_quote {
+      .highlight_quote_group .highlight_quote {
         font-size: 26px;
         padding: 25px; } }
-  .highlights_single_meta .highlight_quote_group .author {
+  .highlight_quote_group .author {
     font-size: 14px;
     padding-top: 25px;
     text-align: right; }
     @media screen and (min-width: 768px) {
-      .highlights_single_meta .highlight_quote_group .author {
+      .highlight_quote_group .author {
         padding-top: 35px;
         font-size: 18px; } }
-  .highlights_single_meta .highlight_quote_group .highlight_quote_bottom {
+  .highlight_quote_group .highlight_quote_bottom {
     position: absolute;
     top: 0.25em;
     left: 0.25em;
@@ -2137,6 +2212,71 @@ body.noScroll {
         height: 190px;
         font-size: 22px;
         line-height: 1.4; } }
+
+.people_content_group {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .people_content_group {
+      margin-top: 50px; } }
+  @media screen and (min-width: 992px) {
+    .people_content_group {
+      width: 650px;
+      margin-top: 0; } }
+  @media screen and (min-width: 1200px) {
+    .people_content_group {
+      width: 750px; } }
+  @media screen and (min-width: 1650px) {
+    .people_content_group {
+      width: 950px; } }
+
+.people_content_meta {
+  width: 80%;
+  margin: 0 auto 100px; }
+  @media screen and (min-width: 500px) {
+    .people_content_meta {
+      width: 375px; } }
+  @media screen and (min-width: 768px) {
+    .people_content_meta {
+      width: 100%; } }
+
+.people_single {
+  text-align: center;
+  margin-bottom: 50px; }
+  @media screen and (min-width: 768px) {
+    .people_single {
+      width: 45%;
+      margin-bottom: 75px; } }
+  .people_single .people_single_avatar {
+    height: 30vh;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 500px) {
+      .people_single .people_single_avatar {
+        height: 37vh; } }
+    @media screen and (min-width: 1650px) {
+      .people_single .people_single_avatar {
+        height: 43vh; } }
+  .people_single .people_single_name {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 10px; }
+  .people_single .people_single_title {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .people_single .people_single_summary {
+    line-height: 1.2;
+    font-size: 18px;
+    margin-bottom: 15px; }
+
+.team_social span {
+  margin-right: 10px; }
+.team_social a {
+  color: #070707; }
+  .team_social a:hover {
+    color: #47E7CE; }
 
 .programs_menu {
   width: 100%;
