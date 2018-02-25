@@ -114,6 +114,16 @@
             width: 70%;
         }
     }
+    .community_prime_image {
+        @extend .discover_prime_image;
+
+        @include laptop {
+            width: 100%;
+        }
+        @include tv {
+            height: 75vh;
+        }
+    }
 
     .discover_prime_meta {
         margin: 25px 15px 0;

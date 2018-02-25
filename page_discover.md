@@ -100,9 +100,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     GWCC Volunteers assist with staff and residents to push the mission forward
                 </div>
-                <a class="brand_cta_v2" href="/volunteer/"><div class="margin_center">
-                    + Learn More
-                </div></a>
+                <a class="brand_cta_v2 typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" style="color:#267DDD;text-decoration:underline;font-size:20px;" target="_blank"><div class="margin_center">+ Apply Now </div></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
             </div>
             <div class="discover_alt_single">
                 <div class="discover_img_group">
@@ -114,10 +112,10 @@ circle: "#47E7CE"
                     Donate
                 </div>
                 <div class="discover_alt_summary">
-                    GWCC Volunteers assist with staff and residents to push the mission forward
+                    GWCC relies on people like you to provide programming, food and events for the youth and their families
                 </div>
                 <a class="brand_cta_v2" href="/donate/"><div class="margin_center">
-                    + Take Action
+                    + Support Us
                 </div></a>
             </div>
             <div class="discover_alt_single">
@@ -131,10 +129,10 @@ circle: "#47E7CE"
                     Space Use / Rental
                 </div>
                 <div class="discover_alt_summary">
-                    GWCC Volunteers assist with staff and residents to push the mission forward
+                    Host your meetings or special events within our community center
                 </div>
-                <a class="brand_cta_v2" href="/space-use-rental"><div class="margin_center">
-                    + Learn More
+                <a class="brand_cta_v2" href="mailto:greenmountwcc@gmail.com"><div class="margin_center">
+                    + Contact Us
                 </div></a>
             </div>
         </div>

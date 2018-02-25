@@ -15,16 +15,13 @@ video_poster: /assets/video/bsb_poster.jpg
     <div class="home_masthead">
         <div class="frow centered">
             <div class="home_masthead_title">A Community Arts Space</div>
-            <div class="home_masthead_subtitle" id="delayReveal">Greenmount West Community Center is a community arts space that’s open to the public.</div>
+            <div class="home_masthead_subtitle" id="delayReveal">Greenmount West Community Center is a space that’s free + open to the public.</div>
             <div class="home_masthead_small_group">
                 <div class="small_circle color"></div>
-                <div class="small_text">Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.  <span class="bold">Donate today!</span></div>
+                <div class="small_text">Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.  <span class="bold"><a class="plain_typeform_link typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" style="color:#267DDD;text-decoration:underline;font-size:20px;" target="_blank">Volunteer today!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></span></div>
             </div>
         </div>
     </div>
-    <!-- <div class="video_group" style="background-image:url('{{ page.brand_video }}')">
-
-    </div> -->
 </div>
 
 {% include components/bronzey.html
@@ -43,13 +40,13 @@ video_poster: /assets/video/bsb_poster.jpg
             <ul>
                 <div class="frow justify-between">
                     <li>
-                        <a href=""><img src="/assets/img/logo_rwd.png" /></a>
+                        <a href="https://www.rwdfoundation.org/" target="_blank"><img src="/assets/img/logo_rwd.png" /></a>
                     </li>
                     <li>
-                        <a href=""><img src="/assets/img/logo_gwca.png" /></a>
+                        <a href="http://www.greenmountwest.org/" target="blank"><img src="/assets/img/logo_gwca.png" /></a>
                     </li>
                     <li>
-                        <a href=""><img src="/assets/img/logo_bma.png" /></a>
+                        <a href="https://artbma.org/" target="_blank"><img src="/assets/img/logo_bma.png" /></a>
                     </li>
                 </div>
             </ul>
