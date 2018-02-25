@@ -31,3 +31,6 @@ collections:
 
   team:
     output: false
+
+  timeline:
+    output: false

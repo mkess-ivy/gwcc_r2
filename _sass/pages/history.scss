@@ -1,0 +1,272 @@
+// History
+.history_group {
+    @extend .mission_group;
+    background-position: top left !important;
+    height: 60vh;
+
+    @include palm {
+        height: 75vh;
+    }
+}
+.history_meta {
+    margin: 50px 15px;
+
+    @include small {
+        margin: 75px 20px;
+    }
+
+    @include palm {
+        margin: 75px 50px;
+    }
+
+    @include laptop {
+        margin: 100px 50px;
+    }
+
+    @include desktop {
+        max-width: 1000px;
+        margin: 100px auto;
+    }
+
+    @include tv {
+        max-width: 1200px;
+    }
+
+    .history_title {
+        font-size: 24px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        line-height: 1.2;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 30px;
+        }
+
+        @include laptop {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+    .history_summary {
+        font-size: 18px;
+        line-height: 1.4;
+
+        @include tablet {
+            font-size: 20px;
+        }
+        @include laptop {
+            font-size: 22px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+.history_content {
+    padding: 9em 0;
+
+    @include palm {
+        padding: 0;
+        margin: auto;
+        width:90%;
+        top: 21vh;
+    }
+    @include laptop {
+        width: 100%;
+    }
+}
+.history_masthead {
+    text-align: center;
+    color: $white;
+    width:90%;
+    margin: auto;
+
+    @include laptop {
+        width: 50%;
+        margin: 0;
+        text-align: left;
+    }
+    @include tv {
+        width: 45%;
+    }
+
+    .history_masthead_title {
+        font-size: 28px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+
+        @include palm {
+            font-size: 45px;
+        }
+        @include tv {
+            font-size: 50px;
+        }
+    }
+    .history_masthead_subtitle {
+        font-size: 18px;
+
+        @include palm {
+            font-size: 24px;
+        }
+        @include tv {
+            font-size: 28px;
+        }
+    }
+}
+.timeline_wrapper {
+    position: relative;
+}
+.timeline_background {
+    background-image:url('/assets/img/timeline_graphic.png');
+    position: absolute;
+    background-repeat-x: no-repeat;
+    height: 100%;
+    left: 2%;
+    width: 8%;
+    background-size: 100%;
+
+    @include tablet {
+        left: 1%;
+        width: 6%;
+    }
+    @include tv {
+        width: 4%;
+    }
+}
+.timeline_section {
+    padding: 65px 10px 65px 14%;
+
+    @include palm {
+        // padding: 65px 10px 65px 130px;
+        padding-left: 20%;
+    }
+    @include tablet {
+        padding-left: 10%;
+    }
+    @include desktop {
+        padding: 125px 5% 125px 10%;
+    }
+    @include tv {
+        padding-left: 15%;
+    }
+
+    .timeline_single {
+        margin-bottom: 100px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include laptop {
+            margin-bottom: 125px;
+        }
+        @include desktop {
+            margin-bottom: 200px;
+        }
+    }
+    .timeline_img_wrapper {
+        @include tablet {
+            width: 47%;
+        }
+        @include desktop {
+            max-width: 515px;
+        }
+        @include tv {
+            max-width: none;
+
+        }
+    }
+
+    .timeline_img {
+        // background-size: contain;
+        // background-position: center center;
+        // height: 210px;
+        // background-repeat: no-repeat;
+        margin-bottom: 45px;
+        width: 100%;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        // @include palm {
+        //     height: 300px;
+        // }
+        //
+        // @include tablet {
+        //     width: 49%;
+        // }
+    }
+    .timeline_content {
+        text-align: center;
+
+        @include tablet {
+            width: 45%;
+        }
+        @include tv {
+            width: 49%;
+        }
+
+        .timeline_date {
+            font-family: $font-1;
+            font-weight: $muli-black;
+            text-transform: uppercase;
+            padding-bottom: 7px;
+            color: $bluegreen;
+
+            @include palm {
+                font-size: 18px;
+            }
+        }
+        .timeline_copy {
+            margin-bottom: 75px;
+
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .timeline_copy_title {
+            font-size: 20px;
+            font-family: $font-1;
+            font-weight: $muli-black;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+
+            @include palm {
+                font-size: 28px;
+            }
+            @include tablet {
+                font-size: 22px;
+            }
+            @include desktop {
+                width: 80%;
+                font-size: 28px;
+                margin: auto;
+            }
+            @include widescreen {
+                font-size: 32px;
+            }
+            @include tv {
+                font-size: 36px;
+            }
+        }
+        .timeline_copy_summary {
+            @include palm {
+                font-size: 20px;
+            }
+            @include desktop {
+                width: 80%;
+                margin: auto;
+            }
+            @include tv {
+                font-size: 24px;
+            }
+        }
+    }
+}

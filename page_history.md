@@ -7,21 +7,41 @@ permalink: /history/
 circle: "#47E7CE"
 ---
 
-<div class="history_group color_overlay" style="background-image: url('/assets/img/gwcc_community_history.jpg');">
-</div>
-
-<div class="discover_grid">
-    <div class="history_meta">
-        <div class="history_title">
-            Greenmount West Community Center sits within Baltimore Montessori Public Charter School
-        </div>
-        <div class="history_summary">
-            <p>
-                Lorem ipsum dolor amet vegan everyday carry +1, wolf portland squid letterpress aesthetic chambray hexagon. Kale chips banh mi kickstarter readymade tumblr chia. Pinterest asymmetrical portland live-edge jianbing hella. Succulents offal bitters, waistcoat freegan tousled kale chips banjo ugh kombucha gastropub iPhone next level banh mi. Offal mumblecore chia put a bird on it. Craft beer man braid fanny pack, knausgaard raclette brooklyn slow-carb humblebrag asymmetrical fam iceland.
-            </p>
-            <p>
-                Vegan irony ennui, yr lomo kombucha pok pok sartorial. Gentrify knausgaard bushwick vice neutra ramps. Trust fund pug banh mi 90's slow-carb, tbh mustache before they sold out pour-over you probably haven't heard of them ramps biodiesel. Kale chips poke bushwick iPhone vice bitters blog flexitarian, crucifix wayfarers gastropub live-edge master cleanse. Forage humblebrag lyft mumblecore truffaut poke, cred hashtag pok pok locavore marfa pabst cornhole. Roof party four loko irony scenester iceland master cleanse.
-            </p>
+<div class="history_group dark_overlay" style="background-image: url('/assets/img/history_cover.jpg');">
+    <div class="discover_grid">
+        <div class="history_content">
+            <div class="frow justify-end">
+                <div class="history_masthead">
+                    <div class="history_masthead_title">
+                        At GWCC, we thrive on building with our community.
+                    </div>
+                    <div class="history_masthead_subtitle">
+                        Learn how much we have been able to accomplish in under one year of re-establishing the center in the Greenmount West neighborhood in Baltimore,&nbsp;Maryland
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<div class="timeline_wrapper">
+    <div class="timeline_background"></div>
+    <section class="timeline_section">
+        {% for item in site.timeline %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+        <div class="timeline_single">
+            <div class="frow justify-between">
+                {% include components/timeline_event.html %}
+            </div>
+        </div>
+        {% endif %}
+        {% if thecycle == 'even' %}
+        <div class="timeline_single">
+            <div class="frow justify-between direction-reverse">
+                {% include components/timeline_event.html %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </section>
 </div>
