@@ -42,13 +42,13 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 .outer_wrapper {
 	position: relative;
-    margin: 15px;
+    padding: 15px;
 
 	@include laptop {
-		margin: 35px;
+		padding: 35px;
 	}
 	@include desktop {
-		margin: 20px 35px 35px;
+		padding: 20px 35px 35px;
 	}
 }
 .single_template_outer_wrapper {
@@ -117,22 +117,20 @@ body.noScroll { /* ...or body.dialogShowing */
 		@extend %hover;
 	}
 }
-
+.brand_cta_v2 {
+	text-decoration: none !important;
+}
 .brand_cta_v2 div {
 	border: 3px solid;
-	// border-radius: 20px;
 	color: $black;
-	// display: block;
 	font-weight: bold;
-	// margin: auto;
 	padding: 5px 25px;
 	text-align: center;
-	text-decoration: none;
+	text-decoration: none !important;
 	width: fit-content;
 	cursor: pointer;
 
 	@include tablet {
-		// width: 160px;
 		padding: 7px 25px;
 		font-size: 18px;
 	}
@@ -152,6 +150,25 @@ body.noScroll { /* ...or body.dialogShowing */
 			@extend %highlights_hover;
 		}
 	}
+	&.nonprofit_btn {
+		margin: auto;
+		text-transform: uppercase;
+
+		@include tablet {
+			margin: 0;
+		}
+		@include desktop {
+			font-size: 12px;
+			padding: 3px 5px;
+			border: 1px solid $bluegreen;
+			background: $bluegreen;
+		}
+		&:hover {
+			background: $black;
+			color: $white;
+			border-color: $black;
+		}
+	}
 
 	&:hover {
 		@extend %hover;
@@ -165,6 +182,8 @@ body.noScroll { /* ...or body.dialogShowing */
 // -- Page Masthead
 .page_masthead {
 	// @extend .site_footer;
+	background-size: auto;
+	background-repeat: repeat;
 }
 // -- Page Header
 .page_header_content {
@@ -353,4 +372,10 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 .vertical-align {
 	align-items: start !important;
+}
+.plain_typeform_link {
+	color: $white !important;
+	text-decoration: none !important;
+	border-bottom: 2px solid;
+	font-size: inherit;
 }

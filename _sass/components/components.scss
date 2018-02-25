@@ -176,7 +176,10 @@
 }
 
 .color_overlay:before{
-  @include color_overlay($orange, 0.45);
+  @include color_overlay($orange, 0.6);
+}
+.dark_overlay:before{
+    @include color_overlay($darkgray, 0.65);
 }
 
 // Overlay Hacks
@@ -187,71 +190,7 @@
     position: relative;
 }
 
-// History
-.history_group {
-    @extend .mission_group;
-    height: 60vh;
 
-    @include palm {
-        height: 75vh;
-    }
-}
-.history_meta {
-    margin: 50px 15px;
-
-    @include small {
-        margin: 75px 20px;
-    }
-
-    @include palm {
-        margin: 75px 50px;
-    }
-
-    @include laptop {
-        margin: 100px 50px;
-    }
-
-    @include desktop {
-        max-width: 1000px;
-        margin: 100px auto;
-    }
-
-    @include tv {
-        max-width: 1200px;
-    }
-
-    .history_title {
-        font-size: 24px;
-        font-family: $font-1;
-        font-weight: $muli-black;
-        line-height: 1.2;
-        margin-bottom: 30px;
-
-        @include tablet {
-            font-size: 30px;
-        }
-
-        @include laptop {
-            font-size: 36px;
-            margin-bottom: 50px;
-        }
-    }
-    .history_summary {
-        font-size: 18px;
-        line-height: 1.4;
-
-        @include tablet {
-            font-size: 20px;
-        }
-        @include laptop {
-            font-size: 22px;
-        }
-
-        p {
-            margin-bottom: 30px;
-        }
-    }
-}
 
 // Accordion
 .accordion_meta {
@@ -406,10 +345,97 @@
             width: 45% !important;
         }
         @include desktop {
-            
+
         }
         // @include tv {
         //     width: 37% !important;
         // }
+    }
+}
+
+// Community
+.category_group {
+    margin-bottom: 75px;
+}
+.category_title {
+    font-family: $font-1;
+    font-weight: $muli-black;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: $bluegreen;
+
+    @include tablet {
+        font-size: 26px;
+    }
+    @include tv {
+        font-size: 32px;
+    }
+}
+.section_group {
+    width: 100%;
+    margin-bottom: 25px;
+
+    @include palm {
+        width: 46%;
+        margin-right: 15px;
+    }
+
+    @include tablet {
+        margin-bottom: 50px;
+        max-width: 250px;
+        margin-right: 50px;
+    }
+
+    @include laptop {
+        margin-right: 30px;
+    }
+    @include desktop {
+        max-width: 225px;
+    }
+    @include tv {
+        margin-right: 50px;
+        max-width: 275px;
+    }
+}
+.section_title {
+    font-family: $font-1;
+    font-weight: $muli-black;
+    padding-bottom: 5px;
+    font-size: 18px;
+
+    @include tablet {
+        font-size: 20px;
+    }
+    @include tv {
+        font-size: 24px;
+    }
+}
+.section_location {
+    font-size: 18px;
+    margin-bottom: 3px;
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    @include tv {
+        font-size: 24px;
+    }
+}
+.section_url {
+    font-weight: $muli-black;
+    font-family: $font-1;
+
+    @include tablet {
+        font-size: 18px;
+    }
+
+    a {
+        color: $bluegreen;
+
+        &:hover {
+            border-bottom: 3px solid;
+            padding-bottom: 2px;
+        }
     }
 }
