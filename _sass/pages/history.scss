@@ -84,9 +84,12 @@
     margin: auto;
 
     @include laptop {
-        width: 50%;
+        width: 55%;
         margin: 0;
         text-align: left;
+    }
+    @include desktop {
+        width: 50%;
     }
     @include tv {
         width: 45%;
@@ -121,7 +124,7 @@
     position: relative;
 }
 .timeline_background {
-    background-image:url('/assets/img/timeline_graphic.png');
+    background-image:url('/assets/img/timeline_graphic2.png');
     position: absolute;
     background-repeat-x: no-repeat;
     height: 100%;
@@ -130,11 +133,18 @@
     background-size: 100%;
 
     @include tablet {
-        left: 1%;
-        width: 6%;
+        left: 3em;
+        width: 40px;
+    }
+    @include desktop {
+        left: 4em;
+        width: 50px;
+    }
+    @include widescreen {
+        left: 7em;
     }
     @include tv {
-        width: 4%;
+        left: 9em;
     }
 }
 .timeline_section {
@@ -142,16 +152,18 @@
 
     @include palm {
         // padding: 65px 10px 65px 130px;
-        padding-left: 20%;
+        // padding-left: 20%;
     }
     @include tablet {
-        padding-left: 10%;
+        // padding-left: 10%;
+        width: 85%;
+        padding: 75px 3%;
     }
-    @include desktop {
-        padding: 125px 5% 125px 10%;
+    @include laptop {
+        padding: 125px 3%;
     }
-    @include tv {
-        padding-left: 15%;
+    @include widescreen {
+        width: 80%;
     }
 
     .timeline_single {

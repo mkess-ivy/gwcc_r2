@@ -25,23 +25,25 @@ circle: "#47E7CE"
 </div>
 <div class="timeline_wrapper">
     <div class="timeline_background"></div>
-    <section class="timeline_section">
-        {% for item in site.timeline %}
-        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-        {% if thecycle == 'odd' %}
-        <div class="timeline_single">
-            <div class="frow justify-between">
-                {% include components/timeline_event.html %}
+    <div class="frow justify-end">
+        <section class="timeline_section">
+            {% for item in site.timeline %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% if thecycle == 'odd' %}
+            <div class="timeline_single">
+                <div class="frow justify-between">
+                    {% include components/timeline_event.html %}
+                </div>
             </div>
-        </div>
-        {% endif %}
-        {% if thecycle == 'even' %}
-        <div class="timeline_single">
-            <div class="frow justify-between direction-reverse">
-                {% include components/timeline_event.html %}
+            {% endif %}
+            {% if thecycle == 'even' %}
+            <div class="timeline_single">
+                <div class="frow justify-between direction-reverse">
+                    {% include components/timeline_event.html %}
+                </div>
             </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </section>
+            {% endif %}
+            {% endfor %}
+        </section>
+    </div>
 </div>

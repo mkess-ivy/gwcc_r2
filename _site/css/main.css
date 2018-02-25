@@ -95,7 +95,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #8bd3bf; }
+      background: #b2aab9; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -2005,9 +2005,12 @@ body.noScroll {
   margin: auto; }
   @media screen and (min-width: 992px) {
     .history_masthead {
-      width: 50%;
+      width: 55%;
       margin: 0;
       text-align: left; } }
+  @media screen and (min-width: 1200px) {
+    .history_masthead {
+      width: 50%; } }
   @media screen and (min-width: 1650px) {
     .history_masthead {
       width: 45%; } }
@@ -2036,7 +2039,7 @@ body.noScroll {
   position: relative; }
 
 .timeline_background {
-  background-image: url("/assets/img/timeline_graphic.png");
+  background-image: url("/assets/img/timeline_graphic2.png");
   position: absolute;
   background-repeat-x: no-repeat;
   height: 100%;
@@ -2045,26 +2048,31 @@ body.noScroll {
   background-size: 100%; }
   @media screen and (min-width: 768px) {
     .timeline_background {
-      left: 1%;
-      width: 6%; } }
+      left: 3em;
+      width: 40px; } }
+  @media screen and (min-width: 1200px) {
+    .timeline_background {
+      left: 4em;
+      width: 50px; } }
+  @media screen and (min-width: 1366px) {
+    .timeline_background {
+      left: 7em; } }
   @media screen and (min-width: 1650px) {
     .timeline_background {
-      width: 4%; } }
+      left: 9em; } }
 
 .timeline_section {
   padding: 65px 10px 65px 14%; }
-  @media screen and (min-width: 500px) {
-    .timeline_section {
-      padding-left: 20%; } }
   @media screen and (min-width: 768px) {
     .timeline_section {
-      padding-left: 10%; } }
-  @media screen and (min-width: 1200px) {
+      width: 85%;
+      padding: 75px 3%; } }
+  @media screen and (min-width: 992px) {
     .timeline_section {
-      padding: 125px 5% 125px 10%; } }
-  @media screen and (min-width: 1650px) {
+      padding: 125px 3%; } }
+  @media screen and (min-width: 1366px) {
     .timeline_section {
-      padding-left: 15%; } }
+      width: 80%; } }
   .timeline_section .timeline_single {
     margin-bottom: 100px; }
     .timeline_section .timeline_single:last-child {
