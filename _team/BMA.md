@@ -1,5 +1,5 @@
 ---
-title: Open Works
+title: BMA
 avatar: /assets/img/people_placeholder2.jpg
 position: Partner
 summary:
@@ -8,5 +8,5 @@ summary:
 team: "partners"
 
 [//]: # Sort
-order: 1
+order: 2
 ---
