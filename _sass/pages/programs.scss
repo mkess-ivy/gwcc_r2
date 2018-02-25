@@ -284,3 +284,17 @@
         margin: 25px 0 0;
     }
 }
+.programs_body {
+    font-size: 18px;
+    padding: 0 30px 50px;
+    line-height: 1.4;
+
+    @include palm {
+        font-size: 22px;
+        padding: 0 50px 50px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}

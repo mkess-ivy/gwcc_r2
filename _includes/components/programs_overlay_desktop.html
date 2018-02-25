@@ -18,7 +18,10 @@
                     ({{ item.subtitle }})
                 </div>
                 <div class="programs_content_summary">
-                    {{ item.program_summary }} <span>Provided by {{ item.program_instructor }}</span>
+                    {{ item.program_summary }}
+                </div>
+                <div>
+                    <a href="{{ item.url }}">Click for more info</a>
                 </div>
             </div>
             {% endfor %}
