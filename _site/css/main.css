@@ -95,7 +95,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #b2aab9; }
+      background: #b9b9a6; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
