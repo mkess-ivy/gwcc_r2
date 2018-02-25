@@ -108,8 +108,8 @@
                 background: $bluegreen;
 
     			&:hover {
-    				// background: $white;
-
+    				background: $white;
+                    color: $black;
                     border: 2px solid $white;
     			}
     		}
@@ -119,7 +119,8 @@
 
                 &:hover {
                     border-color: $black;
-                    color: $black;
+                    background: $black;
+                    color: $white;
                     // color: $white;
                 }
             }

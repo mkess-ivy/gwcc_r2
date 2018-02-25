@@ -4,7 +4,7 @@
     background-position: 2% 7%;
     background-size: cover;
     padding-top: 50px;
-    // margin-top: 200px;
+    position: relative;
 
     @include tablet {
         padding-top: 0;
@@ -263,6 +263,12 @@
         a {
             color: $black;
             text-decoration: none;
+
+            &:hover {
+                border-bottom: 3px solid;
+                padding-bottom: 2px;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -302,15 +308,15 @@
             li {
                 display: inline-block;
                 margin-right: 15px;
-
-                // &:first-child {
-                //     @include tablet {
-                //         margin-left: -55px;
-                //     }
-                // }
+                cursor: pointer;
 
                 a {
                     color: $black;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $bluegreen;
+                    }
                 }
             }
         }
@@ -395,5 +401,47 @@
 
     @include desktop {
         width: 50%;
+    }
+}
+.footer_newsletter {
+    margin: 50px 0 30px;
+
+    @include tablet {
+        margin: 20px 0;
+    }
+    @include desktop {
+        margin: 20px 0 10px;
+    }
+}
+.footer_nonprofit {
+    margin-bottom: 35px;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+    .message {
+        font-family: $font-1;
+        font-weight: $muli-black;
+        margin-bottom: 25px;
+        line-height: 1.4;
+
+        @include tablet {
+            margin-bottom: 15px;
+        }
+        @include desktop {
+            display: inline-block;
+            font-size: 10px;
+            width: 60%;
+            font-weight: 700;
+            margin-bottom:15px;
+            margin-right: 10px;
+        }
+    }
+    .cta {
+        @include desktop {
+            width: 75px;
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 }
