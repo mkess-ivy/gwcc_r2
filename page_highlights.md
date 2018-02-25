@@ -4,7 +4,7 @@ title: Highlights
 permalink: /highlights/
 
 [//]: # Page Header
-circle: "#FC6805"
+circle: "#A87465"
 ---
 {% assign my_featured_post = site.posts | where: "featured", true %}
 {% for post in my_featured_post limit:1 %}

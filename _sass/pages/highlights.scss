@@ -16,10 +16,11 @@
         }
 
         .featured {
-            background-color: $orange;
+            background-color: #d6aea2;
+            border: 3px solid;
             padding: 10px 15px;
             text-transform: uppercase;
-            color: #ba4f07;
+            color: $orange;
             font-size: 18px;
             font-family: $font-1;
             font-weight: $muli-black;
