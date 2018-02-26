@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #91bbcf; }
+      background: #b6b6d4; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -2241,6 +2241,16 @@ body.noScroll {
     @media screen and (min-width: 1650px) {
       .timeline_section .timeline_content .timeline_copy_summary {
         font-size: 24px; } }
+
+.history_p {
+  margin-bottom: 50px; }
+  .history_p span {
+    padding: 5px 9px;
+    background: #47E7CE;
+    font-size: 24px;
+    font-weight: bold; }
+  .history_p div {
+    margin-top: 15px; }
 
 .masthead {
   margin: 75px auto; }

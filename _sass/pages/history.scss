@@ -282,3 +282,16 @@
         }
     }
 }
+.history_p {
+    margin-bottom: 50px;
+
+    span {
+        padding: 5px 9px;
+        background: $bluegreen;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    div {
+        margin-top: 15px;
+    }
+}
