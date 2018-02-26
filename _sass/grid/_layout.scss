@@ -192,11 +192,11 @@ body.noScroll { /* ...or body.dialogShowing */
 	padding-bottom: 25px;
 }
 .page_title_content {
-	margin: 0 auto 50px;
+	margin: 0 auto 40px;
 	width: 100%;
 
 	@include palm {
-		margin: 0 0 75px;
+		margin: 0 0 40px;
 	}
 	@include desktop {
 		margin: 0 0 100px;

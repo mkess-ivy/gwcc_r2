@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #c792bf; }
+      background: #9ca298; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -1299,11 +1299,11 @@ body.noScroll {
   padding-bottom: 25px; }
 
 .page_title_content {
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
   width: 100%; }
   @media screen and (min-width: 500px) {
     .page_title_content {
-      margin: 0 0 75px; } }
+      margin: 0 0 40px; } }
   @media screen and (min-width: 1200px) {
     .page_title_content {
       margin: 0 0 100px; } }
@@ -2653,6 +2653,9 @@ body.noScroll {
 
 .people_content_group {
   width: 100%; }
+  @media screen and (min-width: 500px) {
+    .people_content_group {
+      margin-top: 75px; } }
   @media screen and (min-width: 768px) {
     .people_content_group {
       margin-top: 50px; } }
@@ -2662,10 +2665,13 @@ body.noScroll {
       margin-top: 0; } }
   @media screen and (min-width: 1200px) {
     .people_content_group {
-      width: 750px; } }
+      width: 900px; } }
+  @media screen and (min-width: 1366px) {
+    .people_content_group {
+      width: 1000px; } }
   @media screen and (min-width: 1650px) {
     .people_content_group {
-      width: 950px; } }
+      width: 1200px; } }
 
 .people_content_meta {
   width: 80%;
@@ -2679,14 +2685,19 @@ body.noScroll {
 
 .people_single {
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .people_single {
       width: 45%;
       margin-bottom: 75px; } }
+  @media screen and (min-width: 1200px) {
+    .people_single {
+      width: 32%; } }
   .people_single .people_single_avatar {
     height: 30vh;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
     @media screen and (min-width: 500px) {
       .people_single .people_single_avatar {
         height: 37vh; } }
@@ -2746,7 +2757,7 @@ body.noScroll {
       width: 55%; } }
   @media screen and (min-width: 992px) {
     .programs_menu {
-      width: 250px;
+      width: 220px;
       margin: 0 0 75px 0;
       padding: 0; } }
   .programs_menu ul {
@@ -2775,10 +2786,10 @@ body.noScroll {
         color: #070707; }
         .programs_menu ul li a:hover {
           color: #1CBBA2; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 992px) {
         .programs_menu ul li.active {
           background-color: #1CBBA2; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 992px) {
         .programs_menu ul li.active a {
           color: #f7f7f7; } }
 
@@ -2789,7 +2800,8 @@ body.noScroll {
       width: 100%; } }
   @media screen and (min-width: 992px) {
     .programs_content_group {
-      width: 70%; } }
+      width: 70%;
+      margin: 0 auto; } }
 
 .programs_content_alpha {
   background-image: url("/assets/img/gwcc_programs_overview.jpg");
@@ -2815,8 +2827,8 @@ body.noScroll {
 
 .programs_content_beta {
   background-color: #1CBBA2;
-  width: 90%;
-  margin: -5em auto 50px;
+  width: 85%;
+  margin: -10em auto 50px;
   position: relative;
   z-index: 2;
   padding: 25px;
@@ -2824,29 +2836,36 @@ body.noScroll {
   @media screen and (min-width: 500px) {
     .programs_content_beta {
       width: 75%; } }
+  @media screen and (min-width: 768px) {
+    .programs_content_beta {
+      width: 65%;
+      margin-top: -12em; } }
   @media screen and (min-width: 992px) {
     .programs_content_beta {
-      margin: none;
+      margin: initial;
       position: absolute;
-      bottom: -7em;
-      right: -0.5em;
-      bottom: -6em;
-      width: 50%; } }
+      bottom: 7em;
+      right: -2em;
+      width: 60%;
+      padding: 40px; } }
   @media screen and (min-width: 1200px) {
     .programs_content_beta {
-      bottom: -8em; } }
+      right: -4em; } }
   @media screen and (min-width: 1366px) {
     .programs_content_beta {
-      width: 42%;
-      bottom: -10em; } }
+      width: 50%; } }
   .programs_content_beta .programs_beta_title {
     font-family: "Muli", sans-serif;
     font-weight: 900;
-    font-size: 20px;
-    margin-bottom: 20px; }
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
     @media screen and (min-width: 500px) {
       .programs_content_beta .programs_beta_title {
         font-size: 24px; } }
+    @media screen and (min-width: 992px) {
+      .programs_content_beta .programs_beta_title {
+        font-size: 32px; } }
   .programs_content_beta .programs_beta_single {
     margin-bottom: 15px; }
     .programs_content_beta .programs_beta_single.icon {
@@ -2856,8 +2875,21 @@ body.noScroll {
       vertical-align: top;
       margin-left: 20px;
       line-height: 1.2; }
+      @media screen and (min-width: 500px) {
+        .programs_content_beta .programs_beta_single .meta_details {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .programs_content_beta .programs_beta_single .meta_details {
+          font-size: 20px; } }
     .programs_content_beta .programs_beta_single .programs_beta_description {
       padding-top: 10px; }
+      @media screen and (min-width: 500px) {
+        .programs_content_beta .programs_beta_single .programs_beta_description {
+          padding-top: 15px;
+          font-size: 20px; } }
+      @media screen and (min-width: 992px) {
+        .programs_content_beta .programs_beta_single .programs_beta_description {
+          font-size: 22px; } }
 
 .programs_body {
   padding: 0 30px 50px;

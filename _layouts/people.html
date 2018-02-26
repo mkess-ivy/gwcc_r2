@@ -15,7 +15,10 @@
             <div class="programs_group">
                 <div class="frow justify-between">
                     <div class="programs_menu">
-                        <ul>
+                        <div class="programs_menu_btn_2" id="js_programs_menu_btn">
+                            <a href="#">Teams Menu</a>
+                        </div>
+                        <ul id="programs_menu_list">
                             {% assign ordered_people = site.people | sort: 'order' %}
                             {% for item in ordered_people %}
                             {% if page.url == item.url %}

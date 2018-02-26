@@ -38,7 +38,7 @@
     }
 
     @include laptop {
-        width: 250px;
+        width: 220px;
         margin: 0 0 75px 0;
         padding:0;
     }
@@ -88,12 +88,12 @@
 
             &.active {
 
-                @include tablet {
+                @include laptop {
                     background-color: $darkbluegreen;
                 }
 
                 a {
-                    @include tablet {
+                    @include laptop {
                         color: $white;
                     }
                 }
@@ -111,6 +111,7 @@
     }
     @include laptop {
         width: 70%;
+        margin: 0 auto;
     }
 }
 .programs_content_alpha {
@@ -139,8 +140,9 @@
 }
 .programs_content_beta {
     background-color: $darkbluegreen;
-    width: 90%;
-    margin: -5em auto 50px;
+    width: 85%;
+    margin: -10em auto 50px;
+    // margin: -5em auto 50px;
     position: relative;
     z-index: 2;
     padding: 25px;
@@ -149,35 +151,51 @@
     @include palm {
         width: 75%;
     }
+    @include tablet {
+        width: 65%;
+        margin-top: -12em;
+    }
     @include laptop {
         // width: 55%;
-        margin:none;
+        // margin:none;
+        margin: initial;
         position: absolute;
         // right: -1.5em;
-        bottom: -7em;
-        right: -0.5em;
-        bottom: -6em;
-        width: 50%;
-    }
-    @include laptop {
-
+        // bottom: -7em;
+        bottom: 7em;
+        // right: -0.5em;
+        right: -2em;
+        // bottom: -6em;
+        // width: 50%;
+        width: 60%;
+        padding: 40px;
     }
     @include desktop {
-        bottom: -8em;
+        right: -4em;
     }
     @include widescreen {
-        width: 42%;
-        bottom: -10em;
+        width: 50%;
     }
+    // @include desktop {
+    //     bottom: -8em;
+    // }
+    // @include widescreen {
+    //     width: 42%;
+    //     bottom: -10em;
+    // }
 
     .programs_beta_title {
         font-family: $font-1;
         font-weight: $muli-black;
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 20px;
+        text-transform: uppercase;
 
         @include palm {
             font-size: 24px;
+        }
+        @include laptop {
+            font-size: 32px;
         }
     }
     .programs_beta_single {
@@ -191,9 +209,24 @@
             vertical-align: top;
             margin-left: 20px;
             line-height: 1.2;
+
+            @include palm {
+                font-size: 18px;
+            }
+            @include laptop {
+                font-size: 20px;
+            }
         }
         .programs_beta_description {
             padding-top: 10px;
+
+            @include palm {
+                padding-top: 15px;
+                font-size: 20px;
+            }
+            @include laptop {
+                font-size: 22px;
+            }
         }
     }
 }
