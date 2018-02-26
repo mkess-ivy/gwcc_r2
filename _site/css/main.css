@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #a2a5d1; }
+      background: #aaadbe; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -2713,6 +2713,8 @@ body.noScroll {
   @media screen and (min-width: 1200px) {
     .people_single {
       width: 32%; } }
+  .people_single a {
+    cursor: pointer; }
   .people_single .people_single_avatar {
     height: 30vh;
     margin-bottom: 20px;

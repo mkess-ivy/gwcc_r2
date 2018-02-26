@@ -1,12 +1,13 @@
 ---
 title: BMA
-avatar: /assets/img/people_placeholder2.jpg
+avatar: /assets/img/partner_bma.jpg
 position: Partner
 summary:
+external_link: http://www.artbma.org
 
 [//]: #Team
 team: "partners"
 
 [//]: # Sort
-order: 2
+order: 3
 ---

@@ -53,6 +53,10 @@
         width: 32%;
     }
 
+    a {
+        cursor: pointer;
+    }
+
     .people_single_avatar {
         @extend %bg_props;
         height: 30vh;
