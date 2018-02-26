@@ -68,10 +68,60 @@
         width: 150px;
         margin-bottom: 20px;
 
-        a.donate_cta {
-            div {
-                width: 150px;
+        button {
+            background: transparent;
+            border-radius: 0;
+            border: 3px solid $black;
+            width: 130px;
+            height: 40px;
+            font-family: $font-1;
+            font-weight: $muli-black;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background: $black;
+                color: $white;
+                cursor: pointer;
             }
         }
     }
 }
+
+// Snipcart
+.snip-header
+ {
+    background: #1CBBA2 !important;
+}
+.snip-table__item {
+    background: $black !important;
+}
+.snip-product__name,
+.snip-quantity-trigger__text,
+.snip-table__cell--highlight,
+.snip-table__cell--bold
+ {
+    color: #fff !important;
+}
+// .snip-quantity-trigger__text {
+//     color: #fff !important;
+// }
+.snip-table__header {
+    color: #fff !important;
+    background: #000 !important;
+}
+.snip-product__remove {
+    color: #1cbba2 !important;
+}
+.snip-btn--highlight {
+    background: #1cbba2 !important;
+    color: #fff !important;
+}
+// .snip-table__cell--highlight {
+//     color: #fff !important;
+// }
+// .snip-table__cell--bold {
+//     color: #fff !important;
+// }

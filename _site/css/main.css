@@ -95,7 +95,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #d190bb; }
+      background: #a7a7cb; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -1728,8 +1728,44 @@ body.noScroll {
   text-align: center;
   width: 150px;
   margin-bottom: 20px; }
-  .donate_items_list li a.donate_cta div {
-    width: 150px; }
+  .donate_items_list li button {
+    background: transparent;
+    border-radius: 0;
+    border: 3px solid #070707;
+    width: 130px;
+    height: 40px;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 16px; }
+    .donate_items_list li button:focus {
+      outline: none; }
+    .donate_items_list li button:hover {
+      background: #070707;
+      color: #f7f7f7;
+      cursor: pointer; }
+
+.snip-header {
+  background: #1CBBA2 !important; }
+
+.snip-table__item {
+  background: #070707 !important; }
+
+.snip-product__name,
+.snip-quantity-trigger__text,
+.snip-table__cell--highlight,
+.snip-table__cell--bold {
+  color: #fff !important; }
+
+.snip-table__header {
+  color: #fff !important;
+  background: #000 !important; }
+
+.snip-product__remove {
+  color: #1cbba2 !important; }
+
+.snip-btn--highlight {
+  background: #1cbba2 !important;
+  color: #fff !important; }
 
 .highlights_group .highlights_meta {
   height: 65vh;

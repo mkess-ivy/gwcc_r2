@@ -40,47 +40,109 @@ circle: "#5B978E"
                 <ul class="donate_items_list">
                     <div class="frow justify-between">
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $25
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="1"
+                                data-item-name="Donate $25"
+                                data-item-price="25.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $25">
+                                    $25
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $50
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="2"
+                                data-item-name="Donate $50"
+                                data-item-price="50.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $50">
+                                    $50
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $100
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="3"
+                                data-item-name="Donate $100"
+                                data-item-price="100.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $100">
+                                    $100
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $250
-                            </div></a>
+
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="4"
+                                data-item-name="Donate $250"
+                                data-item-price="250.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $250">
+                                    $250
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $500
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="5"
+                                data-item-name="Donate $500"
+                                data-item-price="500.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $500">
+                                    $500
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $1000
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="6"
+                                data-item-name="Donate $1000"
+                                data-item-price="1000.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $1000">
+                                    $1000
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $1500
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="7"
+                                data-item-name="Donate $1500"
+                                data-item-price="1500.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $1500">
+                                    $1500
+                            </button>
                         </li>
                         <li>
-                            <a href="" class="donate_cta"><div>
-                                $2500
-                            </div></a>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="8"
+                                data-item-name="Donate $2500"
+                                data-item-price="2500.00"
+                                data-item-weight="0"
+                                data-item-url="/donate/"
+                                data-item-description="Donate $2500">
+                                    $2500
+                            </button>
                         </li>
                     </div>
                 </ul>
+                <!-- <div class="submit_donation">
+                    <a href="" class="snipcart-checkout"><div>
+                        Submit Donation
+                    </div></a>
+                </div> -->
             </div>
         </div>
     </div>
