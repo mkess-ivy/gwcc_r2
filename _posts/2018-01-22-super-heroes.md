@@ -8,6 +8,8 @@ featured: true
 
 [//]: # Cover Image
 cover: /assets/img/gwcc_highlights_superheroes.jpg
+
+vimeo_video: true
 ---
 # Important talking points from the youth, check it out below:
 

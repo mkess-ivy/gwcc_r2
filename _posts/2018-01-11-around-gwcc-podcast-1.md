@@ -8,6 +8,7 @@ featured: false
 
 [//]: # Cover Image
 cover: /assets/img/gwcc_highlights_podcast.jpg
+
 ---
 # Important talking points from the youth, check it out below:
 

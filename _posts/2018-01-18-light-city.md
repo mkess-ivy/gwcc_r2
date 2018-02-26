@@ -8,6 +8,8 @@ featured: false
 
 [//]: # Cover Image
 cover: /assets/img/gwcc_highlights_lightcity.jpg
+
+vimeo_video: true
 ---
 # Important talking points from the youth, check it out below:
 
