@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #9ca298; }
+      background: #9fabae; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -3006,7 +3006,8 @@ body.noScroll {
       .programs_menu_button li {
         color: #f7f7f7;
         text-transform: uppercase;
-        font-size: 18px !important; } }
+        font-size: 20px !important;
+        font-weight: bold; } }
 
 .programs_menu_button.black_menu li {
   color: #070707; }
