@@ -25,7 +25,7 @@
 	}
 
 	@include laptop {
-		width: 120px;
+		width: 140px;
 	}
 
 	&:hover {
@@ -47,7 +47,7 @@
 		}
 
 		@include tablet {
-			width: 130px !important;
+			width: 170px !important;
 		}
 
 		@include laptop {

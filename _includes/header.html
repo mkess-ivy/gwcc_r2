@@ -1,8 +1,11 @@
 <header class="site_header {% unless page.layout == "gold" %}outer_wrapper{% endunless %} {% if page.layout == "gold" %} single_template_outer_wrapper {% endif %}">
 
     <div class="frow justify-between">
-        <div class="logo" id="top">
+        <!-- <div class="logo" id="top">
             <a href="/">{% if page.layout == "home" %}<img src="/assets/img/gwcc-logo-white.png" class="logo_img" />{% endif %}{% unless page.layout == "home" %}<img src="/assets/img/gwcc-logo.png" class="logo_img" />{% endunless %}</a>
+        </div> -->
+        <div class="header_logo" id="top">
+            <a href="/">{% if page.layout == "home" %}<div class="header_logo_img"></div>{% endif %}{% unless page.layout == "home" %}<div class="header_logo_img black_logo"></div>{% endunless %}</a>
         </div>
 
         <div class="menu">
@@ -34,13 +37,14 @@
                                     what we do
                                 </div>
                                 <ul>
-                                    <div class="frow justify-between">
+                                    <!-- <div class="frow justify-between"> -->
                                         {% include components/programs_overlay.html %}
                                         <li><a href="{{ site.baseurl }}/discover">discover</a></li>
                                         <li><a href="http://www.noisytenants.com/work/busstoptracker" target="_blank">bus stop buddies</a></li>
                                         <li><a href="{{ site.baseurl }}/history">history</a></li>
                                         <li><a href="{{ site.baseurl }}/calendar">calendar</a></li>
-                                    </div>
+                                        <li><a href="{{ site.baseurl }}/highlights">highlights</a></li>
+                                    <!-- </div> -->
                                 </ul>
                             </div>
                             <div class="menu_group">
@@ -48,36 +52,26 @@
                                     who we are
                                 </div>
                                 <ul>
-                                    <div class="frow justify-between">
+                                    <!-- <div class="frow justify-between"> -->
                                         <li><a href="{{ site.baseurl }}/our-staff">our staff</a></li>
                                         <li><a href="{{ site.baseurl }}/community">community</a></li>
                                         <li><a href="{{ site.baseurl }}/partners">partners</a></li>
-                                    </div>
+                                    <!-- </div> -->
                                 </ul>
                             </div>
+
                             <div class="menu_group">
                                 <div class="menu_group_title">
-                                    gwcc news
+                                    Learn GWCC
                                 </div>
                                 <ul>
-                                    <div class="frow justify-between">
-                                        <li><a href="{{ site.baseurl }}/highlights">highlights</a></li>
-                                        <li><a href="{{ site.baseurl }}/newsletter">join newsletter</a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="menu_group">
-                                <div class="menu_group_title">
-                                    other
-                                </div>
-                                <ul>
-                                    <div class="frow justify-between">
-                                        <li><a href="{{ site.baseurl }}/donate">give</a></li>
-                                        <li><a href="{{ site.baseurl }}/work-with-us">work with us</a></li>
-                                        <li><a href="{{ site.baseurl }}/volunteer">volunteer</a></li>
-                                        <li><a href="{{ site.baseurl }}/faqs">FAQs</a></li>
-                                        <li><a href="{{ site.baseurl }}/contact-us">contact us</a></li>
-                                    </div>
+                                    <li><a href="{{ site.baseurl }}/donate">give</a></li>
+
+                                    <li><a href="{{ site.baseurl }}/policy">policies</a></li>
+
+                                    <!-- <li><a href="{{ site.baseurl }}/volunteer">volunteer</a></li>
+
+                                    <li><a href="{{ site.baseurl }}/contact-us">contact us</a></li> -->
                                 </ul>
                             </div>
                         </nav>

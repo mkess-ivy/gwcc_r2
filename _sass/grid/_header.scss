@@ -256,3 +256,32 @@
 		width: 30% !important;
 	}
 }
+
+// Header GIF Logo
+.header_logo {
+    position: relative;
+
+    .header_logo_img {
+        background-image: url('/assets/img/gwcc-logo-white.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 65px;
+        height: 110px;
+        margin: auto;
+
+        &:hover {
+            background-image: url('/assets/img/gwcc_logo_white.gif');
+            width: 65px;
+            height: 110px;
+        }
+
+        &.black_logo {
+            background-image: url('/assets/img/gwcc-logo.png');
+
+            &:hover {
+                background-image: url('/assets/img/gwcc_logo.gif');
+            }
+        }
+    }
+}

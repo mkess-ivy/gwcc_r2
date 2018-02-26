@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #9fabae; }
+      background: #a2a5d1; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -1163,6 +1163,25 @@ a {
   @media screen and (min-width: 1200px) {
     .menu-content {
       width: 30% !important; } }
+
+.header_logo {
+  position: relative; }
+  .header_logo .header_logo_img {
+    background-image: url("/assets/img/gwcc-logo-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 110px;
+    margin: auto; }
+    .header_logo .header_logo_img:hover {
+      background-image: url("/assets/img/gwcc_logo_white.gif");
+      width: 65px;
+      height: 110px; }
+    .header_logo .header_logo_img.black_logo {
+      background-image: url("/assets/img/gwcc-logo.png"); }
+      .header_logo .header_logo_img.black_logo:hover {
+        background-image: url("/assets/img/gwcc_logo.gif"); }
 
 body.noScroll {
   /* ...or body.dialogShowing */
@@ -2986,7 +3005,7 @@ body.noScroll {
       width: 170px; } }
   @media screen and (min-width: 992px) {
     .programs_menu_button {
-      width: 120px; } }
+      width: 140px; } }
   @media screen and (min-width: 992px) {
     .programs_menu_button:hover {
       border-bottom: 3px solid;
@@ -3001,7 +3020,7 @@ body.noScroll {
         font-size: 28px !important; } }
     @media screen and (min-width: 768px) {
       .programs_menu_button li {
-        width: 130px !important; } }
+        width: 170px !important; } }
     @media screen and (min-width: 992px) {
       .programs_menu_button li {
         color: #f7f7f7;
