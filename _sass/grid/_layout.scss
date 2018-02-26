@@ -139,7 +139,7 @@ body.noScroll { /* ...or body.dialogShowing */
 		color: $white;
 
 		&:hover {
-			@extend %featured_hover;
+			@extend %hover;
 		}
 	}
 
@@ -148,6 +148,7 @@ body.noScroll { /* ...or body.dialogShowing */
 
 		&:hover {
 			@extend %highlights_hover;
+			// @extend %hover;
 		}
 	}
 	&.nonprofit_btn {

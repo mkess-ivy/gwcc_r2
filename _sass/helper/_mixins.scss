@@ -8,15 +8,15 @@
     transition: 0.5s;
 }
 
-%featured_hover {
-    background: $orange;
-    border-color: $orange;
-    transition: 0.5s;
-}
+// %featured_hover {
+//     background: $orange;
+//     border-color: $orange;
+//     transition: 0.5s;
+// }
 %highlights_hover {
-    color: $orange;
+    color: $bluegreen;
     background: transparent;
-    border-color: $orange;
+    border-color: $bluegreen;
 }
 %underline_hover {
     border-bottom: 3px solid;

@@ -50,9 +50,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     GWCC Volunteers enthusiastically assist the staff and residents within the GMW community.
                 </div>
-                <!-- <a class="brand_cta_v2" href="/volunteer/"><div class="margin_center">
-                    + Learn More
-                </div></a> -->
+
                 <a class="brand_cta_v2 typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" style="color:#267DDD;text-decoration:underline;font-size:20px;" target="_blank"><div class="margin_center">+ Apply Now </div></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
             </div>
             <div class="discover_alt_single give_alt_single">
@@ -67,7 +65,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     Help us provide programming, events, workshops, after-school snacks and more. Monetary donations provide program support which moves our mission forward.
                 </div>
-                <a class="brand_cta_v2" href="/donate/"><div class="margin_center">
+                <a class="brand_cta_v2" href="/donate"><div class="margin_center">
                     + Support Us
                 </div></a>
             </div>

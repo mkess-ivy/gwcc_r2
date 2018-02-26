@@ -131,7 +131,7 @@ circle: "#47E7CE"
                 <div class="discover_alt_summary">
                     Host your meetings or special events within our community center
                 </div>
-                <a class="brand_cta_v2" href="mailto:greenmountwcc@gmail.com"><div class="margin_center">
+                <a class="brand_cta_v2" href="mailto:admin@greenmountwestcc.org"><div class="margin_center">
                     + Contact Us
                 </div></a>
             </div>

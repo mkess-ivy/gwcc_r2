@@ -4,11 +4,11 @@ title: Highlights
 permalink: /highlights/
 
 [//]: # Page Header
-circle: "#A87465"
+circle: "#47E7CE"
 ---
 {% assign my_featured_post = site.posts | where: "featured", true %}
 {% for post in my_featured_post limit:1 %}
-<div class="highlights_group color_overlay" style="background-image: url('{{ post.cover }}');">
+<div class="highlights_group discover_overlay" style="background-image: url('{{ post.cover }}');">
     <div class="discover_grid">
         <div class="highlights_meta">
             <div class="highlights_top">

@@ -16,11 +16,11 @@
         }
 
         .featured {
-            background-color: #d6aea2;
-            border: 3px solid;
+            background-color: $white;
+            border: 3px solid $white;
             padding: 10px 15px;
             text-transform: uppercase;
-            color: $orange;
+            color: $bluegreen;
             font-size: 18px;
             font-family: $font-1;
             font-weight: $muli-black;
@@ -146,7 +146,7 @@
 
         .highlights_overlay:hover:before{
           display: block;
-          background-color: rgba($orange, 0.45);
+          background-color: rgba($bluegreen, 0.45);
         }
         .highlights_item_cover * {
             position: relative;
@@ -181,7 +181,7 @@
                 text-decoration: none;
 
                 &:hover {
-                    color: $orange;
+                    color: $bluegreen;
                 }
             }
         }
