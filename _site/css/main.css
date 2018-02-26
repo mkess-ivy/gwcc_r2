@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #d4cb91; }
+      background: #c6ccce; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -2951,6 +2951,40 @@ body.noScroll {
       padding: 0 50px 50px; } }
   .programs_body p {
     margin-bottom: 30px; }
+
+.overview_title {
+  text-transform: uppercase;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  margin-bottom: 25px;
+  font-size: 28px; }
+
+.programs_list li {
+  margin-bottom: 25px;
+  font-size: 20px;
+  width: 80%;
+  text-indent: -.6em;
+  padding-left: 3em; }
+  .programs_list li:before {
+    content: "\232A";
+    display: inline-block;
+    color: #47E7CE; }
+  .programs_list li div {
+    text-indent: 0em;
+    padding-top: 7px; }
+  .programs_list li span {
+    font-weight: bold;
+    background: #47E7CE;
+    padding: 5px 9px; }
+
+.programs_small_title {
+  padding-top: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px; }
+
+.programs_small_text {
+  font-size: 18px; }
 
 #programs_menu_container {
   height: 50px;

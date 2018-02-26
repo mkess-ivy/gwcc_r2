@@ -298,3 +298,47 @@
         margin-bottom: 30px;
     }
 }
+.overview_title {
+    text-transform: uppercase;
+    font-family: $font-1;
+    font-weight: $muli-black;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.programs_list {
+    li {
+        margin-bottom: 25px;
+        font-size: 20px;
+        width: 80%;
+        text-indent: -.6em;
+        padding-left: 3em;
+
+        &:before {
+            content:"\232A";
+            display: inline-block;
+            color: $bluegreen;
+        }
+
+        div {
+            text-indent: 0em;
+            padding-top: 7px;
+        }
+
+        span {
+            // padding-bottom: 4px;
+            // border-bottom: 3px solid $bluegreen;
+            font-weight: bold;
+            background: $bluegreen;
+            padding: 5px 9px;
+        }
+    }
+}
+.programs_small_title {
+    padding-top: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.programs_small_text {
+    font-size: 18px;
+}
