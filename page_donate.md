@@ -14,24 +14,10 @@ circle: "#5B978E"
                 Give the Greatest Gift to a Thriving Community Organization
             </div>
             <div class="donate_summary">
-                GWCC is powered by community support, and there are multiple ways to get involved. Make a one-time donation or become a monthly, quarterly or annual donor.
+                <p>GWCC relies on people like you to help us provide programming, events, workshops, after-school snacks and more. Volunteering your time, monetary donations and providing program support moves our mission forward. GWCC needs you!</p> <p>GWCC is powered by community support, and there are multiple ways to get involved. Make a one-time donation or become a monthly, quarterly or annual donor.</p>
             </div>
         </div>
-        <div class="donate_mid_content">
-            <div class="donate_header">
-                To make a donation by check, please call the community center or send us an email
-            </div>
-            <div class="donate_contact">
-                <div class="frow justify-between">
-                    <a href="tel:6672125286" class="donate_cta"><div>
-                        + Call the Center
-                    </div></a>
-                    <a href="mailto:admin@greenmountwestcc.org" class="donate_cta"><div>
-                        + Email Us
-                    </div></a>
-                </div>
-            </div>
-        </div>
+
         <div class="donate_mid_content">
             <div class="donate_header">
                 Select donation amount
@@ -139,6 +125,21 @@ circle: "#5B978E"
                     </div>
                 </ul>
 
+            </div>
+        </div>
+        <div class="donate_mid_content">
+            <div class="donate_header">
+                To make a donation by check, please call the community center or send us an email
+            </div>
+            <div class="donate_contact">
+                <div class="frow justify-between">
+                    <a href="tel:6672125286" class="donate_cta"><div>
+                        + Call the Center
+                    </div></a>
+                    <a href="mailto:admin@greenmountwestcc.org" class="donate_cta"><div>
+                        + Email Us
+                    </div></a>
+                </div>
             </div>
         </div>
     </div>
