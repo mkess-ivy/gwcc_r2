@@ -12,6 +12,11 @@ $(document).ready(function(){
 	    $('.se-pre-con').fadeOut('slow',function(){$(this).remove();});
 	});
 
+    // Mobile Programs Menu
+    $("#js_programs_menu_btn").click(function() {
+        $("#programs_menu_list").slideToggle('fade');
+    });
+
     // Accordion
     $('.accordion-item .heading').on('click', function(e) {
         e.preventDefault();
@@ -57,7 +62,7 @@ $(document).ready(function(){
     });
 
     // Smooth Scroll
-    $('a[href^="#"]').on('click',function (e) {
+    $('a[href^="#top"]').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
@@ -105,5 +110,7 @@ $(document).ready(function(){
         $(".programs_overlay").removeClass("programs_overlay_open_desktop");
         $('body').removeClass("noScroll");
     });
+
+
 
 }); // Close of jQuery

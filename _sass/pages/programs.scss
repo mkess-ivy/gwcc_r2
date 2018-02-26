@@ -1,3 +1,28 @@
+// Mobile Programs Menu
+.programs_menu_btn_2 {
+    font-family: $font-1;
+    font-weight: $muli-black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    background: $bluegreen;
+    padding: 10px 0;
+
+    @include palm {
+        // max-width: 325px;
+        margin: auto;
+    }
+    @include laptop {
+        display: none;
+    }
+
+    a {
+        color: $black;
+    }
+
+
+}
+
 .programs_menu {
     width: 100%;
     padding: 30px;
@@ -19,18 +44,38 @@
     }
 
     ul {
+        display: none;
+        padding-top: 15px;
+        border: 3px solid $darkbluegreen;
+        width: 100%;
+
+        @include laptop {
+            display: block;
+            border: none;
+            padding-top: 0;
+            // width: auto;
+        }
+        // background: $bluegreen;
+
         li {
+            // Mobile Menu
+            // display: none;
             font-family: $font-1;
             font-weight: $muli-black;
             text-transform: uppercase;
-            font-size: 20px;
-            margin-bottom: 20px;
-            border: 3px solid $bluegreen;
-            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
 
             @include laptop {
-                border: none;
+                font-size: 18px;
                 margin-bottom: 10px;
+                border: 3px solid $bluegreen;
+                padding: 6px;
+            }
+
+            @include laptop {
+                // border: none;
+                // margin-bottom: 10px;
             }
 
             a {
@@ -42,16 +87,28 @@
             }
 
             &.active {
-                background-color: $darkbluegreen;
+
+                @include tablet {
+                    background-color: $darkbluegreen;
+                }
 
                 a {
-                    color: $white;
+                    @include tablet {
+                        color: $white;
+                    }
                 }
             }
+            // &.programs_mobile_menu {
+            //     display: block;
+            // }
         }
     }
 }
 .programs_content_group {
+    margin: auto;
+    @include tablet {
+        width: 100%;
+    }
     @include laptop {
         width: 70%;
     }
@@ -92,17 +149,18 @@
     @include palm {
         width: 75%;
     }
-    @include tablet {
-        width: 55%;
+    @include laptop {
+        // width: 55%;
         margin:none;
         position: absolute;
-        right: -1.5em;
+        // right: -1.5em;
         bottom: -7em;
-    }
-    @include laptop {
         right: -0.5em;
         bottom: -6em;
         width: 50%;
+    }
+    @include laptop {
+
     }
     @include desktop {
         bottom: -8em;
@@ -139,158 +197,159 @@
         }
     }
 }
-.programs_instructors_group {
-    margin: 100px 0;
-
-    @include small {
-        margin: 100px auto;
-        width:80%;
-    }
-
-    @include palm {
-        width: 65%;
-    }
-    @include tablet {
-        margin: 150px auto;
-    }
-    @include laptop {
-        width: 100%;
-        margin: 200px auto 100px;
-    }
-
-    .instructors_title-group {
-        width: 90%;
-        position: relative;
-        margin: 0 auto 25px;
-
-        @include palm {
-            width: 100%;
-        }
-        @include laptop {
-            width: 325px;
-            margin: initial;
-        }
-    }
-    .instructors_title {
-        background-color: $white;
-        font-size: 20px;
-        font-family: $font-1;
-        font-weight: $muli-black;
-        border: 4px solid $darkbluegreen;
-        padding: 15px;
-    }
-    .instructors_title_bottom {
-        position: absolute;
-        top: 0.25em;
-        left: 0.25em;
-        background: $darkbluegreen;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-}
-.instructors_single {
-    width: 100%;
-    margin: 30px;
-
-    @include palm {
-        margin: 20px 20px 50px;
-    }
-    @include laptop {
-        width: 45%;
-        margin: 75px 30px 50px 0;
-    }
-    @include widescreen {
-
-    }
-    @include tv {
-        width: 40%;
-        margin-right: 75px;
-    }
-
-    .instructors_name {
-        font-size:22px;
-        font-weight: $font-bold;
-        margin-bottom: 20px;
-    }
-    .instructors_summary {
-        font-size: 18px;
-        line-height: 1.2;
-        margin-bottom: 15px;
-
-        @include laptop {
-            margin-bottom: 25px;
-        }
-    }
-}
-.instructors_avatar_group {
-    position: relative;
-    margin: 0 auto 50px;
-    width: 100px;
-    height: 100px;
-
-    @include tablet {
-        width: 150px;
-        height: 150px;
-    }
-    @include laptop {
-        width: 75px;
-        height: 75px;
-        margin: initial;
-    }
-
-    .instructors_avatar {
-        background-image: url('/assets/img/gwcc_avatar_instructor.jpeg');
-        @extend %bg_props;
-        height: 100px;
-        width: 100px;
-        position: relative;
-        margin: auto;
-        border-radius: 50%;
-
-        @include tablet {
-            width: 150px;
-            height: 150px;
-        }
-        @include laptop {
-            width: 75px;
-            height: 75px;
-        }
-    }
-    .instructors_avatar_bottom {
-        position: absolute;
-        background: $darkbluegreen;
-        top: 0.35em;
-        left:0;
-        width: 100px;
-        height: 100px;
-        z-index: -1;
-        border-radius: 50%;
-
-        @include tablet {
-            width: 150px;
-            height: 150px;
-            top: 0.75em;
-        }
-        @include laptop {
-            width: 75px;
-            height: 75px;
-        }
-    }
-}
-.instructor_meta {
-    @include laptop {
-        width: 70%;
-        margin: 25px 0 0;
-    }
-}
+// .programs_instructors_group {
+//     margin: 100px 0;
+//
+//     @include small {
+//         margin: 100px auto;
+//         width:80%;
+//     }
+//
+//     @include palm {
+//         width: 65%;
+//     }
+//     @include tablet {
+//         margin: 150px auto;
+//     }
+//     @include laptop {
+//         width: 100%;
+//         margin: 200px auto 100px;
+//     }
+//
+//     .instructors_title-group {
+//         width: 90%;
+//         position: relative;
+//         margin: 0 auto 25px;
+//
+//         @include palm {
+//             width: 100%;
+//         }
+//         @include laptop {
+//             width: 325px;
+//             margin: initial;
+//         }
+//     }
+//     .instructors_title {
+//         background-color: $white;
+//         font-size: 20px;
+//         font-family: $font-1;
+//         font-weight: $muli-black;
+//         border: 4px solid $darkbluegreen;
+//         padding: 15px;
+//     }
+//     .instructors_title_bottom {
+//         position: absolute;
+//         top: 0.25em;
+//         left: 0.25em;
+//         background: $darkbluegreen;
+//         height: 100%;
+//         width: 100%;
+//         z-index: -1;
+//     }
+// }
+// .instructors_single {
+//     width: 100%;
+//     margin: 30px;
+//
+//     @include palm {
+//         margin: 20px 20px 50px;
+//     }
+//     @include laptop {
+//         width: 45%;
+//         margin: 75px 30px 50px 0;
+//     }
+//     @include widescreen {
+//
+//     }
+//     @include tv {
+//         width: 40%;
+//         margin-right: 75px;
+//     }
+//
+//     .instructors_name {
+//         font-size:22px;
+//         font-weight: $font-bold;
+//         margin-bottom: 20px;
+//     }
+//     .instructors_summary {
+//         font-size: 18px;
+//         line-height: 1.2;
+//         margin-bottom: 15px;
+//
+//         @include laptop {
+//             margin-bottom: 25px;
+//         }
+//     }
+// }
+// .instructors_avatar_group {
+//     position: relative;
+//     margin: 0 auto 50px;
+//     width: 100px;
+//     height: 100px;
+//
+//     @include tablet {
+//         width: 150px;
+//         height: 150px;
+//     }
+//     @include laptop {
+//         width: 75px;
+//         height: 75px;
+//         margin: initial;
+//     }
+//
+//     .instructors_avatar {
+//         background-image: url('/assets/img/gwcc_avatar_instructor.jpeg');
+//         @extend %bg_props;
+//         height: 100px;
+//         width: 100px;
+//         position: relative;
+//         margin: auto;
+//         border-radius: 50%;
+//
+//         @include tablet {
+//             width: 150px;
+//             height: 150px;
+//         }
+//         @include laptop {
+//             width: 75px;
+//             height: 75px;
+//         }
+//     }
+//     .instructors_avatar_bottom {
+//         position: absolute;
+//         background: $darkbluegreen;
+//         top: 0.35em;
+//         left:0;
+//         width: 100px;
+//         height: 100px;
+//         z-index: -1;
+//         border-radius: 50%;
+//
+//         @include tablet {
+//             width: 150px;
+//             height: 150px;
+//             top: 0.75em;
+//         }
+//         @include laptop {
+//             width: 75px;
+//             height: 75px;
+//         }
+//     }
+// }
+// .instructor_meta {
+//     @include laptop {
+//         width: 70%;
+//         margin: 25px 0 0;
+//     }
+// }
 .programs_body {
-    font-size: 18px;
+    // font-size: 18px;
     padding: 0 30px 50px;
     line-height: 1.4;
 
     @include palm {
-        font-size: 22px;
+        // font-size: 22px;
+        font-size: 18px;
         padding: 0 50px 50px;
     }
 
@@ -302,21 +361,47 @@
     text-transform: uppercase;
     font-family: $font-1;
     font-weight: $muli-black;
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin: 25px 0;
+    font-size: 20px;
+    // font-size: 28px;
+
+    @include palm {
+        width: 75%;
+        font-size: 24px;
+    }
+
+    @include laptop {
+        margin-top: 0;
+    }
 }
 .programs_list {
-    li {
-        margin-bottom: 25px;
-        font-size: 20px;
+    margin-top: 60px;
+
+    @include tablet {
         width: 80%;
-        text-indent: -.6em;
-        padding-left: 3em;
+    }
+
+
+    li {
+        padding-bottom: 25px;
+
+        @include laptop {
+            text-indent: -0.6em;
+            padding-left: 3em;
+        }
+        // font-size: 20px;
+        // width: 80%;
+        // text-indent: -.6em;
+        // padding-left: 1em;
+        // padding-left: 3em;
 
         &:before {
-            content:"\232A";
-            display: inline-block;
-            color: $bluegreen;
+            @include laptop {
+                content:"\232A";
+                display: inline-block;
+                color: $bluegreen;
+            }
+
         }
 
         div {
@@ -330,15 +415,33 @@
             font-weight: bold;
             background: $bluegreen;
             padding: 5px 9px;
+            display: inline-block;
+            width: 100%;
+
+            @include laptop {
+                display: initial;
+            }
         }
     }
 }
 .programs_small_title {
-    padding-top: 35px;
+    padding: 30px 0 10px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+
+    @include palm {
+        font-size: 20px;
+    }
+    // font-size: 20px;
 }
 .programs_small_text {
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 5px;
+
+    @include palm {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
 }
