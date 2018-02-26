@@ -20,6 +20,10 @@
 	font-family: $font-1;
 	font-size: inherit;
 
+	@include palm {
+		width: 170px;
+	}
+
 	@include laptop {
 		width: 120px;
 	}
@@ -35,6 +39,12 @@
         // letter-spacing: 0.75px;
         -webkit-font-smoothing: antialiased;
 		font-size: 22px !important;
+		font-family: $font-2;
+		font-weight: normal;
+
+		@include palm {
+			font-size: 28px !important;
+		}
 
 		@include tablet {
 			width: 130px !important;
@@ -180,4 +190,17 @@
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
 	visibility: visible;
+}
+.programs_content_link {
+	margin-top: 15px;
+
+	a {
+		color: $black;
+		text-transform: uppercase;
+		font-family: $font-1;
+		font-weight: $muli-black;
+		font-size: 14px;
+		padding-bottom: 3px;
+		border-bottom: 2px solid;
+	}
 }

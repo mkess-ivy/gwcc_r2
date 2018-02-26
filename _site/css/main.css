@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #c6ccce; }
+      background: #91bbcf; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -3006,6 +3006,9 @@ body.noScroll {
   cursor: pointer;
   font-family: "Muli", sans-serif;
   font-size: inherit; }
+  @media screen and (min-width: 500px) {
+    .programs_menu_button {
+      width: 170px; } }
   @media screen and (min-width: 992px) {
     .programs_menu_button {
       width: 120px; } }
@@ -3015,7 +3018,12 @@ body.noScroll {
       padding-bottom: 3px; } }
   .programs_menu_button li {
     -webkit-font-smoothing: antialiased;
-    font-size: 22px !important; }
+    font-size: 22px !important;
+    font-family: "Karla", sans-serif;
+    font-weight: normal; }
+    @media screen and (min-width: 500px) {
+      .programs_menu_button li {
+        font-size: 28px !important; } }
     @media screen and (min-width: 768px) {
       .programs_menu_button li {
         width: 130px !important; } }
@@ -3126,3 +3134,14 @@ body.noScroll {
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
   visibility: visible; }
+
+.programs_content_link {
+  margin-top: 15px; }
+  .programs_content_link a {
+    color: #070707;
+    text-transform: uppercase;
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid; }
