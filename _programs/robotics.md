@@ -8,9 +8,9 @@ program_summary: Build confidence while exploring the essential of science, tech
 cover_image: /assets/img/gwcc_programs_overview.jpg
 
 [//]: # Meta Box (Programs Page)
-days: Wednesdays + Thursdays (Weekly)
+days: Wednesday + Thursday (Weekly)
 time: 04:15 pm - 05:15 pm
-audience: Adult + Youth
+audience: Youth
 description: Banjo tote bag bicycle rights. High Life sartorial cray craft beer whatever street art fap.
 
 ---

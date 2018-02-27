@@ -4,7 +4,6 @@ title: GW Podcast
 subtitle: Youth Ages 8 - 13
 program_summary: The GWCC Podcast gives members of the community the opportunity to tell their stories, interview others and hear their voices.
 
-
 [//]: # Cover Image
 cover_image: /assets/img/gwcc_programs_overview.jpg
 

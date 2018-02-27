@@ -8,9 +8,9 @@ program_summary: Through fun ceramic projects the youth will learn basic ceramic
 cover_image: /assets/img/gwcc_programs_overview.jpg
 
 [//]: # Meta Box (Programs Page)
-days: Tuesdays (Weekly)
+days: Tuesday (Weekly)
 time: 04:00 pm - 05:00 pm
-audience: Adult + Youth
+audience: Youth
 description: Banjo tote bag bicycle rights. High Life sartorial cray craft beer whatever street art fap.
 
 ---

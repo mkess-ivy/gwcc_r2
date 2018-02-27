@@ -10,6 +10,6 @@ cover_image: /assets/img/gwcc_programs_overview.jpg
 [//]: # Meta Box (Programs Page)
 days: Mondays (Weekly)
 time: 04:00 pm - 05:00 pm
-audience: Adult + Youth
+audience: Youth
 description: Banjo tote bag bicycle rights. High Life sartorial cray craft beer whatever street art fap.
 ---
