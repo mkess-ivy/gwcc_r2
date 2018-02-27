@@ -90,7 +90,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #bcadc1; }
+      background: #ab929d; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -2188,9 +2188,6 @@ body.noScroll {
     @media screen and (min-width: 992px) {
       .timeline_section .timeline_single {
         margin-bottom: 125px; } }
-    @media screen and (min-width: 1200px) {
-      .timeline_section .timeline_single {
-        margin-bottom: 200px; } }
   @media screen and (min-width: 768px) {
     .timeline_section .timeline_img_wrapper {
       width: 47%; } }

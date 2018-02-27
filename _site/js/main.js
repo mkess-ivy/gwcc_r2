@@ -111,6 +111,4 @@ $(document).ready(function(){
         $('body').removeClass("noScroll");
     });
 
-
-
 }); // Close of jQuery

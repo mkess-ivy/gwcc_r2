@@ -176,9 +176,7 @@
         @include laptop {
             margin-bottom: 125px;
         }
-        @include desktop {
-            margin-bottom: 200px;
-        }
+    
     }
     .timeline_img_wrapper {
         @include tablet {

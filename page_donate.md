@@ -44,7 +44,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $50"
                                 data-item-price="50.00"
                                 data-item-weight="0"
-                                data-item-url="/donate"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $50">
                                     $50
                             </button>
@@ -56,7 +56,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $100"
                                 data-item-price="100.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $100">
                                     $100
                             </button>
@@ -69,7 +69,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $250"
                                 data-item-price="250.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $250">
                                     $250
                             </button>
@@ -81,7 +81,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $500"
                                 data-item-price="500.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $500">
                                     $500
                             </button>
@@ -93,7 +93,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $1000"
                                 data-item-price="1000.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $1000">
                                     $1000
                             </button>
@@ -105,7 +105,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $1500"
                                 data-item-price="1500.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $1500">
                                     $1500
                             </button>
@@ -117,7 +117,7 @@ circle: "#5B978E"
                                 data-item-name="Donate $2500"
                                 data-item-price="2500.00"
                                 data-item-weight="0"
-                                data-item-url="/"
+                                data-item-url="http://server1.svncrwns.com/donate"
                                 data-item-description="Donate $2500">
                                     $2500
                             </button>
