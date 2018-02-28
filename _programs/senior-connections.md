@@ -1,15 +1,13 @@
 ---
 layout: programs
 title: Senior Connections
-subtitle: Adults Only
+audience: Adults Only
 program_summary: Cakes & Convos, Bingo and Adult Literacy courses coming back soon!
 
 [//]: # Cover Image
-cover_image: /assets/img/gwcc_programs_overview.jpg
+cover_image: /assets/img/programs_seniorconnections.jpg
 
 [//]: # Meta Box (Programs Page)
 days: TBA
 time:
-audience: Adult
-description: Banjo tote bag bicycle rights. High Life sartorial cray craft beer whatever street art fap.
 ---

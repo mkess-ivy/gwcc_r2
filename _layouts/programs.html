@@ -8,7 +8,7 @@
 
         <div class="page_masthead">
             {% include header.html %}
-            {% include page_header.html %}
+            {% include grid/page_header.html %}
         </div>
 
         <div class="discover_grid">
@@ -46,7 +46,7 @@
                         {% unless page.title == "Programs" %}
                         <div class="programs_content_meta">
                             <div class="programs_alpha_group">
-                                <div class="programs_content_alpha" style="background-image:url('/assets/img/gwcc_programs_overview.jpg');"></div>
+                                <div class="programs_content_alpha" style="background-image:url('{{ page.cover_image }}');"></div>
                                 <div class="programs_content_beta">
                                     <div class="programs_beta_title">
                                         {{ page.title }}
@@ -67,81 +67,12 @@
                                         </div>
                                         <div class="programs_beta_single">
                                             <div class="programs_beta_description">
-                                                {{ page.description }}
+                                                {{ page.program_summary }}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- <div class="programs_instructors_group">
-                                <div class="instructors_title-group">
-                                    <div class="instructors_title">
-                                        {{ page.title }} Instructors
-                                    </div>
-                                    <div class="instructors_title_bottom">
-                                    </div>
-                                </div>
-
-                                <div class="frow justify-start">
-                                    <div class="instructors_single">
-                                        <div class="frow justify-between">
-                                            <div class="instructors_avatar_group">
-                                                <div class="instructors_avatar" style="background-image:url('{{ page.instructor1_avatar }}');">
-
-                                                </div>
-                                                <div class="instructors_avatar_bottom">
-
-                                                </div>
-                                            </div>
-                                            <div class="instructor_meta">
-                                                <div class="instructors_name">
-                                                    {{ page.instructor1_name }}
-                                                </div>
-                                                <div class="instructors_summary">
-                                                    {{ page.instructor1_description }}
-                                                </div>
-                                                <div>
-                                                    <a class="brand_cta_v2" href="{{ page.instructor1_url }}">
-                                                        <div>
-                                                            + External Link
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {% if page.instructor2_name %}
-                                    <div class="instructors_single">
-                                        <div class="frow justify-between">
-                                            <div class="instructors_avatar_group">
-                                                <div class="instructors_avatar" style="background-image:url('{{ page.instructor2_avatar }}');">
-
-                                                </div>
-                                                <div class="instructors_avatar_bottom">
-
-                                                </div>
-                                            </div>
-                                            <div class="instructor_meta">
-                                                <div class="instructors_name">
-                                                    {{ page.instructor2_name }}
-                                                </div>
-                                                <div class="instructors_summary">
-                                                    {{ page.instructor2_description }}
-                                                </div>
-                                                <div>
-                                                    <a class="brand_cta_v2" href="{{ page.instructor2_url }}">
-                                                        <div>
-                                                            + External Link
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {% endif %}
-                                </div>
-                            </div> -->
                         </div>
                         {% endunless %}
                         {% if page.title == "Programs" %}
@@ -181,11 +112,6 @@
                                         Photography, dance, music, art, theater, and creative writing classes will be offered to youth providing structured learning and performance opportunities that encourage collaboration with other youth and community service through free performances.
                                     </div>
                                 </li>
-                                <!-- <li>
-                                    Programming Commences:
-                                    October-May for After School programming
-                                    June to Labor Day for Summer programming
-                                </li> -->
                             </ul>
 
                             <div class="programs_small_title">Programming Commences:</div>
@@ -204,10 +130,7 @@
             </div>
         </div>
 
-
-
-
-        {% include footer_test.html %}
+        {% include grid/footer.html %}
 
 
   </body>

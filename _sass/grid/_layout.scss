@@ -2,21 +2,26 @@ body.noScroll { /* ...or body.dialogShowing */
 	overflow: hidden;
 }
 
-// Wrapper
-.fullwidth_inner_wrapper {
-	padding: 25px;
+// Grid
+.grid {
+	margin: 0 10px;
 
-	@include palm {
-		padding: 50px;
+	@include small {
+		margin: 0 25px;
 	}
+
+	@include tablet {
+		margin: auto;
+		max-width: 800px;
+		width:80%;
+	}
+
 	@include laptop {
-		padding: 75px;
+		max-width: 950px;
 	}
-	@include desktop {
+
+	@include tv {
 		max-width: 1200px;
-	}
-	@include widescreen {
-		max-width: 1366px;
 	}
 }
 .inner_wrapper {
@@ -25,20 +30,7 @@ body.noScroll { /* ...or body.dialogShowing */
 
 	@include small {
 		margin: 0 auto;
-		// max-width: 375px;
 	}
-	// @include tablet {
-	// 	max-width: 750px;
-	// }
-	// @include laptop {
-	// 	max-width: 950px;
-	// }
-	// @include desktop {
-	// 	max-width: 1150px;
-	// }
-	// @include widescreen {
-	// 	max-width: 1125px;
-	// }
 }
 .outer_wrapper {
 	position: relative;
@@ -56,316 +48,68 @@ body.noScroll { /* ...or body.dialogShowing */
 	padding: 15px;
 	@extend %clearfix;
 }
-.news_wrapper {
-	@extend .inner_wrapper;
-	@include small {
-		max-width: none;
-		width: 100%;
-	}
-	@include tablet {
-		max-width: 750px;
-	}
-	@include laptop {
-		max-width: 950px;
-	}
-	@include widescreen {
-		max-width: 1250px;
-	}
-}
-
-// Flexbox
-.flex-centered {
-	height: 100%;
-	-webkit-justify-content: flex-start !important;
-	-moz-justify-content: flex-start !important;
-	-ms-justify-content: flex-start !important;
-	justify-content: flex-start !important;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-}
-.ios_flex {
-	margin-top: 150px;
-
-	@include laptop {
-		margin: 0;
-	}
-}
 
 // CTAs
-.brand_cta {
-	border: 3px solid;
-	// border-radius: 20px;
-	color: $black;
-	display: block;
-	font-weight: bold;
-	// margin: auto;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	width: 150px;
-	cursor: pointer;
-
-	@include tablet {
-		width: 160px;
-		padding: 7px 10px;
-		font-size: 18px;
-	}
-
-	&:hover {
-		@extend %hover;
-	}
-}
 .brand_cta_v2 {
 	text-decoration: none !important;
-}
-.brand_cta_v2 div {
-	border: 3px solid;
-	color: $black;
-	font-weight: bold;
-	padding: 5px 25px;
-	text-align: center;
-	text-decoration: none !important;
-	width: fit-content;
-	cursor: pointer;
 
-	@include tablet {
-		padding: 7px 25px;
-		font-size: 18px;
-	}
-
-	&.featured_cta {
-		color: $white;
-
-		&:hover {
-			@extend %hover;
-		}
-	}
-
-	&.highlights_cta {
+	div {
+		border: 3px solid;
 		color: $black;
-
-		&:hover {
-			@extend %highlights_hover;
-			// @extend %hover;
-		}
-	}
-	&.nonprofit_btn {
-		margin: auto;
-		text-transform: uppercase;
+		font-weight: bold;
+		padding: 5px 25px;
+		text-align: center;
+		text-decoration: none !important;
+		width: fit-content;
+		cursor: pointer;
 
 		@include tablet {
-			margin: 0;
+			padding: 7px 25px;
+			font-size: 18px;
 		}
-		@include desktop {
-			font-size: 12px;
-			padding: 3px 5px;
-			border: 1px solid $bluegreen;
-			background: $bluegreen;
-		}
-		&:hover {
-			background: $black;
+
+		&.featured_cta {
 			color: $white;
-			border-color: $black;
-		}
-	}
-
-	&:hover {
-		@extend %hover;
-	}
-}
-.margin_center {
-	margin: auto;
-}
-
-// Gold Layout
-// -- Page Masthead
-.page_masthead {
-	// @extend .site_footer;
-	background-size: auto;
-	background-repeat: repeat;
-}
-// -- Page Header
-.page_header_content {
-	padding-top: 50px;
-	padding-bottom: 25px;
-}
-.page_title_content {
-	margin: 0 auto 40px;
-	width: 100%;
-
-	@include palm {
-		margin: 0 0 40px;
-	}
-	@include desktop {
-		margin: 0 0 100px;
-	}
-
-
-	.circle {
-		// background: $yellow;
-		border-radius: 50%;
-		display: inline-block;
-		height: 75px;
-		width: 75px;
-
-		@include desktop {
-			height: 100px;
-			width: 100px;
-		}
-	}
-	.page_title {
-		display: inline-block;
-		font-family: $font-1;
-		font-size: 40px;
-		font-weight: $muli-black;
-		margin-left: -45px;
-		margin-top: 15px;
-		text-transform: uppercase;
-		vertical-align: top;
-
-		@include desktop {
-			font-size: 50px;
-			margin-top: 20px;
-		}
-	}
-}
-.page_subhead {
-	font-size: 20px;
-	line-height: 30px;
-	padding-bottom: 125px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-
-	@include palm {
-		margin-bottom: 100px;
-		text-align: left;
-	}
-	@include tablet {
-		width: 75%;
-	}
-	@include laptop {
-		float: left;
-		margin-top: 0;
-		max-width: 600px;
-		width: 70%;
-	}
-	@include desktop {
-		font-size: 24px;
-		line-height: 34px;
-		max-width: 700px;
-	}
-
-	.page_subhead_title {
-		font-family: $font-1;
-		font-size: 28px;
-		font-weight: $muli-black;
-		margin-bottom: 25px;
-		text-transform: uppercase;
-
-		@include desktop {
-			font-size: 32px;
-		}
-	}
-}
-.page_subhead_content {
-	@extend %clearfix;
-}
-// -- Side Menu
-.side_menu {
-	border-top: 1px solid $yellow;
-	margin: 0 auto 75px;
-	padding-top: 30px;
-	text-align: center;
-	width: 45%;
-
-	@include palm {
-		margin: 0 0 70px;
-		text-align: left;
-		width: 35%;
-	}
-	@include tablet {
-		max-width: 150px;
-	}
-	@include laptop {
-		float: left;
-		margin-right: 100px;
-	}
-	@include widescreen {
-		margin-right: 200px;
-	}
-
-	ul li {
-		font-family: $font-1;
-		font-size: 18px;
-		font-weight: $muli-black;
-		line-height: 23px;
-		margin-bottom: 20px;
-		text-transform: uppercase;
-
-		a {
-			color: $black;
-			text-decoration: none;
 
 			&:hover {
 				@extend %hover;
 			}
 		}
+
+		&.highlights_cta {
+			color: $black;
+
+			&:hover {
+				@extend %highlights_hover;
+			}
+		}
+		&.nonprofit_btn {
+			margin: auto;
+			text-transform: uppercase;
+
+			@include tablet {
+				margin: 0;
+			}
+			@include desktop {
+				font-size: 12px;
+				padding: 3px 5px;
+				border: 1px solid $bluegreen;
+				background: $bluegreen;
+			}
+			&:hover {
+				background: $black;
+				color: $white;
+				border-color: $black;
+			}
+		}
+
+		&:hover {
+			@extend %hover;
+		}
 	}
 }
 
 
-// Spacers + Misc
-.white_wrap {
-	white-space: nowrap;
-}
-.line_through {
-	&:hover {
-		text-decoration: line-through;
-		cursor: default;
-	}
-}
-
-// Links
-.volunteer_link {
-	font-weight: $font-bold;
-	text-decoration: none;
-	color: $black;
-
-	&:hover {
-		@extend %hover;
-	}
-}
-
-// Fullwidth BG
-.fullwidth_bg {
-    width: 100%;
-    background: $lightgrey;
-}
-
-// Grid
-.grid {
-	margin: 0 10px;
-
-	@include small {
-		margin: 0 25px;
-	}
-
-	@include tablet {
-		margin: auto;
-		max-width: 800px;
-	}
-
-	@include laptop {
-		max-width: 950px;
-	}
-
-	@include tv {
-		max-width: 1200px;
-	}
-}
 
 // Misc
 .bold {
@@ -374,9 +118,6 @@ body.noScroll { /* ...or body.dialogShowing */
 .vertical-align {
 	align-items: start !important;
 }
-.plain_typeform_link {
-	color: $white !important;
-	text-decoration: none !important;
-	border-bottom: 2px solid;
-	font-size: inherit;
+.margin_center {
+	margin: auto;
 }

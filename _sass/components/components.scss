@@ -14,6 +14,56 @@
   background: url(/assets/img/Preloader.gif) center no-repeat #fff;
 }
 
+
+// Page Masthead
+.page_masthead {
+	background-size: auto;
+	background-repeat: repeat;
+}
+// -- Page Header
+.page_header_content {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+.page_title_content {
+	margin: 0 auto 40px;
+	width: 100%;
+
+	@include palm {
+		margin: 0 0 40px;
+	}
+	@include desktop {
+		margin: 0 0 100px;
+	}
+
+	.circle {
+		border-radius: 50%;
+		display: inline-block;
+		height: 75px;
+		width: 75px;
+
+		@include desktop {
+			height: 100px;
+			width: 100px;
+		}
+	}
+	.page_title {
+		display: inline-block;
+		font-family: $font-1;
+		font-size: 40px;
+		font-weight: $muli-black;
+		margin-left: -45px;
+		margin-top: 15px;
+		text-transform: uppercase;
+		vertical-align: top;
+
+		@include desktop {
+			font-size: 50px;
+			margin-top: 20px;
+		}
+	}
+}
+
 // Video Background
 #video-background {
   position: fixed;

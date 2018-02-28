@@ -1,16 +1,14 @@
 ---
 layout: programs
 title: Robotics
-subtitle: Youth Ages 8 - 13
+audience: Youth Ages 8 - 13
 program_summary: Build confidence while exploring the essential of science, technology, engineering and mathematical concepts through hands-on learning.
 
 [//]: # Cover Image
-cover_image: /assets/img/gwcc_programs_overview.jpg
+cover_image: /assets/img/programs_robotics.jpg
 
 [//]: # Meta Box (Programs Page)
 days: Wednesday + Thursday (Weekly)
 time: 04:15 pm - 05:15 pm
-audience: Youth
-description: Banjo tote bag bicycle rights. High Life sartorial cray craft beer whatever street art fap.
 
 ---
