@@ -1,8 +1,9 @@
 .site_footer {
-    background-color: $white;
-    background-repeat: no-repeat;
+    // background-color: $white;
+    background-image:url('/assets/img/texture_background.jpg');
+    background-repeat: repeat;
     background-position: 2% 7%;
-    background-size: cover;
+    background-size: auto;
     padding-top: 50px;
     position: relative;
 

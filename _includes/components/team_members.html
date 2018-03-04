@@ -1,5 +1,7 @@
 <div class="people_single">
-    <a href="{{ item.external_link }}" target="_blank"><div class="people_single_avatar " style="background-image:url('{{ item.avatar }}');"></div></a>
+    {% if item.external_link %}<a href="{{ item.external_link }}" target="_blank">{% endif %}
+        <div class="people_single_avatar " style="background-image:url('{{ item.avatar }}');"></div>
+    {% if item.external_link %}</a>{% endif %}
 
     <div class="people_single_name">
         {{ item.title }}

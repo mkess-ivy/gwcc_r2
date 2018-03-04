@@ -68,7 +68,7 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead" style="background-image:url('/assets/img/dots.png');">
+        <div class="page_masthead" style="background-image:url('/assets/img/texture_background.jpg');">
             <header class="site_header outer_wrapper ">
 
     <div class="frow justify-between">
@@ -611,22 +611,23 @@
 
             <div class="page_header_content inner_wrapper">
     <div class="page_title_content">
-        <div class="circle" style="background: #47E7CE"></div>
+        <div class="circle" style="background: #FA879E"></div>
         <div class="page_title">Community</div>
     </div>
 </div>
 
         </div>
 
-        <div class="history_group mapbox_wrapper">
-    <div class="map_title">
-            Greenmount West Campus<br />
-            <span>(zoom)</span>
-    </div>
-    <div id="map">
+        <section class="textured_bg">
+    <div class="history_group mapbox_wrapper">
+        <div class="map_title">
+                Greenmount West Campus<br />
+                <span>(zoom)</span>
+        </div>
+        <div id="map">
 
-    </div>
-    <script>
+        </div>
+        <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3djY2JhbHRpbW9yZSIsImEiOiJjamUzNTdtems2dmloMzNwMHVoejgzZTdtIn0.q6O1IPH7MpHO6J4Zf99fQQ'; // replace this with your access token
 var map = new mapboxgl.Map({
   container: 'map',
@@ -652,25 +653,25 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 });
 </script>
 
-</div>
+    </div>
 
-<div class="discover_grid">
-    <div class="give_meta">
-        <div class="give_quote_group">
-            <div class="give_quote">
-                Greenmount West Community Center sits on a beautiful campus filled with resources and maker spaces
+    <div class="discover_grid">
+        <div class="give_meta">
+            <div class="give_quote_group">
+                <div class="give_quote">
+                    Greenmount West Community Center sits on a beautiful campus filled with resources and maker spaces
 
+                </div>
+                <div class="highlight_quote_bottom"></div>
             </div>
-            <div class="highlight_quote_bottom"></div>
-        </div>
 
 
-        <div class="category_group">
-            <div class="category_title">
-                Maker + Gallery Spaces
-            </div>
-            <div class="frow justify-start">
-            
+            <div class="category_group js_discover_reveal">
+                <div class="category_title">
+                    Maker + Gallery Spaces
+                </div>
+                <div class="frow justify-start">
+                
 <div class="section_group">
     <div class="section_title"><a href="www.area405.com">Area 405</a></div>
     <div class="section_location">
@@ -704,16 +705,16 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 </div>
 
 
+                </div>
             </div>
-        </div>
 
 
-        <div class="category_group">
-            <div class="category_title">
-                Recreational Spaces
-            </div>
-            <div class="frow justify-start">
-            
+            <div class="category_group js_discover_reveal">
+                <div class="category_title">
+                    Recreational Spaces
+                </div>
+                <div class="frow justify-start">
+                
 <div class="section_group">
     <div class="section_title">Wonderground</div>
     <div class="section_location">
@@ -738,16 +739,24 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 
 </div>
 
+<div class="section_group">
+    <div class="section_title">The Cork Factory</div>
+    <div class="section_location">
+        302 Federal Street
+    </div>
 
-            </div>
-        </div>
+</div>
 
-        <div class="category_group">
-            <div class="category_title">
-                Schools + Transportation Hub
+
+                </div>
             </div>
-            <div class="frow justify-start">
-            
+
+            <div class="category_group js_discover_reveal">
+                <div class="category_title">
+                    Schools + Transportation Hub
+                </div>
+                <div class="frow justify-start">
+                
 <div class="section_group">
     <div class="section_title"><a href="http://baltimoredesignschool.com/">Baltimore Design School</a></div>
     <div class="section_location">
@@ -773,15 +782,15 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 </div>
 
 
+                </div>
             </div>
-        </div>
 
-        <div class="category_group">
-            <div class="category_title">
-                Community Resources
-            </div>
-            <div class="frow justify-start">
-                
+            <div class="category_group js_discover_reveal">
+                <div class="category_title">
+                    Community Resources
+                </div>
+                <div class="frow justify-start">
+                    
 <div class="section_group">
     <div class="section_title"><a href="https://www.iotaphitheta.org/">IOTA House</a></div>
     <div class="section_location">
@@ -798,11 +807,20 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 
 </div>
 
+<div class="section_group">
+    <div class="section_title">The Annex</div>
+    <div class="section_location">
+        122 West Lanvale Street
+    </div>
 
+</div>
+
+
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
         <footer class="site_footer js_scroll_reveal">
@@ -967,6 +985,7 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
                                             text-align: center;
                                             font-weight: 900;
                                             font-size: 14px;
+                                            cursor: none;
                                         }
                                         #mc_embed_signup input.email {
                                             width: 77%;
@@ -1061,7 +1080,7 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
 
     </div>
 </div>
-
+</footer>
 <!-- Javascript CDN -->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -1093,15 +1112,15 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
         opacity: 0.5,
         duration: 700,
         easing: 'ease-in-out'
-    })
+    });
     sr.reveal('.js_programs_overlay', {
         duration: 1000
     });
     sr.reveal('.js_discover_reveal', {
-        reset: true,
+        reset: false,
         easing: 'ease-in',
         duration: 700
-    })
+    });
 </script>
 
 <!-- Scripts -->

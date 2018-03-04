@@ -2,16 +2,13 @@
 layout: bronze
 title: Discover
 permalink: /discover/
-
-[//]: # Page Header
-circle: "#47E7CE"
 ---
 
-<div class="mission_group color_overlay" style="background-image:url('/assets/img/penn_station_team.jpg')">
+<div class="mission_group discover_overlay" style="background-image:url('/assets/img/gwcc_discover_cover.jpg')">
     <div class="discover_grid">
         <div class="mission_meta">
             <div class="frow justify-between">
-                <div class="mission_single">
+                <div class="mission_single animated fadeIn">
                     <div class="mission_title">
                         Mission
                     </div>
@@ -19,7 +16,7 @@ circle: "#47E7CE"
                         The mission of GWCC is to empower the youth and their families through sustainable programming and innovative partnerships in a safe, community art space.
                     </div>
                 </div>
-                <div class="mission_single">
+                <div class="mission_single animated fadeIn">
                     <div class="mission_title">
                         Vision
                     </div>
@@ -33,9 +30,9 @@ circle: "#47E7CE"
 </div>
 
 <section class="textured_bg" style="background-image:url('/assets/img/texture_background.jpg');">
-    <div class="yellow_lines ">
-        <div class="yellow_single animated rubberBand"></div>
-        <div class="yellow_single two animated rubberBand"></div>
+    <div class="animated_lines ">
+        <div class="animated_line_single animated rubberBand"></div>
+        <div class="animated_line_single alt_single animated rubberBand"></div>
     </div>
 
     <!-- Discover Prime -->
@@ -46,7 +43,9 @@ circle: "#47E7CE"
             {% if thecycle == 'odd' %}
             <div class="discover_prime_single js_discover_reveal">
                 <div class="frow justify-between">
-                    <div class="discover_prime_image discover_overlay" style="background-image: url('{{ item.bg }}');"></div>
+                    <!-- <a href="{{ item.url }}"> -->
+                        <div class="discover_prime_image highlights_overlay" style="background-image: url('{{ item.bg }}');"></div>
+                    <!-- </a> -->
                     <div class="discover_prime_meta">
                         <div class="frow centered-column vertical-align">
                             <div class="discover_prime_title">
@@ -68,7 +67,7 @@ circle: "#47E7CE"
             {% if thecycle == 'even' %}
             <div class="discover_prime_single js_discover_reveal">
                 <div class="frow justify-between direction-reverse">
-                    <div class="discover_prime_image discover_overlay" style="background-image: url('{{ item.bg }}');"></div>
+                    <div class="discover_prime_image highlights_overlay" style="background-image: url('{{ item.bg }}');"></div>
                     <div class="discover_prime_meta">
                         <div class="frow centered-column vertical-align">
                             <div class="discover_prime_title">
@@ -94,7 +93,7 @@ circle: "#47E7CE"
             <div class="frow justify-between">
                 <div class="discover_alt_single">
                     <div class="discover_img_group">
-                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_volunteer.jpg');"></div>
+                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_discover_volunteer.jpg');"></div>
                         <div class="discover_alt_solid"></div>
                     </div>
                     <div class="discover_alt_title">
@@ -107,7 +106,7 @@ circle: "#47E7CE"
                 </div>
                 <div class="discover_alt_single">
                     <div class="discover_img_group">
-                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_donate.jpg');"></div>
+                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_discover_donate.jpg');"></div>
                         <div class="discover_alt_solid"></div>
                     </div>
                     <div class="discover_alt_title">
@@ -122,7 +121,7 @@ circle: "#47E7CE"
                 </div>
                 <div class="discover_alt_single">
                     <div class="discover_img_group">
-                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_spaceuse.jpg');"></div>
+                        <div class="discover_alt_image" style="background-image:url('/assets/img/gwcc_discover_spaceuse.jpg');"></div>
                         <div class="discover_alt_solid"></div>
                     </div>
                     <div class="discover_alt_title">

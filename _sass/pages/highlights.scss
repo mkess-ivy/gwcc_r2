@@ -3,20 +3,25 @@
     @extend .mission_group;
 
     .highlights_meta {
-        height: 85vh;
+        height: 50vh;
         // height: 75vh;
         // padding: 25px 20px;
         padding: 15px;
         position: relative;
 
+        @include palm {
+            padding: 25px;
+        }
         @include tablet {
-            padding: 25px 20px;
+            padding: 25px 0;
         }
         @include desktop {
-            height: 75vh;
+            // height: 75vh;
+            height: 60vh;
         }
         @include widescreen {
-            height: 85vh;
+            // height: 85vh;
+            height: 67vh;
         }
 
         .featured {
@@ -38,6 +43,10 @@
             position: absolute;
             bottom: 1em;
 
+            @include palm {
+                bottom: 2em;
+            }
+
             @include tablet {
                 bottom: 3em;
             }
@@ -47,29 +56,33 @@
             }
         }
         .featured_title {
-            font-size: 28px;
+            font-size: 40px;
             // font-size: 50px;
             font-family: $font-1;
             font-weight: $muli-black;
             color: $white;
-            margin-bottom: 3px;
+            margin-bottom: 10px;
             text-shadow: 1px 1px #361d0d;
 
+            @include palm {
+                font-size: 48px;
+            }
             @include tablet {
-                font-size: 50px;
+                font-size: 60px;
             }
             @include laptop {
-                width: 70%;
+                width: 100%;
             }
             @include widescreen {
                 font-size: 65px;
             }
         }
         .featured_summary {
-            // font-size: 20px;
+            font-size: 20px;
             color: $white;
             margin-bottom: 15px;
-            line-height: 1;
+            line-height: 1.2;
+            padding-right: 1em;
 
             @include palm {
                 padding-right: 4em;
@@ -87,11 +100,14 @@
     }
 }
 .highlights_items_meta {
-    margin: 50px 15px 150px;
+    // margin: 50px 15px 150px;
+    padding: 3em 0;
+    width: 90%;
+    margin: 0 auto;
 
     @include palm {
         max-width: 500px;
-        margin: 100px auto 150px;
+        // margin: 100px auto 150px;
     }
 
     @include tablet {
@@ -100,25 +116,28 @@
     }
 
     @include laptop {
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
     }
 
     .highlights_item {
-        margin-bottom: 75px;
+        // margin-bottom: 75px;
         width: 100%;
+        padding-bottom: 3em;
+        border-bottom: 2px solid;
+        margin-bottom: 3em;
 
         &:last-child {
-            margin-bottom: 0;
+            border-bottom: 0;
         }
 
         @include laptop {
-            width: 48%;
+            width: 90%;
         }
         @include desktop {
-            width: 46%;
+            // width: 46%;
         }
         @include widescreen {
-            width: 44%;
+            // width: 44%;
         }
 
         a {
@@ -146,24 +165,7 @@
                 height: 58vh;
             }
         }
-        .highlights_overlay {
-            position: relative;
-        }
-        .highlights_overlay:before{
-          position: absolute;
-          content:" ";
-          top:0;
-          left:0;
-          width:100%;
-          height:100%;
-          display: none;
-          z-index:0;
-        }
-
-        .highlights_overlay:hover:before{
-          display: block;
-          background-color: rgba($bluegreen, 0.45);
-        }
+        
         .highlights_item_cover * {
             position: relative;
             /* hack */
@@ -176,21 +178,25 @@
             margin-bottom: 15px;
 
             @include palm {
-                font-size: 28px;
-                width: 75%;
+                font-size: 34px;
+                width: 90%;
             }
 
             @include tablet {
-                font-size: 34px;
+                font-size: 40px;
             }
 
             @include laptop {
                 width: 90%;
-                font-size: 28px;
+                font-size: 36px;
+            }
+            @include widescreen {
+                font-size: 40px;
+                width: 65%;
             }
             @include tv {
-                font-size: 36px;
-                padding-right: 3em;
+                // font-size: 36px;
+                // padding-right: 3em;
             }
 
             a {
@@ -204,15 +210,19 @@
         }
         .highlights_item_summary {
             // font-size: 18px;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             line-height: 1.2;
 
             @include palm {
                 font-size: 22px;
                 padding-right: 1.5em;
             }
-            @include laptop {
+            @include tablet {
                 font-size: 20px;
+            }
+            @include laptop {
+                // font-size: 20px;
+                width: 60%;
             }
         }
     }

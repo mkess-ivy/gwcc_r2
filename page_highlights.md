@@ -39,13 +39,13 @@ circle: "#47E7CE"
 </div>
 {% endfor %}
 
+<section class="textured_bg">
 <div class="discover_grid">
     <div class="highlights_items_meta">
         <div class="frow justify-between">
             {% assign my_non_featured_post = site.posts | where: "featured", false %}
             {% for post in my_non_featured_post reversed %}
-            <div class="highlights_item">
-                <a href="{{ post.url }}"><div class="highlights_item_cover highlights_overlay" style="background-image:url('{{ post.cover }}');"></div></a>
+            <div class="highlights_item js_discover_reveal">
                 <div class="highlights_item_title">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </div>
@@ -60,3 +60,4 @@ circle: "#47E7CE"
         </div>
     </div>
 </div>
+</section>

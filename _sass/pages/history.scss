@@ -66,19 +66,23 @@
     }
 }
 .history_content {
-    padding: 9em 0;
+    padding: 4em 0;
 
     @include palm {
-        padding: 0;
+        padding: 5em 0;
         margin: auto;
         width:90%;
-        top: 21vh;
+        // top: 21vh;
+    }
+    @include tablet {
+        padding: 2.5em 0;
     }
     @include laptop {
         width: 100%;
+        padding: 4em 0 0;
     }
     @include desktop {
-        top: 11em;
+        padding-top: 8em;
     }
 }
 .history_masthead {
@@ -86,14 +90,17 @@
     color: $white;
     width:90%;
     margin: auto;
+    @include mx_animated(1s,2s,1);
 
     @include laptop {
         width: 50%;
         margin: 0;
         text-align: left;
+        padding-top: 4em;
     }
     @include desktop {
         width: 50%;
+
     }
     @include widescreen {
         width: 45%;
@@ -111,7 +118,7 @@
             font-size: 30px;
         }
         @include laptop {
-            font-size: 48px;
+            font-size: 40px;
         }
     }
     .history_masthead_subtitle {
@@ -154,6 +161,7 @@
 }
 .timeline_section {
     padding: 65px 10px 65px 14%;
+    @extend %texture_background;
 
     @include palm {
         // padding: 65px 10px 65px 130px;
@@ -300,5 +308,25 @@
     }
     div {
         margin-top: 15px;
+    }
+}
+.history_left_panel {
+    background-image: url('/assets/img/history_icon.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // height: 50vh;
+    height: 15vh;
+    // width: 50%;
+    width: 100%;
+    margin-bottom: 25px;
+    @include mx_animated(1s,2s,1);
+
+    @include tablet {
+        height: 25vh;
+    }
+    @include laptop {
+        width: 50%;
+        height: 45vh;
     }
 }

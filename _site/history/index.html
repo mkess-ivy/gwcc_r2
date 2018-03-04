@@ -593,19 +593,21 @@
 
             <div class="page_header_content inner_wrapper">
     <div class="page_title_content">
-        <div class="circle" style="background: #47E7CE"></div>
+        <div class="circle" style="background: #FA879E"></div>
         <div class="page_title">History</div>
     </div>
 </div>
 
         </div>
 
-        <div class="history_group dark_overlay" style="background-image: url('/assets/img/history_cover.jpg');">
+        <div class="history_group discover_overlay" style="background-image: url('/assets/img/history_cover.jpg');">
     <div class="discover_grid">
         <div class="frow centered">
             <div class="history_content">
-                <div class="frow justify-end">
-                    <div class="history_masthead">
+                <div class="frow justify-between">
+                    <div class="history_left_panel animated fadeIn"></div>
+
+                    <div class="history_masthead animated fadeIn">
                         <div class="history_masthead_title">
                             At GWCC, we thrive on building with our community.
                         </div>
@@ -613,6 +615,7 @@
                             Learn how much we have been able to accomplish in under one year of re-establishing the center in the Greenmount West neighborhood in Baltimore,&nbsp;Maryland
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -625,13 +628,13 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between">
                     
 <div class="timeline_img_wrapper">
     <div class="frow centered-column">
         <div class="timeline_img">
-            <img src="/assets/img/timeline_march17_event.jpg" />
+            <img src="/assets/img/timeline_renovations.png" />
         </div>
     </div>
 
@@ -662,7 +665,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between direction-reverse">
                     
 <div class="timeline_img_wrapper">
@@ -697,7 +700,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between">
                     
 <div class="timeline_img_wrapper">
@@ -752,7 +755,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between direction-reverse">
                     
 <div class="timeline_img_wrapper">
@@ -787,13 +790,13 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between">
                     
 <div class="timeline_img_wrapper">
     <div class="frow centered-column">
         <div class="timeline_img">
-            <img src="/assets/img/timeline_june17_event.jpg" />
+            <img src="/assets/img/timeline_hersheypark.png" />
         </div>
     </div>
 
@@ -842,13 +845,13 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between direction-reverse">
                     
 <div class="timeline_img_wrapper">
     <div class="frow centered-column">
         <div class="timeline_img">
-            <img src="/assets/img/timeline_september17_event.jpg" />
+            <img src="/assets/img/timeline_bma_bradford.png" />
         </div>
     </div>
 
@@ -877,7 +880,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between">
                     
 <div class="timeline_img_wrapper">
@@ -914,7 +917,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between direction-reverse">
                     
 <div class="timeline_img_wrapper">
@@ -949,7 +952,7 @@
             
             
             
-            <div class="timeline_single">
+            <div class="timeline_single js_discover_reveal">
                 <div class="frow justify-between">
                     
 <div class="timeline_img_wrapper">
@@ -1150,6 +1153,7 @@
                                             text-align: center;
                                             font-weight: 900;
                                             font-size: 14px;
+                                            cursor: none;
                                         }
                                         #mc_embed_signup input.email {
                                             width: 77%;
@@ -1244,7 +1248,7 @@
 
     </div>
 </div>
-
+</footer>
 <!-- Javascript CDN -->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -1276,15 +1280,15 @@
         opacity: 0.5,
         duration: 700,
         easing: 'ease-in-out'
-    })
+    });
     sr.reveal('.js_programs_overlay', {
         duration: 1000
     });
     sr.reveal('.js_discover_reveal', {
-        reset: true,
+        reset: false,
         easing: 'ease-in',
         duration: 700
-    })
+    });
 </script>
 
 <!-- Scripts -->

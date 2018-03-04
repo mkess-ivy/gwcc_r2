@@ -37,10 +37,10 @@ body.noScroll { /* ...or body.dialogShowing */
     padding: 15px;
 
 	@include laptop {
-		padding: 35px;
+		padding: 35px 35px 0;
 	}
 	@include desktop {
-		padding: 20px 35px 35px;
+		padding: 20px 35px 0;
 	}
 }
 .single_template_outer_wrapper {

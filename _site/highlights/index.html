@@ -593,7 +593,7 @@
 
             <div class="page_header_content inner_wrapper">
     <div class="page_title_content">
-        <div class="circle" style="background: #47E7CE"></div>
+        <div class="circle" style="background: #FA879E"></div>
         <div class="page_title">Highlights</div>
     </div>
 </div>
@@ -630,13 +630,13 @@
     </div>
 </div>
 
+<section class="textured_bg">
 <div class="discover_grid">
     <div class="highlights_items_meta">
         <div class="frow justify-between">
             
             
-            <div class="highlights_item">
-                <a href="/highlights/around-gwcc-podcast-1/"><div class="highlights_item_cover highlights_overlay" style="background-image:url('/assets/img/gwcc_highlights_podcast.jpg');"></div></a>
+            <div class="highlights_item js_discover_reveal">
                 <div class="highlights_item_title">
                     <a href="/highlights/around-gwcc-podcast-1/">Listen to Around GWCC Podcast #001</a>
                 </div>
@@ -648,8 +648,7 @@
                 </div></a>
             </div>
             
-            <div class="highlights_item">
-                <a href="/highlights/runners-club/"><div class="highlights_item_cover highlights_overlay" style="background-image:url('/assets/img/gwcc_highlights_exhibit.jpg');"></div></a>
+            <div class="highlights_item js_discover_reveal">
                 <div class="highlights_item_title">
                     <a href="/highlights/runners-club/">The Runners Club Interview, Lit Relays open April 2018</a>
                 </div>
@@ -661,8 +660,7 @@
                 </div></a>
             </div>
             
-            <div class="highlights_item">
-                <a href="/highlights/light-city/"><div class="highlights_item_cover highlights_overlay" style="background-image:url('/assets/img/gwcc_highlights_lightcity.jpg');"></div></a>
+            <div class="highlights_item js_discover_reveal">
                 <div class="highlights_item_title">
                     <a href="/highlights/light-city/">Pop-Up Shop, Lit Relays, Hello Light City</a>
                 </div>
@@ -674,8 +672,7 @@
                 </div></a>
             </div>
             
-            <div class="highlights_item">
-                <a href="/highlights/gwcc-youth-exhibit/"><div class="highlights_item_cover highlights_overlay" style="background-image:url('/assets/img/gwcc_highlights_exhibit.jpg');"></div></a>
+            <div class="highlights_item js_discover_reveal">
                 <div class="highlights_item_title">
                     <a href="/highlights/gwcc-youth-exhibit/">GWCC Youth to unveil photo + film exhibit, Life + Times</a>
                 </div>
@@ -690,6 +687,7 @@
         </div>
     </div>
 </div>
+</section>
 
 
         <footer class="site_footer js_scroll_reveal">
@@ -854,6 +852,7 @@
                                             text-align: center;
                                             font-weight: 900;
                                             font-size: 14px;
+                                            cursor: none;
                                         }
                                         #mc_embed_signup input.email {
                                             width: 77%;
@@ -948,7 +947,7 @@
 
     </div>
 </div>
-
+</footer>
 <!-- Javascript CDN -->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -980,15 +979,15 @@
         opacity: 0.5,
         duration: 700,
         easing: 'ease-in-out'
-    })
+    });
     sr.reveal('.js_programs_overlay', {
         duration: 1000
     });
     sr.reveal('.js_discover_reveal', {
-        reset: true,
+        reset: false,
         easing: 'ease-in',
         duration: 700
-    })
+    });
 </script>
 
 <!-- Scripts -->

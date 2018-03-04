@@ -50,7 +50,7 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead">
+        <div class="page_masthead" style="background-image:url('/assets/img/texture_background.jpg');">
             <header class="site_header outer_wrapper ">
 
     <div class="frow justify-between">
@@ -593,52 +593,53 @@
 
             <div class="page_header_content inner_wrapper">
     <div class="page_title_content">
-        <div class="circle" style="background: #47e7ce"></div>
+        <div class="circle" style="background: #FA879E"></div>
         <div class="page_title">People</div>
     </div>
 </div>
 
         </div>
 
-        <div class="discover_grid">
-            <div class="programs_group">
-                <div class="frow justify-between">
-                    <div class="programs_menu">
-                        <div class="programs_menu_btn_2" id="js_programs_menu_btn">
-                            <a href="#">Teams Menu</a>
-                        </div>
-                        <ul id="programs_menu_list">
-                            
-                            
-                            
-                            <li>
-                                <a href="/people/staff/">Staff</a>
-                            </li>
-                            
-                            
-                            
-                            <li>
-                                <a href="/people/partners/">Partners</a>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-
-                    <div class="people_content_group">
-
-                        <div class="people_content_meta">
-                            <div class="frow justify-between">
-                                
+        <section class="textured_bg">
+            <div class="discover_grid">
+                <div class="programs_group">
+                    <div class="frow justify-between">
+                        <div class="programs_menu">
+                            <div class="programs_menu_btn_2" id="js_programs_menu_btn">
+                                <a href="#">Teams Menu</a>
                             </div>
-
+                            <ul id="programs_menu_list">
+                                
+                                
+                                
+                                <li>
+                                    <a href="/people/staff/">Staff</a>
+                                </li>
+                                
+                                
+                                
+                                <li>
+                                    <a href="/people/partners/">Partners</a>
+                                </li>
+                                
+                                
+                            </ul>
                         </div>
 
-                    </div>
+                        <div class="people_content_group">
 
+                            <div class="people_content_meta">
+                                <div class="frow justify-between">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
 
         <footer class="site_footer js_scroll_reveal">
     <div class="footer_grid">
@@ -802,6 +803,7 @@
                                             text-align: center;
                                             font-weight: 900;
                                             font-size: 14px;
+                                            cursor: none;
                                         }
                                         #mc_embed_signup input.email {
                                             width: 77%;
@@ -896,7 +898,7 @@
 
     </div>
 </div>
-
+</footer>
 <!-- Javascript CDN -->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -928,15 +930,15 @@
         opacity: 0.5,
         duration: 700,
         easing: 'ease-in-out'
-    })
+    });
     sr.reveal('.js_programs_overlay', {
         duration: 1000
     });
     sr.reveal('.js_discover_reveal', {
-        reset: true,
+        reset: false,
         easing: 'ease-in',
         duration: 700
-    })
+    });
 </script>
 
 <!-- Scripts -->

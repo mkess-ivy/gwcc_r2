@@ -5,7 +5,7 @@ subtitle: Youth Ages 8 - 13
 program_summary: In Noisy Ventures, our youth have the opportunity to develop their own businesses within the community.
 
 [//]: # Cover Image
-cover_image: /assets/img/gwcc_programs_overview.jpg
+cover_image: /assets/img/programs_noisyventures.jpg
 
 [//]: # Meta Box (Programs Page)
 days: Mondays (Weekly)

@@ -118,6 +118,7 @@
     height: 40vh;
     width: 100%;
     position: relative;
+    background-position: center center;
 
     @include palm {
         height: 50vh;

@@ -16,8 +16,7 @@
 
 // Textured Background
 .textured_bg {
-    background-repeat: repeat;
-    background-size: auto;
+    @extend %texture_background;
 }
 
 // Page Masthead
@@ -210,7 +209,7 @@
 }
 
 .color_overlay:before{
-  @include color_overlay($orange, 0.6);
+  @include color_overlay($bluegreen, 0.45);
 }
 .dark_overlay:before{
     @include color_overlay($darkgray, 0.65);
@@ -502,13 +501,13 @@
 }
 
 // Yellow Lines Animated
-.yellow_lines {
+.animated_lines {
     position: relative;
     margin:30px 0 0 75px;
     padding-bottom: 0;
     transform: rotate(30deg);
     display: inline-block;
-
+    z-index: 3;
 
     @include palm {
         margin: 0 0 0 125px;
@@ -517,11 +516,11 @@
         margin: 0 0 0 125px;
     }
     @include desktop {
-        margin: 0 0 0 150px;
+        margin: 0 0 0 300px;
     }
 
-    .yellow_single {
-        background: $yellow;
+    .animated_line_single {
+        background: #FA879E;
         width: 2px;
         height: 150px;
         display: inline-block;
@@ -533,16 +532,16 @@
         -webkit-animation-iteration-count:infinite;
 
         @include desktop {
-            top: -6em;
-            height: 200px;
+            top: 1em;
+            height: 400px;
         }
 
-        &.two {
+        &.alt_single {
             top: -2.5em;
             left: 7px;
 
             @include desktop {
-                top: -4em;
+                top: 3em;
                 left: 10px;
             }
         }

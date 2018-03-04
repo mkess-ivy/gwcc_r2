@@ -7,7 +7,7 @@ permalink: /computers-and-library/
 circle: "#47E7CE"
 ---
 
-<div class="history_group" style="background-image: url('/assets/img/computers_library_cover.jpg');">
+<div class="history_group discover_overlay" style="background-image: url('/assets/img/gwcc_publiccomputers.jpg');">
 </div>
 
 <div class="discover_grid">
