@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <div class="page_masthead" style="background-image:url('/assets/img/dots.png');">
+            {% include header.html %}
+            {% include grid/page_header.html %}
+        </div>
+
+        {{ content }}
+
+        {% include grid/footer.html %}
+
+  </body>
+
+</html>

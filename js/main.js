@@ -1,11 +1,5 @@
-$(document).ready(function(){
 
-    // DelayReveal
-    // $(function(){
-    //     setTimeout(function(){
-    //         $("#delayReveal").show();
-    //     }, 1500);
-    // });
+$(document).ready(function(){
 
     // site preloader
     $(window).load(function(){
@@ -21,19 +15,14 @@ $(document).ready(function(){
     $('.accordion-item .heading').on('click', function(e) {
         e.preventDefault();
 
-        // Add the correct active class
         if($(this).closest('.accordion-item').hasClass('active')) {
-            // Remove active classes
             $('.accordion-item').removeClass('active');
         } else {
-            // Remove active classes
-            $('.accordion-item').removeClass('active');
 
-            // Add the active class
+            $('.accordion-item').removeClass('active');
             $(this).closest('.accordion-item').addClass('active');
         }
 
-        // Show the content
         var $content = $(this).next();
         $content.slideToggle(100);
         $('.accordion-item .content').not($content).slideUp('fast');
@@ -43,23 +32,20 @@ $(document).ready(function(){
     $('.docs-accordion-item .docs-heading').on('click', function(e) {
         e.preventDefault();
 
-        // Add the correct active class
         if($(this).closest('.docs-accordion-item').hasClass('active')) {
-            // Remove active classes
+
             $('.docs-accordion-item').removeClass('active');
         } else {
-            // Remove active classes
             $('.docs-accordion-item').removeClass('active');
 
-            // Add the active class
             $(this).closest('.docs-accordion-item').addClass('active');
         }
 
-        // Show the content
         var $content = $(this).next();
         $content.slideToggle(100);
         $('.docs-accordion-item .docs-content').not($content).slideUp('fast');
     });
+
 
     // Smooth Scroll
     $('a[href^="#top"]').on('click',function (e) {
@@ -75,8 +61,6 @@ $(document).ready(function(){
         });
     });
 
-    // Delay reveal
-    // $("#delayReveal").delay(2000).fadeIn(500);
 
     // Main Overlay Menu Functionality
     $("#overlay-menu").click(function() {
@@ -110,5 +94,6 @@ $(document).ready(function(){
         $(".programs_overlay").removeClass("programs_overlay_open_desktop");
         $('body').removeClass("noScroll");
     });
+
 
 }); // Close of jQuery

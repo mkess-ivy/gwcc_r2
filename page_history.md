@@ -9,14 +9,16 @@ circle: "#47E7CE"
 
 <div class="history_group dark_overlay" style="background-image: url('/assets/img/history_cover.jpg');">
     <div class="discover_grid">
-        <div class="history_content">
-            <div class="frow justify-end">
-                <div class="history_masthead">
-                    <div class="history_masthead_title">
-                        At GWCC, we thrive on building with our community.
-                    </div>
-                    <div class="history_masthead_subtitle">
-                        Learn how much we have been able to accomplish in under one year of re-establishing the center in the Greenmount West neighborhood in Baltimore,&nbsp;Maryland
+        <div class="frow centered">
+            <div class="history_content">
+                <div class="frow justify-end">
+                    <div class="history_masthead">
+                        <div class="history_masthead_title">
+                            At GWCC, we thrive on building with our community.
+                        </div>
+                        <div class="history_masthead_subtitle">
+                            Learn how much we have been able to accomplish in under one year of re-establishing the center in the Greenmount West neighborhood in Baltimore,&nbsp;Maryland
+                        </div>
                     </div>
                 </div>
             </div>

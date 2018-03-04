@@ -6,7 +6,7 @@
     padding-top: 50px;
     position: relative;
 
-    @include tablet {
+    @include laptop {
         padding-top: 0;
     }
 }
@@ -305,10 +305,13 @@
     padding: 25px 0;
 
     @include tablet {
-        padding-bottom: 25px;
+        padding: 75px 0 25px;
+    }
+    @include laptop {
+        padding: 50px 0 25px;
     }
     @include desktop {
-        padding: 65px 0 20px;
+        padding: 40px 0 20px;
     }
 
     .backtotop {
@@ -401,6 +404,13 @@
         }
     }
     .cta {
+        width: fit-content;
+        margin: auto;
+
+        @include tablet {
+            margin: 0;
+        }
+
         @include desktop {
             width: 75px;
             display: inline-block;

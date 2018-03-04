@@ -19,8 +19,6 @@
     a {
         color: $black;
     }
-
-
 }
 
 .programs_menu {
@@ -126,7 +124,7 @@
     }
     @include tablet {
         height: 55vh;
-        width: 95%;
+        width: 100%;
     }
     @include laptop {
         height: 65vh;
@@ -139,7 +137,7 @@
     position: relative;
 }
 .programs_content_beta {
-    background-color: $darkbluegreen;
+    background-color: rgba($darkbluegreen, 0.85);
     width: 85%;
     margin: -10em auto 50px;
     // margin: -5em auto 50px;
@@ -162,19 +160,23 @@
         position: absolute;
         // right: -1.5em;
         // bottom: -7em;
-        bottom: 7em;
+        bottom: 4.5em;
         // right: -0.5em;
-        right: -2em;
+        right: -3em;
         // bottom: -6em;
         // width: 50%;
         width: 60%;
         padding: 40px;
     }
     @include desktop {
+        bottom: 5.5em;
         right: -4em;
     }
     @include widescreen {
         width: 50%;
+    }
+    @include tv {
+        right: -6em;
     }
     // @include desktop {
     //     bottom: -8em;
@@ -418,6 +420,9 @@
     li {
         padding-bottom: 25px;
 
+        @include tablet {
+            padding-bottom: 50px;
+        }
         @include laptop {
             text-indent: -0.6em;
             padding-left: 3em;

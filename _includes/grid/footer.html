@@ -1,4 +1,4 @@
-<footer class="site_footer">
+<footer class="site_footer js_scroll_reveal">
     <div class="footer_grid">
         <div class="frow justify-between">
 
@@ -168,6 +168,7 @@
                                             display: inline-block;
                                             background: transparent;
                                             min-height: 38px;
+                                            outline: none;
                                             /* max-width: 235px; */
                                         }
                                         #mc_embed_signup input.button {
@@ -213,11 +214,14 @@
                                     <div class="message">
                                         GWCC is a registered 501(c)-3 nonprofit, status is pending.  All donations are tax-deductible.
                                     </div>
-                                    <div class="cta">
+                                    <!-- <div class="cta">
                                         <a class="brand_cta_v2 blue" href="/donate"><div class="nonprofit_btn">
                                             Donate
                                         </div></a>
-                                    </div>
+                                    </div> -->
+                                    <a class="donate_btn" href="/donate"><div>
+                                        Donate
+                                    </div></a>
 
                                 </div>
                             </div>
@@ -270,6 +274,30 @@
 
 <!-- Slow Reveal -->
 <script type="text/javascript" src="/js/vendor/fadethis.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.js_scroll_reveal', {
+        reset: true,
+        duration: 900
+    });
+    sr.reveal('.js_home', {
+        reset: true,
+        opacity: 0.5,
+        duration: 700,
+        easing: 'ease-in-out'
+    })
+    sr.reveal('.js_programs_overlay', {
+        duration: 1000
+    });
+    sr.reveal('.js_discover_reveal', {
+        reset: true,
+        easing: 'ease-in',
+        duration: 700
+    })
+</script>
 
 <!-- Scripts -->
 <script type="text/javascript" src="/js/main.js"></script>

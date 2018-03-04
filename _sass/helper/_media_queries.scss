@@ -57,8 +57,8 @@ $on-tv-1900         : 1900px;
   }
 }
 
-@mixin tv-1920 {
-  @media screen and (min-width: #{$on-tv-1920}) {
+@mixin tv-1900 {
+  @media screen and (min-width: #{$on-tv-1900}) {
     @content;
   }
 }

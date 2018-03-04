@@ -3,8 +3,8 @@ layout: home
 title: Home
 
 [//]: #Videos
-video_bg: /assets/video/bsbv2.mp4
-video_poster: /assets/video/bsb_poster.jpg
+video_bg: /assets/video/bsb_gwcc.mp4
+video_poster: /assets/video/poster.jpg
 
 vimeo_video: true
 ---
@@ -16,11 +16,11 @@ vimeo_video: true
 <div class="grid">
     <div class="home_masthead">
         <div class="frow centered">
-            <div class="home_masthead_title">A Community Arts Space</div>
-            <div class="home_masthead_subtitle" id="delayReveal">Greenmount West Community Center is a space that’s free + open to the public.</div>
+            <div class="home_masthead_title animated fadeIn">A Community Arts Space</div>
+            <div class="home_masthead_subtitle animated fadeIn">Greenmount West Community Center is a space that’s free + open to the public.</div>
             <div class="home_masthead_small_group">
-                <div class="small_circle"></div>
-                <div class="small_text">Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.  <span class="bold"><a class="plain_typeform_link typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank">Volunteer&nbsp;today!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></span></div>
+                <div class="small_circle animated infinite lightSpeedIn"></div>
+                <div class="small_text animated fadeIn">Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.  <span class="bold"><a class="plain_typeform_link typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank">Volunteer&nbsp;today!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></span></div>
             </div>
         </div>
     </div>

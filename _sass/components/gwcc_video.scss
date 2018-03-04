@@ -1,3 +1,39 @@
+// Bronzey - Full Width Video
+.bronzey {
+    background-image: url('/assets/img/learn_gwcc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    left: 50%;
+    margin-left: -50vw;
+    position: relative;
+    transition: 0.5s;
+    width: 100vw;
+
+    @include desktop {
+        height: 75vh;
+    }
+
+    .bronzey_alpha {
+        color: $white;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin-top: 35px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px #484646;
+
+        @include tablet {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .bronzey_play {
+        text-align: center;
+    }
+}
+
+
 /* Fullscreen Section */
 .gwcc_video_player {
     width: 100%;

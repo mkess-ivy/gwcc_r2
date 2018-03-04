@@ -1,45 +1,29 @@
-// Masthead
-.masthead {
-    margin: 75px auto;
-
-    @include tablet {
-        margin-bottom: 125px;
-        max-width: 750px;
-    }
-    @include laptop {
-        margin-bottom: 100px;
-        max-width: 950px;
-    }
-    @include desktop {
-        max-width: 1150px;
-    }
-    @include widescreen {
-        height: 35vh;
-        margin-bottom: 60px;
-        max-width: 1325px;
-    }
-
-}
 .home_masthead {
     text-align: center;
     color: $white;
     height: 80vh;
+
 
     @include laptop {
         height: 78vh;
     }
 
     .home_masthead_title {
-        font-size: 44px;
+        font-size: 36px;
         font-family: $font-1;
         font-weight: $muli-black;
         text-transform: uppercase;
         line-height:1;
         letter-spacing: 1px;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
+        margin-bottom: 20px;
+        -webkit-animation-duration:2s;
+        -webkit-animation-delay: 2s;
+        -webkit-animation-iteration-count:1;
 
         @include small {
-            font-size: 46px;
+            font-size: 48px;
+            margin-bottom: 30px;
         }
         @include palm {
             font-size: 60px;
@@ -61,14 +45,21 @@
     .home_masthead_subtitle {
         font-weight: $font-bold;
         font-size: 20px;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+        margin-bottom: 20px;
+        -webkit-animation-duration:2s;
+        -webkit-animation-delay: 2.5s;
+        -webkit-animation-iteration-count:1;
 
+        @include small {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
         @include palm {
             font-size: 28px;
         }
         @include tablet {
             font-size: 32px;
-            width: 80%;
         }
         @include laptop {
             font-size: 36px;
@@ -88,12 +79,7 @@
     .home_masthead_small_group {
         position: relative;
 
-        @include tablet {
-            width: 85%;
-            margin: 0 auto;
-        }
         @include laptop {
-            width: 100%;
             margin: 0 auto;
             padding: 0 50px;
         }
@@ -111,15 +97,23 @@
             left: 0.2em;
             z-index:1;
             background-color: $bluegreen;
+            -webkit-animation-duration:0.75s;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count:1;
 
             @include palm {
                 height: 100px;
                 width: 100px;
             }
+            @include tablet {
+                // height: 150px;
+                // width: 150px;
+                top: -1.5em;
+            }
 
             @include laptop {
-                top: -0.5em;
                 left: 4em;
+                top: -0.7em;
             }
             @include widescreen {
                 left: 3.5em;
@@ -134,6 +128,9 @@
             letter-spacing: 1.2px;
             position: relative;
             z-index: 2;
+            -webkit-animation-duration:2s;
+            -webkit-animation-delay: 2.5s;
+            -webkit-animation-iteration-count:1;
 
             @include palm {
                 font-size: 20px;
@@ -250,7 +247,6 @@
     }
 }
 
-// Sponsors
 .sponsors {
     color: $white;
     margin-bottom: 40px;
@@ -259,10 +255,9 @@
     }
     @include laptop {
         max-width: 750px;
-        margin: 0 auto 40px;
+        margin: 0 auto 100px;
     }
     @include desktop {
-
         max-width: none;
         width: 100%;
     }
@@ -280,7 +275,6 @@
         @include tablet {
             width: 75%;
             margin: auto;
-
         }
         ul {
             li {
@@ -348,16 +342,18 @@
             }
 
             @include tablet {
-                padding-right: 50px;
+                font-size: 28px;
+                width: 75%;
             }
 
-            @include desktop {
-                font-size: 28px;
+            @include laptop {
                 width: 90%;
+                max-width: 240px;
             }
 
             @include tv {
                 font-size: 30px;
+                max-width: 255px;
 
             }
         }
@@ -368,6 +364,9 @@
             font-weight: 400;
             @include palm {
                 font-size: 20px;
+            }
+            @include tablet {
+                font-size: 24px;
             }
             @include laptop {
                 font-size: 18px;
@@ -419,90 +418,12 @@
     }
 }
 
-// Old Index - Delete Later
-// Featured Content (2 news posts)
-.featured_content {
-    margin-top: 125px !important;
-    margin-bottom: 125px !important;
-
-    @include tablet {
-        margin-bottom: 0px !important;
-    }
-
-    .featured_item {
-        margin-bottom: 125px;
-
-        @include tablet {
-            width: 42%;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    .double_image {
-        position: relative;
-        margin-bottom: 50px;
-
-        .double_bottom {
-            background: $bluegreen;
-            height: 277px;
-            margin-left: 3px;
-            width: 100%;
-
-            @include small {
-                height: 329px;
-                margin: auto;
-
-                text-align: center;
-                width: 315px;
-            }
-            @include tablet {
-                width: 310px;
-            }
-        }
-        .double_top {
-            height: 303px;
-            position: absolute;
-            right: 1px;
-            top: -5px;
-
-            @include small {
-                height: auto;
-                left: -10px;
-                right: 0;
-                text-align: center;
-                top: -5px;
-            }
-        }
-    }
-    .featured_title {
-        font-size: 24px;
-        font-weight: $font-bold;
-        margin-bottom: 30px;
-        text-align: center;
-        text-transform: uppercase;
-
-        @include tablet {
-            font-size: 34px;
-        }
-    }
-    .featured_text {
-        font-size: 20px;
-        line-height: 28px;
-        letter-spacing: 0.3px;
-        margin-bottom: 30px;
-        text-align: center;
-
-        @include tablet {
-            height: 190px;
-            font-size: 22px;
-            line-height: 1.4;
-        }
-    }
-}
 .plain_typeform_link {
-	color: $white !important;
-	text-decoration: none !important;
+	color: $white;
+	text-decoration: none;
 	border-bottom: 2px solid;
+
+    &:hover {
+        color: $black;
+    }
 }

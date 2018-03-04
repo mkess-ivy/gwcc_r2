@@ -30,65 +30,19 @@
         center: 'title',
         right: 'month,basicWeek,basicDay'
       },
-      defaultDate: '2018-02-12',
+      defaultDate: '{{ 'now' | date: "%Y-%m-%d" }}',
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
       events: [
+        {% for item in site.data.february_calendar %}
         {
-          title: 'All Day Event',
-          start: '2018-02-01'
+          title: '{{ item.title }}',
+          start: '{{ item.start_date }}T{{ item.start_time }}',
+          end: '{{ item.end }}',
+          url: '{{ item.url }}'
         },
-        {
-          title: 'Long Event',
-          start: '2018-02-07',
-          end: '2018-02-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-02-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-02-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-02-11',
-          end: '2018-02-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-02-12T10:30:00',
-          end: '2018-02-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-02-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-02-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-02-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-02-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-02-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-02-28'
-        }
+        {% endfor %}
       ]
     });
 
@@ -104,13 +58,67 @@
     font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
     font-size: 14px;
   }
-
   #calendar {
-    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
+    background: #fff;
+    opacity: 0.75;
   }
   .calendar_wrapper {
       height: 100vh;
+      background-image: url('/assets/img/calendar_bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+  }
+  .fc-event {
+      background-color: #193531;
+  }
+  .calendar_route {
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      background: #47E7CE;
+      /* padding: 7px 12px; */
+      padding: 3px 7px;
+      font-size: 12px;
+      font-family: 'Muli',sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+  }
+  .calendar_route a {
+      color: #000;
+      text-decoration: none;
+      padding-bottom: 1px;
+  }
+  .calendar_route a:hover {
+      border-bottom: 1px solid;
+  }
+
+  @media screen and (min-width: 500px) {
+      #calendar {
+          max-width: 500px;
+      }
+  }
+  @media screen and (min-width: 768px) {
+      #calendar {
+          max-width: 700px;
+      }
+      .calendar_route {
+          font-size: 14px;
+          padding: 7px 12px;
+      }
+  }
+  @media screen and (min-width: 992px) {
+      #calendar {
+          max-width: 900px;
+      }
+  }
+  @media screen and (min-width: 1440px) {
+      #calendar {
+          max-width: 1000px;
+      }
   }
 
 </style>
@@ -122,9 +130,9 @@
         <div class="frow centered">
             <div id='calendar'></div>
         </div>
+        <div class="calendar_route">
+            <a href="/">Back to Home</a>
+        </div>
     </div>
-
-
-
 </body>
 </html>

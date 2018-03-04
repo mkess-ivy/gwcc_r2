@@ -4,8 +4,9 @@
     background-position: top left !important;
     height: 60vh;
 
-    @include palm {
-        height: 75vh;
+    @include desktop {
+        // height: 75vh;
+        height: 70vh;
     }
 }
 .history_meta {
@@ -76,6 +77,9 @@
     @include laptop {
         width: 100%;
     }
+    @include desktop {
+        top: 11em;
+    }
 }
 .history_masthead {
     text-align: center;
@@ -84,14 +88,14 @@
     margin: auto;
 
     @include laptop {
-        width: 55%;
+        width: 50%;
         margin: 0;
         text-align: left;
     }
     @include desktop {
         width: 50%;
     }
-    @include tv {
+    @include widescreen {
         width: 45%;
     }
 
@@ -103,10 +107,11 @@
         text-transform: uppercase;
 
         @include palm {
-            font-size: 45px;
+            // font-size: 45px;
+            font-size: 30px;
         }
-        @include tv {
-            font-size: 50px;
+        @include laptop {
+            font-size: 48px;
         }
     }
     .history_masthead_subtitle {
@@ -167,16 +172,19 @@
     }
 
     .timeline_single {
-        margin-bottom: 100px;
+        margin-bottom: 7em;
 
         &:last-child {
             margin-bottom: 0;
         }
 
         @include laptop {
-            margin-bottom: 125px;
+            margin-bottom: 9em;
         }
-    
+        @include desktop {
+            margin-bottom: 11em;
+        }
+
     }
     .timeline_img_wrapper {
         @include tablet {
@@ -246,10 +254,10 @@
             font-family: $font-1;
             font-weight: $muli-black;
             text-transform: uppercase;
-            padding-bottom: 30px;
+            padding-bottom: 15px;
 
             @include palm {
-                font-size: 28px;
+                font-size: 24px;
             }
             @include tablet {
                 font-size: 22px;
@@ -268,7 +276,8 @@
         }
         .timeline_copy_summary {
             @include palm {
-                font-size: 20px;
+                // font-size: 20px;
+                font-size: 18px;
             }
             @include desktop {
                 width: 80%;

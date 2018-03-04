@@ -1,0 +1,9 @@
+{% for space in site.data.[include.data_space] %}
+<div class="section_group">
+    <div class="section_title">{% if space.url %}<a href="{{ space.url }}">{% endif %}{{ space.name_of_space }}{% if space.url %}</a>{% endif %}</div>
+    <div class="section_location">
+        {{ space.address }}
+    </div>
+
+</div>
+{% endfor %}

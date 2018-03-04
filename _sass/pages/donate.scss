@@ -2,8 +2,27 @@
     background-color: $bluegreen;
 }
 .donate_meta {
-    width: 850px;
-    margin: auto;
+    // max-width: 850px;
+    // width: 90%;
+    padding: 50px 10px;
+
+    @include small {
+        padding: 50px 30px;
+    }
+    @include palm {
+        width: 80%;
+        padding: 0;
+        margin: 50px auto 0;
+    }
+    @include laptop {
+        max-width: 850px;
+    }
+    @include widescreen {
+        max-width: 900px;
+    }
+    // @include tablet {
+    //     margin: 50px auto;
+    // }
 }
 .donate_intro_content {
     text-align: center;
@@ -13,25 +32,60 @@
         font-family: $font-1;
         font-weight: $muli-black;
         text-transform: uppercase;
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 20px;
         margin-bottom: 45px;
+
+        @include palm {
+            font-size: 32px;
+        }
+        @include tablet {
+            font-size: 36px;
+        }
+        @include widescreen {
+            // font-size: 42px;
+        }
+
+
     }
     .donate_summary {
-        font-size: 28px;
+        // font-size: 28px;
+        font-size: 18px;
+        line-height: 1.2;
+
+        @include palm {
+            font-size: 22px;
+        }
+        @include desktop {
+            font-size: 26px;
+        }
     }
 }
 .donate_mid_content {
-    width: 75%;
+    // width: 75%;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
 }
 .donate_header {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: $font-1;
     font-weight: $muli-black;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
+
+    @include palm {
+        width: 75%;
+        margin: auto;
+    }
+    @include desktop {
+        width: 60%;
+    }
 }
 .donate_contact {
     margin: auto;
@@ -44,16 +98,24 @@
     text-transform: uppercase;
     font-family: $font-1;
     font-size: 14px;
-    margin-right: 50px;
+    // margin-right: 50px;
+    width: 100%;
 
     &:last-child {
         margin-right: 0;
     }
 
+    @include palm {
+        width: auto;
+        margin: 0 25px 0 0;
+    }
+
     div {
         width: fit-content;
         border: 3px solid;
-        padding: 10px 20px;
+        // padding: 10px 20px;
+        padding: 4px 10px;
+        margin: 0 auto 15px;
 
         &:hover {
             background: $black;
@@ -67,6 +129,13 @@
         text-align: center;
         width: 150px;
         margin-bottom: 20px;
+
+        @include palm {
+            width: 50%;
+        }
+        @include tablet {
+            width: 30%;
+        }
 
         button {
             background: transparent;
@@ -85,6 +154,14 @@
                 background: $black;
                 color: $white;
                 cursor: pointer;
+            }
+
+            @include palm {
+                width: 175px;
+            }
+            @include laptop {
+                width: 225px;
+                height: 50px;
             }
         }
     }

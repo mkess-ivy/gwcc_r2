@@ -122,6 +122,18 @@ circle: "#5B978E"
                                     $2500
                             </button>
                         </li>
+                        <li>
+                            <button
+                                class="snipcart-add-item"
+                                data-item-id="8"
+                                data-item-name="Donate $5000"
+                                data-item-price="5000.00"
+                                data-item-weight="0"
+                                data-item-url="http://server1.svncrwns.com/donate"
+                                data-item-description="Donate $5000">
+                                    $5000
+                            </button>
+                        </li>
                     </div>
                 </ul>
 

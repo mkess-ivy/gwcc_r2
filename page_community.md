@@ -1,5 +1,5 @@
 ---
-layout: bronze
+layout: map2
 title: Community
 permalink: /community/
 
@@ -7,11 +7,19 @@ permalink: /community/
 circle: "#47E7CE"
 ---
 
-<div class="discover_grid">
-    <div class="discover_prime_single">
-        <div class="community_prime_image" style="background-image: url('/assets/img/community_map.jpg');"></div>
-    </div>
 
+<div class="history_group mapbox_wrapper">
+    <div class="map_title">
+            Greenmount West Campus<br/>
+            <span>(zoom)</span>
+    </div>
+    <div id='map'>
+
+    </div>
+    {% include components/mapbox.html %}
+</div>
+
+<div class="discover_grid">
     <div class="give_meta">
         <div class="give_quote_group">
             <div class="give_quote">
@@ -27,17 +35,9 @@ circle: "#47E7CE"
                 Maker + Gallery Spaces
             </div>
             <div class="frow justify-start">
-                {% for space in site.data.maker_gallery_spaces %}
-                <div class="section_group">
-                    <div class="section_title">{{ space.name_of_space }}</div>
-                    <div class="section_location">
-                        {{ space.address }}
-                    </div>
-                    <div class="section_url">
-                        <a href="{{ space.url }}">{{ space.url }}</a>
-                    </div>
-                </div>
-                {% endfor %}
+            {% include components/community_resource.html  
+                data_space="maker_gallery_spaces"
+            %}
             </div>
         </div>
 
@@ -47,17 +47,9 @@ circle: "#47E7CE"
                 Recreational Spaces
             </div>
             <div class="frow justify-start">
-                {% for space in site.data.recreational_spaces %}
-                <div class="section_group">
-                    <div class="section_title">{{ space.name_of_space }}</div>
-                    <div class="section_location">
-                        {{ space.address }}
-                    </div>
-                    <div class="section_url">
-                        <a href="{{ space.url }}">{{ space.url }}</a>
-                    </div>
-                </div>
-                {% endfor %}
+            {%  include components/community_resource.html  
+                data_space="recreational_spaces"
+            %}
             </div>
         </div>
 
@@ -66,17 +58,9 @@ circle: "#47E7CE"
                 Schools + Transportation Hub
             </div>
             <div class="frow justify-start">
-                {% for space in site.data.school_spaces %}
-                <div class="section_group">
-                    <div class="section_title">{{ space.name_of_space }}</div>
-                    <div class="section_location">
-                        {{ space.address }}
-                    </div>
-                    <div class="section_url">
-                        <a href="{{ space.url }}">{{ space.url }}</a>
-                    </div>
-                </div>
-                {% endfor %}
+            {% include components/community_resource.html  
+                data_space="school_spaces"
+            %}
             </div>
         </div>
 
@@ -85,20 +69,10 @@ circle: "#47E7CE"
                 Community Resources
             </div>
             <div class="frow justify-start">
-                {% for space in site.data.community_resource_spaces %}
-                <div class="section_group">
-                    <div class="section_title">{{ space.name_of_space }}</div>
-                    <div class="section_location">
-                        {{ space.address }}
-                    </div>
-                    <div class="section_url">
-                        <a href="{{ space.url }}">{{ space.url }}</a>
-                    </div>
-                </div>
-                {% endfor %}
+                {% include components/community_resource.html  
+                    data_space="community_resource_spaces"
+                %}
             </div>
         </div>
     </div>
-
-
 </div>
