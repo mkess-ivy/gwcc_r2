@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <section class="textured_bg">
+            {% include grid/page_header.html %}
+
+            <div class="history_group mapbox_wrapper">
+                <div class="map_title">
+                    Greenmount West Campus<br/>
+                    <span>(zoom)</span>
+                </div>
+                <div id='map'></div>
+
+                {% include components/mapbox.html %}
+            </div>
+
+            <div class="discover_grid">
+                <div class="give_meta">
+                    {% include components/animated_lines.html %}
+                    <div class="give_quote_group">
+                        <div class="give_quote">
+                            {{ page.community_quote }}
+                        </div>
+                        <div class="highlight_quote_bottom"></div>
+
+                    </div>
+
+
+                    <div class="category_group js_discover_reveal">
+                        <div class="category_title">
+                            Maker + Gallery Spaces
+                        </div>
+                        <div class="frow justify-start">
+                        {% include components/community_resource.html
+                            data_space="maker_gallery_spaces"
+                        %}
+                        </div>
+                    </div>
+
+                    <div class="category_group js_discover_reveal">
+                        <div class="category_title">
+                            Recreational Spaces
+                        </div>
+                        <div class="frow justify-start">
+                        {%  include components/community_resource.html
+                            data_space="recreational_spaces"
+                        %}
+                        </div>
+                    </div>
+
+                    <div class="category_group js_discover_reveal">
+                        <div class="category_title">
+                            Schools + Transportation Hub
+                        </div>
+                        <div class="frow justify-start">
+                        {% include components/community_resource.html
+                            data_space="school_spaces"
+                        %}
+                        </div>
+                    </div>
+
+                    <div class="category_group js_discover_reveal">
+                        <div class="category_title">
+                            Community Resources
+                        </div>
+                        <div class="frow justify-start">
+                            {% include components/community_resource.html
+                                data_space="community_resource_spaces"
+                            %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {% include grid/footer.html %}
+
+        </section>
+
+  </body>
+
+</html>

@@ -40,24 +40,24 @@ circle: "#47E7CE"
 {% endfor %}
 
 <section class="textured_bg">
-<div class="discover_grid">
-    <div class="highlights_items_meta">
-        <div class="frow justify-between">
-            {% assign my_non_featured_post = site.posts | where: "featured", false %}
-            {% for post in my_non_featured_post reversed %}
-            <div class="highlights_item js_discover_reveal">
-                <div class="highlights_item_title">
-                    <a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="discover_grid">
+        <div class="highlights_items_meta">
+            <div class="frow justify-between">
+                {% assign my_non_featured_post = site.posts | where: "featured", false %}
+                {% for post in my_non_featured_post %}
+                <div class="highlights_item js_discover_reveal">
+                    <div class="highlights_item_title">
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </div>
+                    <div class="highlights_item_summary">
+                        {{ post.highlight_summary }}
+                    </div>
+                    <a class="brand_cta_v2" href="{{ post.url }}"><div class="highlights_cta">
+                        + Read More
+                    </div></a>
                 </div>
-                <div class="highlights_item_summary">
-                    {{ post.highlight_summary }}
-                </div>
-                <a class="brand_cta_v2" href="{{ post.url }}"><div class="highlights_cta">
-                    + Read More
-                </div></a>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 </section>

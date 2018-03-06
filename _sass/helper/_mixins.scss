@@ -2,7 +2,6 @@
 
 // Hover for Links
 %hover {
-    // color: $orange;
     background: $bluegreen;
     border-color: $bluegreen;
     transition: 0.5s;
@@ -55,14 +54,16 @@
     height:100%;
     display: block;
     z-index:0;
-    // background-color: rgba($color,$opacity);
-    background: linear-gradient(#47E7CE, #9198e5);
+    background: linear-gradient($color1, $color2);
     opacity: 0.4;
 }
 @mixin mx_animated($duration, $delay, $loop) {
     -webkit-animation-duration:$duration;
+    animation-duration: $duration;
     -webkit-animation-delay: $delay;
+    animation-delay: $delay;
     -webkit-animation-iteration-count:$loop;
+    animation-iteration-count: $loop;
 }
 
 // CTA

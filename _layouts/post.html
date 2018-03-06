@@ -6,14 +6,13 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead">
-            {% include header.html %}
+        <div class="textured_bg">
+            {% include grid/page_header.html %}
         </div>
 
         <div class="highlights_group" style="background-image: url('{{ page.cover }}');">
             <div class="discover_grid">
                 <div class="highlights_meta">
-
                     <div class="highlights_bottom">
                         <div class="frow justify-start">
                             <div>
@@ -31,9 +30,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="discover_grid">
             <div class="highlights_single_meta">
                 <div id="content">
                     {{ content }}

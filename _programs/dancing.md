@@ -8,7 +8,7 @@ program_summary: Multiple dance genres are taught, practiced and eventually, per
 cover_image: /assets/img/programs_dance.jpg
 
 [//]: # Meta Box (Programs Page)
-days: Wednesday (Weekly)
-time: 03:45 pm - 05:45 pm
+days: TBA
+time:
 
 ---

@@ -6,12 +6,9 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead" style="background-image:url('/assets/img/texture_background.jpg');">
-            {% include header.html %}
-            {% include grid/page_header.html %}
-        </div>
-
         <section class="textured_bg">
+            {% include grid/page_header.html %}
+
             <div class="discover_grid">
                 <div class="programs_group">
                     <div class="frow justify-between">
@@ -53,15 +50,17 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            {% include grid/footer.html %}
+            
         </section>
 
 
-        {% include grid/footer.html %}
 
   </body>
 

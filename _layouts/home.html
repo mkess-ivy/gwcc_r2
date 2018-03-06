@@ -7,7 +7,62 @@
         <div class="se-pre-con"></div>
         {% include header.html %}
 
-        {{ content }}
+        <video autoplay loop id="video-background" muted plays-inline poster="{{ page.video_poster }}">
+            <!-- <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4"> -->
+            <source src="{{ page.video_bg }}" type="video/mp4">
+        </video>
+
+        <div class="home_grid">
+            <div class="home_masthead">
+                <div class="frow centered">
+                    <div class="home_masthead_title animated fadeIn">{{ page.masthead_title }}</div>
+                    <div class="home_masthead_subtitle animated fadeIn">{{ page.masthead_subtitle }}</div>
+                    <div class="home_masthead_small_group">
+                        <div class="small_circle animated infinite lightSpeedIn"></div>
+                        <div class="small_text animated fadeIn">{{ page.masthead_summary }}  <span class="bold"><a class="plain_typeform_link typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank">Volunteer&nbsp;today!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include components/home_video.html
+            text="Peek Inside GWCC"
+        %}
+
+        {% include components/home_resources.html %}
+
+        <div class="home_grid">
+            <div class="sponsors">
+                <div class="sponsors_title">
+                    GWCC Sponsors
+                </div>
+                <div class="sponsors_group">
+                    <ul>
+                        <div class="frow justify-between">
+                            <li>
+                                <a href="{{ site.sponsor1_url }}" target="_blank"><img src="{{ site.sponsor1_img }}" alt="{{ site.sponsor1_text }}" /></a>
+                            </li>
+                            <li>
+                                <a href="{{ site.sponsor2_url }}" target="blank"><img src="{{ site.sponsor2_img }}" alt="{{ site.sponsor2_text }}" /></a>
+                            </li>
+                            <li>
+                                <a href="{{ site.sponsor3_url }}" target="_blank"><img src="{{ site.sponsor3_img }}" alt="{{ site.sponsor2_text }}" /></a>
+                            </li>
+                            {% if site.sponsor4_img %}
+                            <li>
+                                <a href="{{ site.sponsor4_url }}" target="_blank"><img src="{{ site.sponsor4_img }}" alt="{{ site.sponsor4_text }}" /></a>
+                            </li>
+                            {% endif %}
+                            {% if site.sponsor5_img %}
+                            <li>
+                                <a href="{{ site.sponsor5_url }}" target="_blank"><img src="{{ site.sponsor5_img }}" alt="{{ site.sponsor5_text }}" /></a>
+                            </li>
+                            {% endif %}
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         {% include grid/footer.html %}
 

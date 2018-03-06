@@ -124,7 +124,6 @@
 			position: relative;
 			@include tablet {
 				margin: 10px 0 50px;
-
 			}
 			@include laptop {
 				margin-bottom: 25px;
@@ -148,7 +147,6 @@
 				margin-bottom: 40px;
 			}
 			@include laptop {
-				// font-size: 75px;
 				font-size: 54px;
 				width: 60%;
 			}
@@ -163,15 +161,10 @@
 			font-size: 18px;
 			font-family: $font-2;
 			margin-top: 40px;
-			// width: 100%;
 			line-height: 1.4;
 
 			@include tablet {
 				margin-top: 25px;
-			}
-
-			@include laptop {
-				// font-size: 20px;
 			}
 		}
 		.programs_content_bg {
@@ -243,13 +236,6 @@
 				font-weight: $muli-black;
 				text-transform: uppercase;
 				padding-bottom: 15px;
-
-				@include desktop {
-					// font-size: 22px;
-				}
-				@include tv {
-					// font-size: 16px;
-				}
 			}
 			.programs_content_summary {
 				font-size: 18px;
@@ -257,10 +243,6 @@
 
 				@include laptop {
 					font-size: 16px;
-				}
-
-				@include desktop {
-					// font-size: 24px;
 				}
 
 				@include tv {
@@ -316,4 +298,50 @@
 		padding-bottom: 3px;
 		border-bottom: 2px solid;
 	}
+}
+
+// Programs Content
+.programs_content {
+    padding: 50px !important;
+
+    .program_item {
+        margin-bottom: 50px;
+
+        @include tablet {
+            width: 45%;
+        }
+        @include laptop {
+            margin-bottom: 75px;
+        }
+    }
+    .programs_title {
+        font-family: $font-1;
+        font-size: 36px;
+        font-weight: $muli-black;
+        margin-bottom: 10px;
+
+        @include laptop {
+            font-size: 50px;
+        }
+    }
+    .programs_group {
+        font-family: $font-1;
+        font-size: 20px;
+        font-weight: $muli-black;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .programs_text {
+        font-size: 18px;
+        line-height: 26px;
+
+        @include tablet {
+            height: 125px;
+        }
+        @include laptop {
+            font-size: 22px;
+            line-height: 34px;
+            height: 175px;
+        }
+    }
 }

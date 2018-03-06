@@ -1,9 +1,7 @@
 .donate_wrapper {
-    background-color: $bluegreen;
+    padding: 3em 0
 }
 .donate_meta {
-    // max-width: 850px;
-    // width: 90%;
     padding: 50px 10px;
 
     @include small {
@@ -11,8 +9,8 @@
     }
     @include palm {
         width: 80%;
-        padding: 0;
-        margin: 50px auto 0;
+        padding: 50px 0 75px;
+        margin: 0 auto;
     }
     @include laptop {
         max-width: 850px;
@@ -20,9 +18,6 @@
     @include widescreen {
         max-width: 900px;
     }
-    // @include tablet {
-    //     margin: 50px auto;
-    // }
 }
 .donate_intro_content {
     text-align: center;
@@ -32,7 +27,6 @@
         font-family: $font-1;
         font-weight: $muli-black;
         text-transform: uppercase;
-        // font-size: 34px;
         font-size: 20px;
         margin-bottom: 45px;
 
@@ -42,14 +36,8 @@
         @include tablet {
             font-size: 36px;
         }
-        @include widescreen {
-            // font-size: 42px;
-        }
-
-
     }
     .donate_summary {
-        // font-size: 28px;
         font-size: 18px;
         line-height: 1.2;
 
@@ -62,7 +50,6 @@
     }
 }
 .donate_mid_content {
-    // width: 75%;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 75px;
@@ -98,7 +85,6 @@
     text-transform: uppercase;
     font-family: $font-1;
     font-size: 14px;
-    // margin-right: 50px;
     width: 100%;
 
     &:last-child {
@@ -113,7 +99,6 @@
     div {
         width: fit-content;
         border: 3px solid;
-        // padding: 10px 20px;
         padding: 4px 10px;
         margin: 0 auto 15px;
 
@@ -182,9 +167,6 @@
  {
     color: #fff !important;
 }
-// .snip-quantity-trigger__text {
-//     color: #fff !important;
-// }
 .snip-table__header {
     color: #fff !important;
     background: #000 !important;
@@ -196,9 +178,3 @@
     background: #1cbba2 !important;
     color: #fff !important;
 }
-// .snip-table__cell--highlight {
-//     color: #fff !important;
-// }
-// .snip-table__cell--bold {
-//     color: #fff !important;
-// }

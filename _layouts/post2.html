@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <section class="textured_bg">
+            {% include grid/page_header.html %}
+
+            <div class="highlights__content_wrapper">
+                <div class="highlight__content_top">
+                    {{ content }}
+                </div>
+            </div>
+
+            <div class="discover_grid">
+                <div class="frow justify-between">
+                    <div class="highlight__content_left">
+                        <div class="highlights__content-title">
+                            {{ page.title }}
+                        </div>
+                        <div class="highlights__content-summary">
+                            {{ page.highlight_summary }}
+                        </div>
+                        {% if page.external_link %}
+                        <a class="brand_cta_v2" href="#"><div>
+                            + {{ page.external_link_text }}
+                        </div></a>
+                        {% endif %}
+                    </div>
+
+                    <div class="highlight__content_right">
+                        <div class="highlights__back">
+                            <a href="/highlights" class="brand_cta_v2">
+                                <div class="back_to_highlights uppercase">
+                                    Back to Highlights
+                                </div>
+                            </a>
+                        </div>
+                        {% include components/pagination.html %}
+                    </div>
+                </div>
+            </div>
+
+            {% include grid/footer.html %}
+
+        </section>
+
+    </body>
+
+</html>

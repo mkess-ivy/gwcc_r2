@@ -2,56 +2,30 @@
 layout: home
 title: Home
 
-[//]: #Videos
+[//]: #Video Background
 video_bg: /assets/video/bsb_gwcc.mp4
 video_poster: /assets/video/poster.jpg
 
+[//]: # Main Title Masthead
+masthead_title: A Community Arts Space
+masthead_subtitle: Greenmount West Community Center is a space that’s free + open to the public.
+masthead_summary: Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.
+
+[//]: # Video Embed
 vimeo_video: true
+video_embed: '242342417'
+video_embed_bg: /assets/img/home_cover.jpg
+
+[//]: # Community Resources (Three Column Section)
+resource1_name: Resource hub to members of the community
+resource1_summary: GWCC sits on a community campus of resources &mdash; visit spaces like Open Works and Gallery CA. Learn how the youth are activating on campus.
+resource1_link_text: Learn More
+
+resource2_name: Employing Youth Workers Ages 14+
+resource2_summary: Youth either living in or going to school in the  Greenmount West community, are hired to help manage and facilitate programming and procedures in the center.
+resource2_link_text: Apply Now
+
+resource3_name: GWCC Relies on People Like You!
+resource3_summary: Help us provide programming, events, workshops, after-school snacks and more. Monetary donations provide program support which moves our mission forward.
+resource3_link_text: Support Us
 ---
-<video autoplay loop id="video-background" muted plays-inline poster="{{ page.video_poster }}">
-    <!-- <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4"> -->
-    <source src="{{ page.video_bg }}" type="video/mp4">
-</video>
-
-<div class="grid">
-    <div class="home_masthead">
-        <div class="frow centered">
-            <div class="home_masthead_title animated fadeIn">A Community Arts Space</div>
-            <div class="home_masthead_subtitle animated fadeIn">Greenmount West Community Center is a space that’s free + open to the public.</div>
-            <div class="home_masthead_small_group">
-                <div class="small_circle animated infinite lightSpeedIn"></div>
-                <div class="small_text animated fadeIn">Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.  <span class="bold"><a class="plain_typeform_link typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank">Volunteer&nbsp;today!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></span></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-{% include components/bronzey.html
-    background="/assets/img/penn_station_team_v3.jpg"
-    text="Peek Inside GWCC"
-%}
-
-{% include components/goldie.html %}
-
-<div class="grid">
-    <div class="sponsors">
-        <div class="sponsors_title">
-            GWCC Sponsors
-        </div>
-        <div class="sponsors_group">
-            <ul>
-                <div class="frow justify-between">
-                    <li>
-                        <a href="https://www.rwdfoundation.org/" target="_blank"><img src="/assets/img/logo_rwd.png" /></a>
-                    </li>
-                    <li>
-                        <a href="http://www.greenmountwest.org/" target="blank"><img src="/assets/img/logo_gwca.png" /></a>
-                    </li>
-                    <li>
-                        <a href="https://artbma.org/" target="_blank"><img src="/assets/img/logo_bma.png" /></a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </div>
-</div>

@@ -5,28 +5,27 @@
     height: 60vh;
 
     @include desktop {
-        // height: 75vh;
         height: 70vh;
     }
 }
 .history_meta {
-    margin: 50px 15px;
+    padding: 50px 15px;
 
     @include small {
-        margin: 75px 20px;
+        padding: 75px 20px;
     }
 
     @include palm {
-        margin: 75px 50px;
+        padding: 75px 50px;
     }
 
     @include laptop {
-        margin: 100px 50px;
+        padding: 100px 50px;
     }
 
     @include desktop {
         max-width: 1000px;
-        margin: 100px auto;
+        padding: 100px auto;
     }
 
     @include tv {
@@ -72,7 +71,6 @@
         padding: 5em 0;
         margin: auto;
         width:90%;
-        // top: 21vh;
     }
     @include tablet {
         padding: 2.5em 0;
@@ -114,7 +112,6 @@
         text-transform: uppercase;
 
         @include palm {
-            // font-size: 45px;
             font-size: 30px;
         }
         @include laptop {
@@ -161,14 +158,8 @@
 }
 .timeline_section {
     padding: 65px 10px 65px 14%;
-    @extend %texture_background;
 
-    @include palm {
-        // padding: 65px 10px 65px 130px;
-        // padding-left: 20%;
-    }
     @include tablet {
-        // padding-left: 10%;
         width: 85%;
         padding: 75px 3%;
     }
@@ -208,24 +199,12 @@
     }
 
     .timeline_img {
-        // background-size: contain;
-        // background-position: center center;
-        // height: 210px;
-        // background-repeat: no-repeat;
         margin-bottom: 45px;
         width: 100%;
 
         @include tablet {
             margin-bottom: 0;
         }
-
-        // @include palm {
-        //     height: 300px;
-        // }
-        //
-        // @include tablet {
-        //     width: 49%;
-        // }
     }
     .timeline_content {
         text-align: center;
@@ -251,8 +230,6 @@
         .timeline_copy {
             margin-bottom: 75px;
 
-
-
             &:last-child {
                 margin-bottom: 0;
             }
@@ -270,9 +247,11 @@
             @include tablet {
                 font-size: 22px;
             }
+            @include laptop {
+                font-size: 26px;
+            }
             @include desktop {
                 width: 80%;
-                font-size: 28px;
                 margin: auto;
             }
             @include widescreen {
@@ -284,8 +263,10 @@
         }
         .timeline_copy_summary {
             @include palm {
-                // font-size: 20px;
                 font-size: 18px;
+            }
+            @include laptop {
+                font-size: 20px;
             }
             @include desktop {
                 width: 80%;
@@ -315,9 +296,7 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    // height: 50vh;
     height: 15vh;
-    // width: 50%;
     width: 100%;
     margin-bottom: 25px;
     @include mx_animated(1s,2s,1);

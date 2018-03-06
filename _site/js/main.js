@@ -95,5 +95,16 @@ $(document).ready(function(){
         $('body').removeClass("noScroll");
     });
 
+    // Highlights Slider
+    $('.highlights__slider').slick ({
+        autoplay:false,
+        arrows: true,
+        fade: true,
+        cssEase: 'linear',
+        infinite:true,
+        prevArrow: '<img src="/assets/img/left_caret.png" class="caret_slide_web left" />',
+        nextArrow: '<img src="/assets/img/right_caret.png" class="caret_slide_web right" />'
+    });
+
 
 }); // Close of jQuery

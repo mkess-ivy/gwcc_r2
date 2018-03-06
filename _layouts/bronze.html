@@ -6,15 +6,13 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead" style="background-image:url('/assets/img/texture_background.jpg');">
-            {% include header.html %}
+        <div class="textured_bg">
             {% include grid/page_header.html %}
+
+            {{ content }}
+
+            {% include grid/footer.html %}
         </div>
-
-        {{ content }}
-
-        {% include grid/footer.html %}
-
 
   </body>
 

@@ -6,131 +6,132 @@
     <body>
   	    <div class="se-pre-con"></div>
 
-        <div class="page_masthead">
-            {% include header.html %}
+        <section class="textured_bg">
             {% include grid/page_header.html %}
-        </div>
 
-        <div class="discover_grid">
-            <div class="programs_group">
-                <div class="frow justify-between">
-                    <div class="programs_menu">
-                        <div class="programs_menu_btn_2" id="js_programs_menu_btn">
-                            <a href="#">Programs Menu</a>
+            <div class="discover_grid">
+                <div class="programs_group">
+                    <div class="frow justify-between">
+
+                        <div class="programs_menu">
+                            <div class="programs_menu_btn_2" id="js_programs_menu_btn">
+                                <a href="#">Programs Menu</a>
+                            </div>
+                            <ul id="programs_menu_list">
+                                {% if page.url == "/programs/" %}
+                                <li class="active">
+                                    <a href="{{ site.baseurl }}/programs">Overview</a>
+                                </li>
+                                {% else %}
+                                <li>
+                                    <a href="{{ site.baseurl }}/programs">Overview</a>
+                                </li>
+                                {% endif %}
+                                {% for item in site.programs %}
+                                {% if page.url == item.url %}
+                                <li class="active">
+                                    <a href="{{ item.url }}">{{ item.title }}</a>
+                                </li>
+                                {% else %}
+                                <li>
+                                    <a href="{{ item.url }}">{{ item.title }}</a>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
                         </div>
-                        <ul id="programs_menu_list">
-                            {% if page.url == "/programs/" %}
-                            <li class="active">
-                                <a href="{{ site.baseurl }}/programs">Overview</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="{{ site.baseurl }}/programs">Overview</a>
-                            </li>
-                            {% endif %}
-                            {% for item in site.programs %}
-                            {% if page.url == item.url %}
-                            <li class="active">
-                                <a href="{{ item.url }}">{{ item.title }}</a>
-                            </li>
-                            {% else %}
-                            <li>
-                                <a href="{{ item.url }}">{{ item.title }}</a>
-                            </li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </div>
 
-                    <div class="programs_content_group">
-                        {% unless page.title == "Programs" %}
-                        <div class="programs_content_meta">
-                            <div class="programs_alpha_group">
-                                <div class="programs_content_alpha" style="background-image:url('{{ page.cover_image }}');"></div>
-                                <div class="programs_content_beta">
-                                    <div class="programs_beta_title">
-                                        {{ page.title }}
-                                    </div>
-                                    <div class="programs_beta_details">
-                                        <div class="programs_beta_single">
-                                            <span class="icon"><img src="/assets/img/icon_clock_white.png" /></span>
-                                            <div class="meta_details">
-                                                {{ page.days }}<br/>
-                                                {{ page.time }}
-                                            </div>
+                        <div class="programs_content_group">
+                            {% unless page.title == "Programs" %}
+                            <div class="programs_content_meta">
+                                <div class="programs_alpha_group">
+                                    <div class="programs_content_alpha" style="background-image:url('{{ page.cover_image }}');"></div>
+                                    <div class="programs_content_beta">
+                                        <div class="programs_beta_title">
+                                            {{ page.title }}
                                         </div>
-                                        <div class="programs_beta_single">
-                                            <span class="icon"><img src="/assets/img/icon_adult_child.png" /></span>
-                                            <div class="meta_details">
-                                                {{ page.audience }}
+                                        <div class="programs_beta_details">
+                                            <div class="programs_beta_single">
+                                                <span class="icon"><img src="/assets/img/icon_clock_white.png" /></span>
+                                                <div class="meta_details">
+                                                    {{ page.days }}<br/>
+                                                    {{ page.time }}
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="programs_beta_single">
-                                            <div class="programs_beta_description">
-                                                {{ page.program_summary }}
+                                            <div class="programs_beta_single">
+                                                <span class="icon"><img src="/assets/img/icon_adult_child.png" /></span>
+                                                <div class="meta_details">
+                                                    {{ page.audience }}
+                                                </div>
+                                            </div>
+                                            <div class="programs_beta_single">
+                                                <div class="programs_beta_description">
+                                                    {{ page.program_summary }}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            {% endunless %}
+                            {% if page.title == "Programs" %}
+                            <div class="programs_body">
+                                <div class="overview_title">
+                                    Programming Overview
+                                </div>
+                                <p>
+                                    The Greenmount West Community Center (GWCC) seeks to provide a safe and secure environment that can lead to positive outcomes for all who live in Greenmount West. The GWCC is also committed to ensuring that the youth living in Greenmount West and the surrounding communities have the opportunity to develop self-confidence, self-esteem, and do well in school so that they can grow to be self-sufficient and successful in society.
+                                </p>
+
+                                <p>
+                                    The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:
+                                </p>
+
+                                <ul class="programs_list">
+                                    <li>
+                                        <span>Academic Strengthening</span>  <div>
+                                            Retired schoolteachers, librarians, and other community volunteers will provide academic tutoring sessions for small groups throughout the school year.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Business Skills for Youth Entrepreneurs</span>
+                                        <div>
+                                            A program that teaches administrative and business skills to youth through experiential learning under the guidance of a well-trained adult, volunteer, small business owner. Youth will start and run a business, with the profits from the business being reinvested in the program and small stipends for youth involved
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>STEM (Science, Tech, Engineering & Math</span>
+                                        <div>
+                                            Hands-on work in a wide range of STEM subjects, such as programming, engineering, science, digital arts, and game design. Youth will learn the fundamental concepts and skills that are beyond what is taught in schools.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Performing Arts</span>
+                                        <div>
+                                            Photography, dance, music, art, theater, and creative writing classes will be offered to youth providing structured learning and performance opportunities that encourage collaboration with other youth and community service through free performances.
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="programs_small_title">Programming Commences:</div>
+
+                                <div class="programs_small_text">
+                                    After School Programming &mdash; October to May
+                                </div>
+                                <div class="programs_small_text">
+                                    Summer Programming &mdash; June to Labor Day
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
-                        {% endunless %}
-                        {% if page.title == "Programs" %}
-                        <div class="programs_body">
-                            <div class="overview_title">
-                                Programming Overview
-                            </div>
-                            <p>
-                                The Greenmount West Community Center (GWCC) seeks to provide a safe and secure environment that can lead to positive outcomes for all who live in Greenmount West. The GWCC is also committed to ensuring that the youth living in Greenmount West and the surrounding communities have the opportunity to develop self-confidence, self-esteem, and do well in school so that they can grow to be self-sufficient and successful in society.
-                            </p>
 
-                            <p>
-                                The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:
-                            </p>
-
-                            <ul class="programs_list">
-                                <li>
-                                    <span>Academic Strengthening</span>  <div>
-                                        Retired schoolteachers, librarians, and other community volunteers will provide academic tutoring sessions for small groups throughout the school year.
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>Business Skills for Youth Entrepreneurs</span>
-                                    <div>
-                                        A program that teaches administrative and business skills to youth through experiential learning under the guidance of a well-trained adult, volunteer, small business owner. Youth will start and run a business, with the profits from the business being reinvested in the program and small stipends for youth involved
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>STEM (Science, Tech, Engineering & Math</span>
-                                    <div>
-                                        Hands-on work in a wide range of STEM subjects, such as programming, engineering, science, digital arts, and game design. Youth will learn the fundamental concepts and skills that are beyond what is taught in schools.
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>Performing Arts</span>
-                                    <div>
-                                        Photography, dance, music, art, theater, and creative writing classes will be offered to youth providing structured learning and performance opportunities that encourage collaboration with other youth and community service through free performances.
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="programs_small_title">Programming Commences:</div>
-
-                            <div class="programs_small_text">
-                                After School Programming &mdash; October to May
-                            </div>
-                            <div class="programs_small_text">
-                                Summer Programming &mdash; June to Labor Day
-                            </div>
-                        </div>
-                        {% endif %}
                     </div>
-
                 </div>
             </div>
-        </div>
 
-        {% include grid/footer.html %}
+            {% include grid/footer.html %}
+        </section>
+
 
 
   </body>

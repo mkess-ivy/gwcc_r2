@@ -9,7 +9,6 @@
     padding: 10px 0;
 
     @include palm {
-        // max-width: 325px;
         margin: auto;
     }
     @include laptop {
@@ -20,7 +19,6 @@
         color: $black;
     }
 }
-
 .programs_menu {
     width: 100%;
     padding: 30px;
@@ -51,13 +49,10 @@
             display: block;
             border: none;
             padding-top: 0;
-            // width: auto;
         }
-        // background: $bluegreen;
 
         li {
             // Mobile Menu
-            // display: none;
             font-family: $font-1;
             font-weight: $muli-black;
             text-transform: uppercase;
@@ -69,11 +64,6 @@
                 margin-bottom: 10px;
                 border: 3px solid $bluegreen;
                 padding: 6px;
-            }
-
-            @include laptop {
-                // border: none;
-                // margin-bottom: 10px;
             }
 
             a {
@@ -96,12 +86,10 @@
                     }
                 }
             }
-            // &.programs_mobile_menu {
-            //     display: block;
-            // }
         }
     }
 }
+
 .programs_content_group {
     margin: auto;
     @include tablet {
@@ -112,6 +100,8 @@
         margin: 0 auto;
     }
 }
+
+// ALPHA - PROGRAMS
 .programs_content_alpha {
     background-image: url('/assets/img/gwcc_programs_overview.jpg');
     @extend %bg_props;
@@ -137,11 +127,12 @@
 .programs_alpha_group {
     position: relative;
 }
+
+// BETA - PROGRAMS
 .programs_content_beta {
     background-color: rgba($darkbluegreen, 0.85);
     width: 85%;
     margin: -10em auto 50px;
-    // margin: -5em auto 50px;
     position: relative;
     z-index: 2;
     padding: 25px;
@@ -155,17 +146,10 @@
         margin-top: -12em;
     }
     @include laptop {
-        // width: 55%;
-        // margin:none;
         margin: initial;
         position: absolute;
-        // right: -1.5em;
-        // bottom: -7em;
         bottom: 4.5em;
-        // right: -0.5em;
         right: -3em;
-        // bottom: -6em;
-        // width: 50%;
         width: 60%;
         padding: 40px;
     }
@@ -179,13 +163,6 @@
     @include tv {
         right: -6em;
     }
-    // @include desktop {
-    //     bottom: -8em;
-    // }
-    // @include widescreen {
-    //     width: 42%;
-    //     bottom: -10em;
-    // }
 
     .programs_beta_title {
         font-family: $font-1;
@@ -233,158 +210,13 @@
         }
     }
 }
-// .programs_instructors_group {
-//     margin: 100px 0;
-//
-//     @include small {
-//         margin: 100px auto;
-//         width:80%;
-//     }
-//
-//     @include palm {
-//         width: 65%;
-//     }
-//     @include tablet {
-//         margin: 150px auto;
-//     }
-//     @include laptop {
-//         width: 100%;
-//         margin: 200px auto 100px;
-//     }
-//
-//     .instructors_title-group {
-//         width: 90%;
-//         position: relative;
-//         margin: 0 auto 25px;
-//
-//         @include palm {
-//             width: 100%;
-//         }
-//         @include laptop {
-//             width: 325px;
-//             margin: initial;
-//         }
-//     }
-//     .instructors_title {
-//         background-color: $white;
-//         font-size: 20px;
-//         font-family: $font-1;
-//         font-weight: $muli-black;
-//         border: 4px solid $darkbluegreen;
-//         padding: 15px;
-//     }
-//     .instructors_title_bottom {
-//         position: absolute;
-//         top: 0.25em;
-//         left: 0.25em;
-//         background: $darkbluegreen;
-//         height: 100%;
-//         width: 100%;
-//         z-index: -1;
-//     }
-// }
-// .instructors_single {
-//     width: 100%;
-//     margin: 30px;
-//
-//     @include palm {
-//         margin: 20px 20px 50px;
-//     }
-//     @include laptop {
-//         width: 45%;
-//         margin: 75px 30px 50px 0;
-//     }
-//     @include widescreen {
-//
-//     }
-//     @include tv {
-//         width: 40%;
-//         margin-right: 75px;
-//     }
-//
-//     .instructors_name {
-//         font-size:22px;
-//         font-weight: $font-bold;
-//         margin-bottom: 20px;
-//     }
-//     .instructors_summary {
-//         font-size: 18px;
-//         line-height: 1.2;
-//         margin-bottom: 15px;
-//
-//         @include laptop {
-//             margin-bottom: 25px;
-//         }
-//     }
-// }
-// .instructors_avatar_group {
-//     position: relative;
-//     margin: 0 auto 50px;
-//     width: 100px;
-//     height: 100px;
-//
-//     @include tablet {
-//         width: 150px;
-//         height: 150px;
-//     }
-//     @include laptop {
-//         width: 75px;
-//         height: 75px;
-//         margin: initial;
-//     }
-//
-//     .instructors_avatar {
-//         background-image: url('/assets/img/gwcc_avatar_instructor.jpeg');
-//         @extend %bg_props;
-//         height: 100px;
-//         width: 100px;
-//         position: relative;
-//         margin: auto;
-//         border-radius: 50%;
-//
-//         @include tablet {
-//             width: 150px;
-//             height: 150px;
-//         }
-//         @include laptop {
-//             width: 75px;
-//             height: 75px;
-//         }
-//     }
-//     .instructors_avatar_bottom {
-//         position: absolute;
-//         background: $darkbluegreen;
-//         top: 0.35em;
-//         left:0;
-//         width: 100px;
-//         height: 100px;
-//         z-index: -1;
-//         border-radius: 50%;
-//
-//         @include tablet {
-//             width: 150px;
-//             height: 150px;
-//             top: 0.75em;
-//         }
-//         @include laptop {
-//             width: 75px;
-//             height: 75px;
-//         }
-//     }
-// }
-// .instructor_meta {
-//     @include laptop {
-//         width: 70%;
-//         margin: 25px 0 0;
-//     }
-// }
+
+// BODY - PROGRAMS
 .programs_body {
-    // font-size: 18px;
     padding: 0 30px 50px;
     line-height: 1.4;
 
     @include palm {
-        // font-size: 22px;
         font-size: 18px;
         padding: 0 50px 50px;
     }
@@ -399,7 +231,6 @@
     font-weight: $muli-black;
     margin: 25px 0;
     font-size: 20px;
-    // font-size: 28px;
 
     @include palm {
         width: 75%;
@@ -417,7 +248,6 @@
         width: 80%;
     }
 
-
     li {
         padding-bottom: 25px;
 
@@ -428,11 +258,6 @@
             text-indent: -0.6em;
             padding-left: 3em;
         }
-        // font-size: 20px;
-        // width: 80%;
-        // text-indent: -.6em;
-        // padding-left: 1em;
-        // padding-left: 3em;
 
         &:before {
             @include laptop {
@@ -449,8 +274,6 @@
         }
 
         span {
-            // padding-bottom: 4px;
-            // border-bottom: 3px solid $bluegreen;
             font-weight: bold;
             background: $bluegreen;
             padding: 5px 9px;
@@ -472,10 +295,8 @@
     @include palm {
         font-size: 20px;
     }
-    // font-size: 20px;
 }
 .programs_small_text {
-    // font-size: 18px;
     font-size: 16px;
     margin-bottom: 5px;
 

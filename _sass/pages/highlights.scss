@@ -1,113 +1,109 @@
 // Highlights
 .highlights_group {
     @extend .mission_group;
+}
 
-    .highlights_meta {
-        height: 50vh;
-        // height: 75vh;
-        // padding: 25px 20px;
-        padding: 15px;
-        position: relative;
+// Highlights Page - Featured Post
+.highlights_meta {
+    height: 50vh;
+    padding: 15px;
+    position: relative;
+
+    @include palm {
+        padding: 25px;
+    }
+    @include tablet {
+        padding: 25px 0;
+    }
+    @include desktop {
+        height: 60vh;
+    }
+    @include widescreen {
+        height: 67vh;
+    }
+
+    .featured {
+        background-color: $black;
+        border: 3px solid $black;
+        padding: 3px 10px;
+        text-transform: uppercase;
+        color: $bluegreen;
+        font-size: 12px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+
+        @include tablet {
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+    }
+    .highlights_bottom {
+        position: absolute;
+        bottom: 1em;
 
         @include palm {
-            padding: 25px;
+            bottom: 2em;
+        }
+
+        @include tablet {
+            bottom: 3em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+    .featured_title {
+        font-size: 40px;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        color: $white;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px #361d0d;
+
+        @include palm {
+            font-size: 48px;
         }
         @include tablet {
-            padding: 25px 0;
+            font-size: 60px;
         }
-        @include desktop {
-            // height: 75vh;
-            height: 60vh;
+        @include laptop {
+            width: 100%;
         }
         @include widescreen {
-            // height: 85vh;
-            height: 67vh;
+            font-size: 65px;
         }
+    }
+    .featured_summary {
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        padding-right: 1em;
 
-        .featured {
-            background-color: $white;
-            border: 3px solid $white;
-            padding: 3px 10px;
-            text-transform: uppercase;
-            color: $bluegreen;
-            font-size: 12px;
-            font-family: $font-1;
-            font-weight: $muli-black;
-
-            @include tablet {
-                font-size: 18px;
-                padding: 10px 15px;
-            }
+        @include palm {
+            padding-right: 4em;
         }
-        .highlights_bottom {
-            position: absolute;
-            bottom: 1em;
-
-            @include palm {
-                bottom: 2em;
-            }
-
-            @include tablet {
-                bottom: 3em;
-            }
-
-            a {
-                text-decoration: none;
-            }
+        @include tablet {
+            width: 500px;
+            font-size: 24px;
+            padding-right: 0;
         }
-        .featured_title {
-            font-size: 40px;
-            // font-size: 50px;
-            font-family: $font-1;
-            font-weight: $muli-black;
-            color: $white;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px #361d0d;
-
-            @include palm {
-                font-size: 48px;
-            }
-            @include tablet {
-                font-size: 60px;
-            }
-            @include laptop {
-                width: 100%;
-            }
-            @include widescreen {
-                font-size: 65px;
-            }
-        }
-        .featured_summary {
-            font-size: 20px;
-            color: $white;
-            margin-bottom: 15px;
-            line-height: 1.2;
-            padding-right: 1em;
-
-            @include palm {
-                padding-right: 4em;
-            }
-            @include tablet {
-                width: 500px;
-                font-size: 24px;
-                padding-right: 0;
-            }
-            @include widescreen {
-                font-size: 28px;
-                width: 600px;
-            }
+        @include widescreen {
+            font-size: 28px;
+            width: 600px;
         }
     }
 }
+
+// Highlights Page - Non Featured Posts
 .highlights_items_meta {
-    // margin: 50px 15px 150px;
     padding: 3em 0;
     width: 90%;
     margin: 0 auto;
 
     @include palm {
         max-width: 500px;
-        // margin: 100px auto 150px;
     }
 
     @include tablet {
@@ -115,12 +111,7 @@
         width: 100%;
     }
 
-    @include laptop {
-        // margin-bottom: 100px;
-    }
-
     .highlights_item {
-        // margin-bottom: 75px;
         width: 100%;
         padding-bottom: 3em;
         border-bottom: 2px solid;
@@ -133,42 +124,9 @@
         @include laptop {
             width: 90%;
         }
-        @include desktop {
-            // width: 46%;
-        }
-        @include widescreen {
-            // width: 44%;
-        }
 
         a {
             text-decoration: none;
-        }
-
-        .highlights_item_cover {
-            @extend %bg_props;
-            height: 60vh;
-            margin-bottom: 25px;
-            vertical-align: top;
-            position: relative;
-
-            @include palm {
-                // height: 45vh;
-            }
-            @include laptop {
-                height: 50vh;
-            }
-
-            @include desktop {
-                height: 52vh;
-            }
-            @include widescreen {
-                height: 58vh;
-            }
-        }
-        
-        .highlights_item_cover * {
-            position: relative;
-            /* hack */
         }
 
         .highlights_item_title {
@@ -194,10 +152,6 @@
                 font-size: 40px;
                 width: 65%;
             }
-            @include tv {
-                // font-size: 36px;
-                // padding-right: 3em;
-            }
 
             a {
                 color: $black;
@@ -209,7 +163,6 @@
             }
         }
         .highlights_item_summary {
-            // font-size: 18px;
             margin-bottom: 15px;
             line-height: 1.2;
 
@@ -221,12 +174,146 @@
                 font-size: 20px;
             }
             @include laptop {
-                // font-size: 20px;
                 width: 60%;
             }
         }
     }
 }
+
+// Highlight Single - Video
+.highlight_video {
+    @extend %bg_props;
+    height: 75vh;
+    left: 50%;
+    margin-left: -50vw;
+    position: relative;
+    transition: 0.5s;
+    width: 100vw;
+
+    @include desktop {
+        height: 80vh;
+    }
+
+    .bronzey_alpha {
+        color: $white;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin-top: 35px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px #484646;
+
+        @include tablet {
+            font-size: 24px;
+        }
+        @include desktop {
+            font-weight: bold;
+        }
+    }
+    .bronzey_play {
+        text-align: center;
+    }
+}
+.highlight_audio {
+    margin: 75px 0 125px;
+}
+// Highlights Single - Slider
+.highlights__slider_bg_img {
+    width: 100%;
+    height: 80vh !important;
+    @extend %bg_props;
+    background-position: center center;
+}
+.caret_slide_web {
+    position: absolute;
+    z-index: 7;
+    width: 60px;
+    bottom: 5vh;
+
+    @include tablet {
+        bottom: auto;
+        top: 30vh;
+    }
+
+    &.left {
+        left: 15px;
+        @include tablet {
+            left: 2em;
+        }
+        @include tv {
+            left: 10em;
+        }
+    }
+    &.right {
+        right: 15px;
+        @include tablet {
+            right: 2em;
+        }
+        @include tv {
+            right: 10em;
+        }
+    }
+}
+// Highlights Single - Bottom Content
+.highlight__content_left {
+    padding: 2em 1em 1em;
+
+    @include tablet {
+        width: 65%;
+    }
+    @include laptop {
+        width: 55%;
+        padding-bottom: 4em;
+    }
+    @include tv {
+        width: 40%;
+    }
+}
+.highlight__content_right {
+    padding: 0 1em;
+
+    @include laptop {
+        width: 35%;
+    }
+    @include tv {
+        width: 25%;
+    }
+}
+.highlights__content-title {
+    font-family: $font-1;
+    font-weight: $muli-black;
+    font-size: 24px;
+    padding-bottom: 15px;
+
+    @include palm {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    @include laptop {
+        font-size: 44px;
+    }
+
+}
+.highlights__content-summary {
+    line-height: 1.2;
+    padding-bottom: 25px;
+
+    @include palm {
+        font-size: 20px;
+    }
+    @include laptop {
+        font-size: 22px;
+    }
+}
+.highlights__content_wrapper {
+    position: relative;
+    @extend %clearfix;
+}
+.highlights__back {
+    margin-top: 2.5em;
+}
+
+
+// Highlights Single - Old Posts (Delete Later)
 .highlights_single_meta {
     @extend .highlights_items_meta;
     margin:25px 15px 30px;
@@ -314,7 +401,6 @@
         z-index: -1;
     }
 }
-
 // Interview Excerpt
 .highlights_interview_excerpt {
     margin-bottom: 50px;
@@ -348,41 +434,49 @@
     }
 }
 
-// Highlight Video
-.highlight_video {
-    @extend %bg_props;
-    height: 50vh;
-    left: 50%;
-    margin-left: -50vw;
-    position: relative;
-    transition: 0.5s;
-    width: 100vw;
-    margin-top: 75px;
-    margin-bottom: 50px;
+// Pagination
+.pagination_wrapper {
+    margin: 15px 0;
 
     @include laptop {
-        margin-bottom: 0;
+        margin: 0;
+        width: 100%;
     }
 
-    .bronzey_alpha {
-        color: $white;
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        margin-top: 35px;
-        text-transform: uppercase;
-        text-shadow: 1px 1px #484646;
+    a {
+        text-decoration: none;
 
-        @include tablet {
-            font-size: 24px;
+        div {
+            color: $black;
+            font-size: 12px;
+            font-family: $font-1;
+            font-weight: $muli-black;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $bluegreen;
+            }
         }
-        @include desktop {
-            font-weight: bold;
+
+
+    }
+    .next_post_group {
+        margin: 20px 0;
+        position: relative;
+
+		@include palm {
+			max-width: 350px;
+		}
+
+        .next_post {
+            font-size: 18px;
+            font-weight: $muli-black;
+            font-family: $font-1;
+            background: $black;
+            color: $white;
+            padding: 10px;
+            border: 3px solid;
+            line-height: 1.2;
         }
     }
-    .bronzey_play {
-        text-align: center;
-    }
-}
-.highlight_audio {
-    margin: 75px 0 125px;
 }

@@ -1,6 +1,12 @@
-<div class="page_header_content inner_wrapper">
-    <div class="page_title_content">
-        <div class="circle" style="background: {% unless page.layout == "programs" or page.layout == "people" %}#FA879E{% endunless %}{% if page.layout == "programs" %}#FA879E{% endif %}{% if page.layout == "people" %}#FA879E{% endif %}"></div>
-        <div class="page_title">{% unless page.layout == "programs" or page.layout == "people" %}{{ page.title }}{% endunless %}{% if page.layout == "programs" %}Programs{% endif %}{% if page.layout == "people" %}People{% endif %}</div>
+{% include header.html %}
+
+{% unless page.layout == "post" or page.layout == "post2" %}
+<div class="discover_grid">
+    <div class="page_header_content">
+        <div class="page_title_content">
+            <div class="circle" style="background: {% unless page.layout == "programs" or page.layout == "people" %}#FA879E{% endunless %}{% if page.layout == "programs" %}#FA879E{% endif %}{% if page.layout == "people" %}#FA879E{% endif %}"></div>
+            <div class="page_title">{% unless page.layout == "programs" or page.layout == "people" %}{{ page.title }}{% endunless %}{% if page.layout == "programs" %}Programs{% endif %}{% if page.layout == "people" %}People{% endif %}</div>
+        </div>
     </div>
 </div>
+{% endunless %}

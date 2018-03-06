@@ -19,7 +19,6 @@
 .overlay_logo_img {
 	width: 50px;
     position: relative;
-    // z-index: 1000;
 
 	@include tablet {
 		width: 63px;
@@ -132,15 +131,10 @@
 		}
 	}
 }
-.menu_desktop.black_menu {
-    ul {
-        li {
-            a {
-                color: $black;
-            }
-        }
-    }
+.menu_desktop.black_menu ul li a {
+    color: $black;
 }
+
 #menu-container {
 	height: 50px;
 	position: relative;
@@ -215,8 +209,6 @@
     padding-bottom: 3px;
 }
 .overlay ul li a:hover {
-	// color: $grey !important;
-	// @extend %hover;
     border-bottom: 2px solid;
 }
 .overlay-close {
@@ -273,17 +265,13 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        // width: 65px;
-        // height: 110px;
         width: 45px;
         height: 75px;
         margin: auto;
 
         &:hover {
             background-image: url('/assets/img/gwcc_logo_white.gif');
-            // width: 65px;
             width: 45px;
-            // height: 110px;
             height: 75px;
         }
 

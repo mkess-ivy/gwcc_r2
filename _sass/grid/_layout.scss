@@ -3,7 +3,7 @@ body.noScroll { /* ...or body.dialogShowing */
 }
 
 // Grid
-.grid {
+.home_grid {
 	margin: 0 10px;
 
 	@include small {
@@ -24,13 +24,24 @@ body.noScroll { /* ...or body.dialogShowing */
 		max-width: 1200px;
 	}
 }
-.inner_wrapper {
-	padding: 12px;
-	@extend .discover_grid;
-
-	@include small {
-		margin: 0 auto;
-	}
+.discover_grid {
+    position: relative;
+    @include tablet {
+        max-width: 700px;
+        margin: auto;
+    }
+    @include laptop {
+        max-width: 950px;
+    }
+    @include desktop {
+        max-width: 1150px;
+    }
+    @include widescreen {
+        max-width: 1280px;
+    }
+    @include tv {
+        max-width: 1500px;
+    }
 }
 .outer_wrapper {
 	position: relative;
@@ -48,97 +59,6 @@ body.noScroll { /* ...or body.dialogShowing */
 	padding: 15px;
 	@extend %clearfix;
 }
-
-// CTAs
-.brand_cta_v2 {
-	text-decoration: none;
-	width: fit-content;
-	display: block;
-
-	div {
-		border: 3px solid;
-		color: $black;
-		font-weight: bold;
-		padding: 3px 10px;
-		text-align: center;
-		text-decoration: none;
-		width: fit-content;
-		cursor: pointer;
-
-		@include tablet {
-			padding: 7px 25px;
-			font-size: 18px;
-		}
-
-		&.featured_cta {
-			color: $white;
-
-			&:hover {
-				@extend %hover;
-			}
-		}
-
-		&.highlights_cta {
-			color: $black;
-
-			&:hover {
-				@extend %highlights_hover;
-			}
-		}
-		&.nonprofit_btn {
-			margin: auto;
-			text-transform: uppercase;
-
-			@include tablet {
-				margin: 0;
-			}
-			@include desktop {
-				font-size: 12px;
-				padding: 3px 5px;
-				border: 1px solid $bluegreen;
-				background: $bluegreen;
-			}
-			&:hover {
-				background: $black;
-				color: $white;
-				border-color: $black;
-			}
-		}
-
-		&:hover {
-			@extend %hover;
-		}
-	}
-}
-.donate_btn {
-	color: $black;
-	width: fit-content;
-	display: block;
-	margin: auto;
-
-	@include tablet {
-		margin:0;
-	}
-
-	div {
-		text-transform: uppercase;
-		font-family: $font-1;
-		font-weight: $muli-black;
-		font-size: 14px;
-		letter-spacing: 1.1px;
-		border: 2px solid;
-		padding: 3px 10px;
-
-		&:hover {
-			background: $black;
-			color: $white;
-			border-color: $black;
-			transition: 0.5s;
-		}
-	}
-}
-
-
 
 // Misc
 .bold {

@@ -3,7 +3,6 @@
     color: $white;
     height: 80vh;
 
-
     @include laptop {
         height: 78vh;
     }
@@ -15,11 +14,8 @@
         text-transform: uppercase;
         line-height:1;
         letter-spacing: 1px;
-        // margin-bottom: 40px;
         margin-bottom: 20px;
-        -webkit-animation-duration:2s;
-        -webkit-animation-delay: 2s;
-        -webkit-animation-iteration-count:1;
+        @include mx_animated(2s, 2.3s, 1);
 
         @include small {
             font-size: 48px;
@@ -45,11 +41,8 @@
     .home_masthead_subtitle {
         font-weight: $font-bold;
         font-size: 20px;
-        // margin-bottom: 50px;
         margin-bottom: 20px;
-        -webkit-animation-duration:2s;
-        -webkit-animation-delay: 2.5s;
-        -webkit-animation-iteration-count:1;
+        @include mx_animated(2s,2.5s,1);
 
         @include small {
             font-size: 22px;
@@ -97,17 +90,13 @@
             left: 0.2em;
             z-index:1;
             background-color: $bluegreen;
-            -webkit-animation-duration:0.75s;
-            -webkit-animation-delay: 2s;
-            -webkit-animation-iteration-count:1;
+            @include mx_animated(0.75s,2s,1);
 
             @include palm {
                 height: 100px;
                 width: 100px;
             }
             @include tablet {
-                // height: 150px;
-                // width: 150px;
                 top: -1.5em;
             }
 
@@ -128,9 +117,7 @@
             letter-spacing: 1.2px;
             position: relative;
             z-index: 2;
-            -webkit-animation-duration:2s;
-            -webkit-animation-delay: 2.5s;
-            -webkit-animation-iteration-count:1;
+            @include mx_animated(2s,2.5s,1);
 
             @include palm {
                 font-size: 20px;
@@ -145,151 +132,7 @@
     }
 }
 
-// Intro Content
-.intro_content {
-    margin-bottom: 55px;
-
-    .intro_item {
-        margin-bottom: 50px;
-
-        @include tablet {
-            margin-bottom: 0;
-            margin-top: 75px;
-            width: 45%;
-        }
-
-    }
-
-    .intro_title {
-        font-family: $font-1;
-        font-size: 26px;
-        font-weight: 900;
-        letter-spacing: 1.42px;
-        line-height: 34px;
-        margin-bottom: 30px;
-
-        @include tablet {
-            font-size: 36px;
-            line-height: 1.4;
-        }
-    }
-    .intro_text {
-        font-size: 18px;
-        letter-spacing: 1.2px;
-        line-height: 28px;
-        margin-bottom: 30px;
-
-        @include tablet {
-            font-size: 24px;
-            line-height: 1.4;
-        }
-    }
-}
-
-// Highlight Content
-.highlight_content {
-    border: 9px solid $bluegreen;
-    margin-bottom: 150px;
-
-    @include tablet {
-        width: 40%;
-        height: 48vh;
-    }
-    @include widescreen {
-        max-width: 300px;
-    }
-
-    .highlight_title {
-        font-family: $font-1;
-        font-size: 24px;
-        font-weight: $muli-black;
-        line-height: 30px;
-        margin-bottom: 25px;
-        text-transform: uppercase;
-    }
-    .highlight_img {
-        margin-bottom: 40px;
-
-        img {
-            width: 75px;
-        }
-    }
-}
-
-// Sponsors
-.sponsor_content {
-    margin-bottom: 150px;
-
-    .sponsor_title {
-        font-family: $font-1;
-        font-size: 24px;
-        font-weight: $muli-black;
-        margin: 30px 0 75px;
-        text-align: center;
-        text-transform: uppercase;
-
-        @include tablet {
-            margin-top: 60px;
-        }
-    }
-    .sponsor_item {
-        margin-bottom: 30px;
-        text-align: center;
-        width: 100%;
-
-        @include tablet {
-            width: 22%;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.sponsors {
-    color: $white;
-    margin-bottom: 40px;
-    @include tablet {
-        margin-bottom: 75px;
-    }
-    @include laptop {
-        max-width: 750px;
-        margin: 0 auto 100px;
-    }
-    @include desktop {
-        max-width: none;
-        width: 100%;
-    }
-
-    .sponsors_title {
-        text-align: center;
-        font-family: $font-1;
-        font-weight: $muli-black;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        padding-bottom: 30px;
-    }
-
-    .sponsors_group {
-        @include tablet {
-            width: 75%;
-            margin: auto;
-        }
-        ul {
-            li {
-                width: 24%;
-                display: inline-block;
-
-                @include laptop {
-                    width: auto;
-                }
-            }
-        }
-    }
-}
-
-// Goldie - Three Column Structure - Home
+// Home Resources - Goldie
 .goldie {
     margin: 100px auto;
     color: $white;
@@ -418,6 +261,81 @@
     }
 }
 
+// Sponsors
+.sponsor_content {
+    margin-bottom: 150px;
+
+    .sponsor_title {
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: $muli-black;
+        margin: 30px 0 75px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include tablet {
+            margin-top: 60px;
+        }
+    }
+    .sponsor_item {
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+
+        @include tablet {
+            width: 22%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.sponsors {
+    color: $white;
+    margin-bottom: 40px;
+    @include tablet {
+        margin-bottom: 75px;
+    }
+    @include laptop {
+        max-width: 750px;
+        margin: 0 auto 100px;
+    }
+    @include desktop {
+        max-width: none;
+        width: 100%;
+    }
+
+    .sponsors_title {
+        text-align: center;
+        font-family: $font-1;
+        font-weight: $muli-black;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-bottom: 30px;
+    }
+
+    .sponsors_group {
+        @include tablet {
+            width: 75%;
+            margin: auto;
+        }
+        ul {
+            li {
+                width: 24%;
+                display: inline-block;
+
+                @include laptop {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+// Misc Typeform Links - Volunteer Form
 .plain_typeform_link {
 	color: $white;
 	text-decoration: none;

@@ -1,4 +1,4 @@
-<div class="bronzey" style="background-image:url('{{ include.background }}');">
+<div class="bronzey" style="background-image:url('{{ page.video_embed_bg }}');">
     <div class="frow centered">
         <div>
 
@@ -11,13 +11,13 @@
 
 
                     <!-- Embedded video -->
-                    <iframe id="video" src="https://player.vimeo.com/video/242342417?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <iframe id="video" src="https://player.vimeo.com/video/{{ page.video_embed }}?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="gwcc_video_player">
                 <div>
-                    <span class="gwcc_play">Play</span>
+                    <span class="gwcc_play">+ Play</span>
                 </div>
             </div>
             <div class="bronzey_alpha">

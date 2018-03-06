@@ -1,54 +1,25 @@
-// Back to top
-.backtop {
-    margin: 0px auto;
-}
-
-// Preloader
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(/assets/img/Preloader.gif) center no-repeat #fff;
-}
-
-// Textured Background
-.textured_bg {
-    @extend %texture_background;
-}
-
-// Page Masthead
-.page_masthead {
-	background-size: auto;
-	background-repeat: repeat;
-}
 // -- Page Header
 .page_header_content {
-	padding-top: 50px;
-	padding-bottom: 25px;
+	padding: 20px 15px;
+
+    @include tablet {
+        padding: 12px;
+    }
+    @include laptop {
+        padding: 0 0 20px;
+    }
 }
 .page_title_content {
 	margin: 0 auto 10px;
 	width: 100%;
 
 	@include palm {
-		margin: 0 0 40px;
-	}
-    @include laptop {
-        margin: 0 0 15px;
-    }
-	@include desktop {
 		margin: 0 0 25px;
 	}
-
 
 	.circle {
 		border-radius: 50%;
 		display: inline-block;
-		// height: 75px;
-		// width: 75px;
         height: 65px;
 		width: 65px;
 
@@ -65,7 +36,6 @@
 	.page_title {
 		display: inline-block;
 		font-family: $font-1;
-		// font-size: 40px;
         font-size: 30px;
 		font-weight: $muli-black;
 		margin-left: -45px;
@@ -97,213 +67,82 @@
   object-fit: cover;
 }
 
-// Highlight Short Content
-.highlight_short {
-    .highlight_short_title {
-        font-family: $font-1;
-        font-size: 20px;
-        font-weight: $muli-black;
-        line-height: 25px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
+// Accordion
+.accordion_meta {
+    @extend .history_meta;
+
+    @include tablet {
+        padding: 50px 0 !important;
     }
-    .icon_copper {
-        margin-bottom: 30px;
 
-        .icon_copper_text {
-            display: inline-block;
-            width: 80%;
-
-            @include laptop {
-                max-width: 320px;
-                line-height: 1.4;
-            }
-        }
-        .icon_copper_textbig {
-            @extend .icon_copper_text;
-
-            @include laptop {
-                font-size: 20px;
-            }
-        }
-        .icon_copper_title {
-            font-size: 16px;
-            font-weight: $font-bold;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-
-            @include tablet {
-                font-size: 18px;
-            }
-        }
-        .icon_copper_img {
-            float: left;
-            padding-right: 10px;
-        }
+    @include desktop {
+        max-width: 1000px !important;
+        padding: 100px 0 100px 100px;
     }
 }
 
-// Newsletter
-.newsletter_title {
-    @include laptop {
-        font-size: 24px !important;
-        line-height: 1.2 !important;
-    }
-}
-
-// Programs Content
-.programs_content {
-    background: $lightgrey;
-    padding: 50px !important;
-
-    .program_item {
-        margin-bottom: 50px;
-
-        @include tablet {
-            width: 45%;
-        }
-        @include laptop {
-            margin-bottom: 75px;
-        }
-    }
-    .programs_title {
-        font-family: $font-1;
-        font-size: 36px;
-        font-weight: $muli-black;
-        margin-bottom: 10px;
-
-        @include laptop {
-            font-size: 50px;
-        }
-    }
-    .programs_group {
-        font-family: $font-1;
-        font-size: 20px;
-        font-weight: $muli-black;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
-    .programs_text {
-        font-size: 18px;
-        line-height: 26px;
-
-        @include tablet {
-            height: 125px;
-        }
-        @include laptop {
-            font-size: 22px;
-            line-height: 34px;
-            height: 175px;
-        }
-    }
-}
-
-// Full-width Image + Color Overlays
-.mission_group {
-    @extend %bg_props;
-    width: 100%;
-    height: auto;
-    display: block;
+// Yellow Lines Animated
+.animated_lines {
     position: relative;
-    vertical-align: top;
+    margin:30px 0 0 75px;
+    padding-bottom: 0;
+    transform: rotate(30deg);
+    display: inline-block;
+    z-index: 3;
+
+    @include palm {
+        margin: 0 0 0 125px;
+    }
+    @include laptop {
+        margin: 0 0 0 125px;
+    }
+    @include desktop {
+        margin: 0 0 0 300px;
+    }
+
+    .animated_line_single {
+        background: #FA879E;
+        width: 2px;
+        height: 150px;
+        display: inline-block;
+        position: absolute;
+        top: -4em;
+        left: 0;
+		@include mx_animated(4s,2s,infinite);
+
+        @include desktop {
+            top: 1em;
+            height: 400px;
+        }
+
+        &.alt_single {
+            top: -2.5em;
+            left: 7px;
+
+            @include desktop {
+                top: 3em;
+                left: 10px;
+            }
+        }
+    }
+
 }
 
+// Color Overlays
 .color_overlay:before{
   @include color_overlay($bluegreen, 0.45);
-}
-.dark_overlay:before{
-    @include color_overlay($darkgray, 0.65);
 }
 
 // Overlay Hacks
 .mission_group *,
 .discover_prime_image *,
 .history_group *,
-.highlight_video * {
+.highlight_video *,
+.highlights__slider_bg_img * {
     position: relative;
 }
 
-
-
-// Accordion
-.accordion_meta {
-    @extend .history_meta;
-
-    @include tablet {
-        margin: 50px 0 !important;
-    }
-
-    @include desktop {
-        max-width: 1000px !important;
-        margin: 100px 0 100px 100px;
-    }
-}
-
-// Pagination
-.pagination_wrapper {
-    // margin: 50px 25px;
-    margin: 15px;
-
-    @include laptop {
-        margin: 25px 0 50px;
-    }
-
-    a {
-        text-decoration: none;
-
-        div {
-            color: $black;
-            font-size: 16px;
-            font-family: $font-1;
-            font-weight: $muli-black;
-            text-transform: uppercase;
-
-            &:hover {
-                color: $bluegreen;
-            }
-        }
-
-
-    }
-    .next_post_group {
-        // margin: 50px 0 25px;
-        margin: 20px 0;
-        position: relative;
-
-        @include tablet {
-            max-width: 475px;
-        }
-
-        .next_post {
-            // font-size: 22px;
-            font-size: 18px;
-            font-weight: $muli-black;
-            font-family: $font-1;
-            background: $white;
-            // padding: 20px;
-            padding: 10px;
-            border: 3px solid $bluegreen;
-            // border: 5px solid $bluegreen;
-            line-height: 1.2;
-
-            @include tablet {
-                font-size: 24px;
-                padding: 30px;
-            }
-        }
-        .next_post_bottom {
-            position: absolute;
-            top: 0.25em;
-            left: 0.25em;
-            background: $bluegreen;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-        }
-    }
-}
-
-// Give
+// Give Page
 .give_meta {
     width:90%;
     margin:auto;
@@ -335,7 +174,6 @@
         font-weight: $muli-black;
         border: 4px solid $bluegreen;
         padding: 15px;
-        background: $white;
         line-height: 1.2;
 
         @include tablet {
@@ -390,19 +228,23 @@
         @include laptop {
             width: 45% !important;
         }
-        @include desktop {
-
-        }
-        // @include tv {
-        //     width: 37% !important;
-        // }
     }
 }
 
-// Community
+// Community Page
 .category_group {
-    margin-bottom: 75px;
+    padding: 75px 0;
+    border-bottom: 2px solid;
+
+	@include tablet {
+		padding: 55px 0 25px;
+	}
+
+    &:last-child {
+        border-bottom: none;
+    }
 }
+
 .category_title {
     font-family: $font-1;
     font-weight: $muli-black;
@@ -499,58 +341,11 @@
         }
     }
 }
-
-// Yellow Lines Animated
-.animated_lines {
-    position: relative;
-    margin:30px 0 0 75px;
-    padding-bottom: 0;
-    transform: rotate(30deg);
-    display: inline-block;
-    z-index: 3;
-
-    @include palm {
-        margin: 0 0 0 125px;
-    }
-    @include laptop {
-        margin: 0 0 0 125px;
-    }
-    @include desktop {
-        margin: 0 0 0 300px;
-    }
-
-    .animated_line_single {
-        background: #FA879E;
-        width: 2px;
-        height: 150px;
-        display: inline-block;
-        position: absolute;
-        top: -4em;
-        left: 0;
-        -webkit-animation-duration:4s;
-        -webkit-animation-delay: 2s;
-        -webkit-animation-iteration-count:infinite;
-
-        @include desktop {
-            top: 1em;
-            height: 400px;
-        }
-
-        &.alt_single {
-            top: -2.5em;
-            left: 7px;
-
-            @include desktop {
-                top: 3em;
-                left: 10px;
-            }
-        }
-    }
-
-}
+// Mapbox
 .mapbox_wrapper {
-    width: 85%;
-    margin: 50px auto 75px;
+    width: 80% !important;
+    margin: 0 auto;
+    padding: 50px 0 75px;
 
     @include tablet {
         width: 90%;
@@ -559,8 +354,6 @@
         width:80%;
     }
 }
-
-// Mapbox Title
 .map_title {
     position: absolute;
     font-size: 14px;

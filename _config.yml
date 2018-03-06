@@ -34,3 +34,28 @@ collections:
 
   timeline:
     output: false
+
+# GWCC Sponsors
+sponsor1_img: /assets/img/logo_rwd.png
+sponsor1_text: Robert Deutsch Foundation
+sponsor1_url: https://www.rwdfoundation.org/
+
+sponsor2_img: /assets/img/logo_gwca.png
+sponsor2_text: Greenmount West Community Association
+sponsor2_url: http://www.greenmountwest.org/
+
+sponsor3_img: /assets/img/logo_bma.png
+sponsor3_text: Greenmount West Community Association
+sponsor3_url: https://artbma.org/
+
+# Social
+facebook: gwccbaltimore
+twitter: gwccbaltimore
+youtube: gwccbaltimore
+instagram: gwccbaltimore
+email: admin@greenmountwestcc.org
+
+# Programs Overlay
+programs_overlay_img: /assets/img/programs_overlay_cover.png
+programs_overlay_title: Programs
+programs_overlay_summary: 'The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:'

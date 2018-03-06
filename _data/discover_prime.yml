@@ -1,4 +1,4 @@
--   bg: /assets/img/gwcc_art_class.jpg
+-   bg: /assets/img/gwcc_discover_art_class.jpg
     title: Our History
     summary: Established and operating since 2016. The founding members have a focus on providing programming + new experiences to all community residents.
     cta_text: Learn More
@@ -13,7 +13,6 @@
     summary: Visit our computer room for general use or our lending library with a great assortment of books + movies
     cta_text: Learn More
     url: /computers-and-library/
-
 -   bg: /assets/img/gwcc_discover_center.jpg
     title: Visit the Center
     summary: The Greenmount West Community Center sits within the Baltimore Montesorri Public Charter School.

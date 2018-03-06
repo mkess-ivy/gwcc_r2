@@ -7,7 +7,7 @@ permalink: /history/
 circle: "#47E7CE"
 ---
 
-<div class="history_group discover_overlay" style="background-image: url('/assets/img/history_cover.jpg');">
+<div class="history_group discover_overlay" style="background-image: url('/assets/img/history_cover2.jpg');">
     <div class="discover_grid">
         <div class="frow centered">
             <div class="history_content">
@@ -28,7 +28,7 @@ circle: "#47E7CE"
         </div>
     </div>
 </div>
-<div class="timeline_wrapper">
+<div class="timeline_wrapper textured_bg">
     <div class="timeline_background"></div>
     <div class="frow justify-end">
         <section class="timeline_section">

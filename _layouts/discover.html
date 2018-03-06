@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <section class="textured_bg">
+            {% include grid/page_header.html %}
+
+            <div class="mission_group discover_overlay" style="background-image:url('/assets/img/gwcc_discover_cover.jpg')">
+                <div class="discover_grid">
+                    <div class="mission_meta">
+                        <div class="frow justify-between">
+                            <div class="mission_single animated fadeIn">
+                                <div class="mission_title">
+                                    Mission
+                                </div>
+                                <div class="mission_summary">
+                                    {{ page.mission_statement }}
+                                </div>
+                            </div>
+                            <div class="mission_single animated fadeIn">
+                                <div class="mission_title">
+                                    Vision
+                                </div>
+                                <div class="mission_summary">
+                                    {{ page.vision_statement }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include components/animated_lines.html %}
+
+            <!-- Discover Prime -->
+            <div class="discover_grid">
+                <div class="discover_prime_group">
+                    {% for item in site.data.discover_prime %}
+                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                    {% if thecycle == 'odd' %}
+                    <div class="discover_prime_single">
+                        <div class="frow justify-between">
+                            <div class="discover_prime_image" style="background-image: url('{{ item.bg }}');"></div>
+                            <div class="discover_prime_meta">
+                                <div class="frow centered-column vertical-align">
+                                    <div class="discover_prime_title">
+                                        {{ item.title }}
+                                    </div>
+                                    <div class="discover_prime_summary">
+                                        {{ item.summary }}
+                                    </div>
+                                    <a class="brand_cta_v2" href="{{ item.url }}">
+                                        <div>
+                                            + {{ item.cta_text }}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if thecycle == 'even' %}
+                    <div class="discover_prime_single">
+                        <div class="frow justify-between direction-reverse">
+                            <div class="discover_prime_image" style="background-image: url('{{ item.bg }}');"></div>
+                            <div class="discover_prime_meta">
+                                <div class="frow centered-column vertical-align">
+                                    <div class="discover_prime_title">
+                                        {{ item.title }}
+                                    </div>
+                                    <div class="discover_prime_summary">
+                                        {{ item.summary }}
+                                    </div>
+                                    <a class="brand_cta_v2" href="{{ item.url }}">
+                                        <div>
+                                            + {{ item.cta_text }}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="discover_alt_group">
+                    <div class="frow justify-between">
+                        <div class="discover_alt_single">
+                            <div class="discover_img_group">
+                                <div class="discover_alt_image" style="background-image:url('{{ page.column1_img }}');"></div>
+                                <div class="discover_alt_solid"></div>
+                            </div>
+                            <div class="discover_alt_title">
+                                {{ page.column1_title }}
+                            </div>
+                            <div class="discover_alt_summary">
+                                {{ page.column1_summary }}
+                            </div>
+                            <a class="brand_cta_v2 margin_center typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank"><div>+ {{ page.column1_link_text }} </div></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                        </div>
+                        <div class="discover_alt_single">
+                            <div class="discover_img_group">
+                                <div class="discover_alt_image" style="background-image:url('{{ page.column2_img }}');"></div>
+                                <div class="discover_alt_solid"></div>
+                            </div>
+                            <div class="discover_alt_title">
+                                {{ page.column2_title }}
+                            </div>
+                            <div class="discover_alt_summary">
+                                {{ page.column2_summary }}
+                            </div>
+                            <a class="brand_cta_v2 margin_center" href="/donate/"><div>
+                                + {{ page.column2_link_text }}
+                            </div></a>
+                        </div>
+                        <div class="discover_alt_single">
+                            <div class="discover_img_group">
+                                <div class="discover_alt_image" style="background-image:url('{{ page.column3_img }}');"></div>
+                                <div class="discover_alt_solid"></div>
+                            </div>
+                            <div class="discover_alt_title">
+                                {{ page.column3_title }}
+                            </div>
+                            <div class="discover_alt_summary">
+                                {{ page.column3_summary }}
+                            </div>
+                            <a class="brand_cta_v2 margin_center" href="mailto:{{ site.email }}"><div>
+                                + {{ page.column3_link_text }}
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include grid/footer.html %}
+
+        </section>
+
+  </body>
+
+</html>

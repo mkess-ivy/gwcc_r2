@@ -1,20 +1,20 @@
 .site_footer {
-    // background-color: $white;
-    background-image:url('/assets/img/texture_background.jpg');
-    background-repeat: repeat;
-    background-position: 2% 7%;
-    background-size: auto;
-    padding-top: 50px;
+    // padding-top: 50px;
     position: relative;
 
     @include laptop {
-        padding-top: 0;
+        // padding-top: 0;
     }
 }
+.footer_solid_bg {
+    background-color: $bluegreen;
+}
 .footer_grid {
-    margin: 0 15px;
+    padding: 0 15px;
+
+
     @include small {
-        margin: 0 50px;
+        padding: 0 50px;
     }
     @include palm {
         width: 65%;
@@ -24,7 +24,7 @@
     @include tablet {
         width: 100%;
         max-width: 675px;
-        padding: 50px 0 0;
+        padding: 4em 0;
     }
     @include laptop {
         max-width: 900px;
@@ -34,15 +34,19 @@
     }
     @include widescreen {
         max-width: none;
-        padding: 50px 25px 0;
+        padding: 4em 1em 4em 0;
     }
 }
 .footer_logo {
     margin: 0 auto 50px;
+    padding-top: 50px;
 
     @include tablet {
         width: 75px;
         margin: 0 auto 50px;
+    }
+    @include laptop {
+        padding-top: 0;
     }
     @include desktop {
         width: 5%;
@@ -295,7 +299,7 @@
 
                     &:hover {
                         cursor: pointer;
-                        color: $bluegreen;
+                        color: $pink;
                     }
                 }
             }
@@ -303,6 +307,9 @@
     }
 }
 .site_footer_mini {
+    background-image:url('/assets/img/texture_background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
     padding: 25px 0;
 
     @include tablet {
