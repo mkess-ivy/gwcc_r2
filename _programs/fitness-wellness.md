@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Fitness + Wellness
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: Increase your knowledge of nutrition & healthy eating while engaging in physical activity for increase healthy living.
 
 [//]: # Cover Image

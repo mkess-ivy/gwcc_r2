@@ -5,7 +5,7 @@ permalink: /discover/
 
 [//]: # Mission + Vision Statement
 mission_statement: The mission of GWCC is to empower the youth and their families through sustainable programming and innovative partnerships in a safe, community art space.
-vision_statement: A safe, welcoming and inclusive gathering space where opportunities to grow, learn and create are boundless
+vision_statement: A safe, welcoming and inclusive gathering space where opportunities to grow, learn and create are boundless.
 
 [//]: # Three Column Section
 column1_img: /assets/img/gwcc_discover_volunteer.jpg

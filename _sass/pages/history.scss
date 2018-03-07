@@ -2,7 +2,7 @@
 .history_group {
     @extend .mission_group;
     background-position: top left !important;
-    height: 60vh;
+    // height: 60vh;
 
     @include desktop {
         height: 70vh;

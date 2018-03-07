@@ -55,17 +55,9 @@
 
     .people_single_avatar {
         @extend %bg_props;
-        height: 30vh;
+        height: 45vh;
         margin-bottom: 20px;
         position: relative;
-
-        @include palm {
-            height: 37vh;
-        }
-
-        @include tv {
-            height: 43vh;
-        }
     }
     .people_single_name {
         font-family: $font-1;

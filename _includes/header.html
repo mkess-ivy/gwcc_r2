@@ -1,9 +1,6 @@
 <header class="site_header {% unless page.layout == "gold" %}outer_wrapper{% endunless %} {% if page.layout == "gold" %} single_template_outer_wrapper {% endif %}">
 
     <div class="frow justify-between">
-        <!-- <div class="logo" id="top">
-            <a href="/">{% if page.layout == "home" %}<img src="/assets/img/gwcc-logo-white.png" class="logo_img" />{% endif %}{% unless page.layout == "home" %}<img src="/assets/img/gwcc-logo.png" class="logo_img" />{% endunless %}</a>
-        </div> -->
         <div class="header_logo" id="top">
             <a href="/">{% if page.layout == "home" %}<div class="header_logo_img"></div>{% endif %}{% unless page.layout == "home" %}<div class="header_logo_img black_logo"></div>{% endunless %}</a>
         </div>
@@ -37,14 +34,12 @@
                                     what we do
                                 </div>
                                 <ul>
-                                    <!-- <div class="frow justify-between"> -->
-                                        {% include components/programs_overlay.html %}
-                                        <li><a href="{{ site.baseurl }}/discover">discover</a></li>
-                                        <li><a href="http://www.noisytenants.com/work/busstoptracker" target="_blank">bus stop buddies</a></li>
-                                        <li><a href="{{ site.baseurl }}/history">history</a></li>
-                                        <li><a href="{{ site.baseurl }}/calendar">calendar</a></li>
-                                        <li><a href="{{ site.baseurl }}/highlights">highlights</a></li>
-                                    <!-- </div> -->
+                                    {% include components/programs_overlay.html %}
+                                    <li><a href="{{ site.baseurl }}/discover">discover</a></li>
+                                    <li><a href="{{ site.baseurl }}/history">history</a></li>
+                                    <li><a href="{{ site.baseurl }}/calendar">calendar</a></li>
+                                    <li><a href="{{ site.baseurl }}/highlights">highlights</a></li>
+                                    <li><a href="http://www.noisytenants.com/work/busstoptracker" target="_blank">bus stop buddies</a></li>
                                 </ul>
                             </div>
                             <div class="menu_group">
@@ -52,11 +47,9 @@
                                     who we are
                                 </div>
                                 <ul>
-                                    <!-- <div class="frow justify-between"> -->
-                                        <li><a href="{{ site.baseurl }}/our-staff">our staff</a></li>
-                                        <li><a href="{{ site.baseurl }}/community">community</a></li>
-                                        <li><a href="{{ site.baseurl }}/partners">partners</a></li>
-                                    <!-- </div> -->
+                                    <li><a href="{{ site.baseurl }}/people/staff">our staff</a></li>
+                                    <li><a href="{{ site.baseurl }}/community">community</a></li>
+                                    <li><a href="{{ site.baseurl }}/people/partners">partners</a></li>
                                 </ul>
                             </div>
 
@@ -65,13 +58,11 @@
                                     Learn GWCC
                                 </div>
                                 <ul>
-                                    <li><a href="{{ site.baseurl }}/donate">give</a></li>
-
+                                    <li><a href="{{ site.baseurl }}/computers-and-library">digital lab</a></li>
+                                    <li><a href="{{ site.baseurl }}/calendar">calendar</a></li>
+                                    <li><a href="{{ site.baseurl }}/donate">donate</a></li>
                                     <li><a href="{{ site.baseurl }}/policy">policies</a></li>
-
-                                    <!-- <li><a href="{{ site.baseurl }}/volunteer">volunteer</a></li>
-
-                                    <li><a href="{{ site.baseurl }}/contact-us">contact us</a></li> -->
+                                    <li><a href="https://www.google.com/maps/dir//1634+Guilford+Ave,+Baltimore,+MD+21202/@39.3086914,-76.6147125,17z/data=!4m17!1m7!3m6!1s0x89c804eb578362c1:0xee9b7a61c419df67!2s1634+Guilford+Ave,+Baltimore,+MD+21202!3b1!8m2!3d39.3086873!4d-76.6125238!4m8!1m0!1m5!1m1!1s0x89c804eb578362c1:0xee9b7a61c419df67!2m2!1d-76.6125238!2d39.3086873!3e3">directions</a></li>
                                 </ul>
                             </div>
                         </nav>

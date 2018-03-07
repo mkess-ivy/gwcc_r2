@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: GW Podcast
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: The GWCC Podcast gives members of the community the opportunity to tell their stories, interview others and hear their voices.
 
 [//]: # Cover Image

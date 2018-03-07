@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Dancing
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: Multiple dance genres are taught, practiced and eventually, performed.
 
 [//]: # Cover Image

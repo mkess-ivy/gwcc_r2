@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Clay Creations
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: Through fun ceramic projects the youth will learn basic ceramic methods such as molding and alternating shapes while making usable pots and fanciful sculptures.
 
 [//]: # Cover Image

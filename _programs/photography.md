@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Photography
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: Learn the basics of photography & film&mdash; composition, digital camera use, editing with software and more!
 
 [//]: # Cover Image

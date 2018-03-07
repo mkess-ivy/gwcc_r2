@@ -42,9 +42,11 @@
 		margin-top: 15px;
 		text-transform: uppercase;
 		vertical-align: top;
+		width: 90%;
 
         @include tablet {
             font-size: 40px;
+			width: auto;
         }
 
 		@include desktop {
@@ -232,6 +234,7 @@
 }
 
 // Community Page
+
 .category_group {
     padding: 75px 0;
     border-bottom: 2px solid;
@@ -346,6 +349,8 @@
     width: 80% !important;
     margin: 0 auto;
     padding: 50px 0 75px;
+	height: 60vh;
+	position: relative;
 
     @include tablet {
         width: 90%;
@@ -381,4 +386,17 @@
     span {
         font-size: 14px;
     }
+}
+
+// Background Cover
+.cover_group {
+	height: 60vh;
+	width: 100%;
+	@extend %bg_props;
+	position: relative;
+	vertical-align: top;
+
+	@include tablet {
+		height: 70vh;
+	}
 }

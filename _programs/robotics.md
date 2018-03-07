@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Robotics
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: Build confidence while exploring the essential of science, technology, engineering and mathematical concepts through hands-on learning.
 
 [//]: # Cover Image

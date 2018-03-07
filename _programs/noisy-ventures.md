@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Noisy Ventures
-subtitle: Youth Ages 8 - 13
+subtitle: Youth Ages 5 - 13
 program_summary: In Noisy Ventures, our youth have the opportunity to develop their own businesses within the community.
 
 [//]: # Cover Image

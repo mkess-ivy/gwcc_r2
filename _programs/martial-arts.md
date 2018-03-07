@@ -1,7 +1,7 @@
 ---
 layout: programs
 title: Martial Arts
-audience: Youth Ages 8 - 13
+audience: Youth Ages 5 - 13
 program_summary: With a focus on teaching discipline & developing character, martial arts is a fun way for the youth to gain self-respect, self-control and self-confidence.
 
 [//]: # Cover Image

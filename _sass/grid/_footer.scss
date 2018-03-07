@@ -1,10 +1,5 @@
 .site_footer {
-    // padding-top: 50px;
     position: relative;
-
-    @include laptop {
-        // padding-top: 0;
-    }
 }
 .footer_solid_bg {
     background-color: $bluegreen;
@@ -172,11 +167,6 @@
             font-weight: $muli-black;
             text-transform: uppercase;
             padding-bottom: 10px;
-
-            @include tablet {
-                font-size: 14px;
-                padding-bottom: 5px;
-            }
         }
         .icon {
             display: inline-block;
@@ -197,6 +187,14 @@
 
             @include desktop {
                 width: 210px;
+            }
+
+            li a {
+                color: $black;
+
+                &:hover {
+                    border-bottom: 2px solid;
+                }
             }
         }
         .footer_content_single {
