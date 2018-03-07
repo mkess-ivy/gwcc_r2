@@ -1,7 +1,7 @@
 ---
 layout: calendar
 title: Calendar
-permalink: /calendar/
+permalink: /calendar-oldarchive/
 
 [//]: # Page Header
 circle: "#47E7CE"

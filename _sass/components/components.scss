@@ -400,3 +400,25 @@
 		height: 70vh;
 	}
 }
+
+// Calendar
+.calendar_title_wrapper {
+	margin: 0 auto;
+	padding: 0 0 2em;
+	width: 90%;
+}
+.calendar_subtitle {
+	padding-top: 15px;
+	font-size: 18px;
+	width: 100%;
+	line-height: 1.4;
+	font-family: 'Karla',sans-serif;
+
+	@include tablet {
+		width: 75%;
+		font-size: 24px;
+	}
+	@include desktop {
+		width: 50%;
+	}
+}

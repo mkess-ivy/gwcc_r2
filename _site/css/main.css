@@ -96,7 +96,7 @@ a {
   .accordion-item.active .icon {
     background: #fefefe; }
     .accordion-item.active .icon:before {
-      background: #adc8a3; }
+      background: #9fccaf; }
     .accordion-item.active .icon:after {
       width: 0; }
   .accordion-item .heading {
@@ -524,6 +524,25 @@ a {
   @media screen and (min-width: 768px) {
     .cover_group {
       height: 70vh; } }
+
+.calendar_title_wrapper {
+  margin: 0 auto;
+  padding: 0 0 2em;
+  width: 90%; }
+
+.calendar_subtitle {
+  padding-top: 15px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.4;
+  font-family: 'Karla',sans-serif; }
+  @media screen and (min-width: 768px) {
+    .calendar_subtitle {
+      width: 75%;
+      font-size: 24px; } }
+  @media screen and (min-width: 1200px) {
+    .calendar_subtitle {
+      width: 50%; } }
 
 .bronzey {
   background-image: url("/assets/img/learn_gwcc.jpg");

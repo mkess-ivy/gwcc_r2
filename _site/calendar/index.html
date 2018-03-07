@@ -1,601 +1,927 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8' />
-<title>Calendar</title>
-<meta name="author" content="Montier Kess" />
-<meta name="portfolio" content="http://theivyproject.com" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calendar</title>
+  <meta name="author" content="Montier Kess" />
+  <meta name="portfolio" content="http://theivyproject.com" />
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
+  <meta charset="utf-8" />
 
-<!-- Meta OG Tags -->
-<meta name="og:title" content="Greenmount West Community Center">
-<meta name="og:title" content="A Community Art Space">
-<meta property="og:url" content="http://www.greenmountwestcc.com" />
-<meta property="og:image" content="img/og-img.png" />
+  <!-- Meta OG Tags -->
+  <meta name="og:title" content="Greenmount West Community Center">
+  <meta name="og:title" content="A Community Art Space">
+  <meta property="og:url" content="http://www.greenmountwestcc.com" />
+  <meta property="og:image" content="img/og-img.png" />
 
-<link rel="shortcut icon" href="/crwn.png" type="image/png">
+  <link rel="shortcut icon" href="/crwn.png" type="image/png">
 
-<link href='/fullcalendar/fullcalendar.css' rel='stylesheet' />
- <link rel="stylesheet" type="text/css" href="/css/vendor/frow.css" />
-<script src='/fullcalendar/lib/moment.min.js'></script>
-<script src='/fullcalendar/lib/jquery.min.js'></script>
-<script src='/fullcalendar/fullcalendar.js'></script>
-<script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/calendar/">
+  <link rel="alternate" type="application/rss+xml" title="GWCC" href="http://localhost:4000/feed.xml" />
 
-  $(document).ready(function() {
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Muli:700,900" rel="stylesheet">
 
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,basicWeek,basicDay'
-      },
-      defaultDate: '2018-03-06',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        
-        {
-          title: 'Photography',
-          start: '2018-03-05 16:00',
-          end: '2018-03-05 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-07 16:00',
-          end: '2018-03-07 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-12 16:00',
-          end: '2018-03-12 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-14 16:00',
-          end: '2018-03-14 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-19 16:00',
-          end: '2018-03-19 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-21 16:00',
-          end: '2018-03-21 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-26 16:00',
-          end: '2018-03-26 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Photography',
-          start: '2018-03-28 16:00',
-          end: '2018-03-28 17:30',
-          url: '/programs/photography'
-        },
-        
-        {
-          title: 'Clay Creations',
-          start: '2018-03-06 16:00',
-          end: '2018-03-06 17:00',
-          url: '/programs/clay-creations'
-        },
-        
-        {
-          title: 'Clay Creations',
-          start: '2018-03-13 16:00',
-          end: '2018-03-13 17:00',
-          url: '/programs/clay-creations'
-        },
-        
-        {
-          title: 'Clay Creations',
-          start: '2018-03-20 16:00',
-          end: '2018-03-20 17:00',
-          url: '/programs/clay-creations'
-        },
-        
-        {
-          title: 'Clay Creations',
-          start: '2018-03-27 16:00',
-          end: '2018-03-27 17:00',
-          url: '/programs/clay-creations'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-05 16:30',
-          end: '2018-03-05 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-07 16:30',
-          end: '2018-03-07 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-12 16:30',
-          end: '2018-03-12 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-14 16:30',
-          end: '2018-03-14 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-19 16:30',
-          end: '2018-03-19 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-21 16:30',
-          end: '2018-03-21 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-26 16:30',
-          end: '2018-03-26 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'Fitness + Wellness',
-          start: '2018-03-28 16:30',
-          end: '2018-03-28 18:00',
-          url: '/programs/fitness-wellness'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-05 16:00',
-          end: '2018-03-05 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-07 16:00',
-          end: '2018-03-07 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-12 16:00',
-          end: '2018-03-12 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-14 16:00',
-          end: '2018-03-14 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-19 16:00',
-          end: '2018-03-19 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-21 16:00',
-          end: '2018-03-21 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-26 16:00',
-          end: '2018-03-26 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'GW Podcast',
-          start: '2018-03-28 16:00',
-          end: '2018-03-28 17:30',
-          url: '/programs/gw-podcast'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-05 16:30',
-          end: '2018-03-05 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-07 16:30',
-          end: '2018-03-07 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-12 16:30',
-          end: '2018-03-12 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-14 16:30',
-          end: '2018-03-14 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-19 16:30',
-          end: '2018-03-19 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-21 16:30',
-          end: '2018-03-21 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-26 16:30',
-          end: '2018-03-26 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Martial Arts',
-          start: '2018-03-28 16:30',
-          end: '2018-03-28 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Music',
-          start: '2018-03-08 16:00',
-          end: '2018-03-08 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Music',
-          start: '2018-03-15 16:00',
-          end: '2018-03-15 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Music',
-          start: '2018-03-22 16:00',
-          end: '2018-03-22 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Music',
-          start: '2018-03-29 16:00',
-          end: '2018-03-29 18:00',
-          url: '/programs/martial-arts'
-        },
-        
-        {
-          title: 'Noisy Ventures',
-          start: '2018-03-05 16:00',
-          end: '2018-03-05 17:00',
-          url: '/programs/noisy-ventures'
-        },
-        
-        {
-          title: 'Noisy Ventures',
-          start: '2018-03-12 16:00',
-          end: '2018-03-12 17:00',
-          url: '/programs/noisy-ventures'
-        },
-        
-        {
-          title: 'Noisy Ventures',
-          start: '2018-03-19 16:00',
-          end: '2018-03-19 17:00',
-          url: '/programs/noisy-ventures'
-        },
-        
-        {
-          title: 'Noisy Ventures',
-          start: '2018-03-26 16:00',
-          end: '2018-03-26 17:00',
-          url: '/programs/noisy-ventures'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-07 16:15',
-          end: '2018-03-07 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-08 16:15',
-          end: '2018-03-08 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-14 16:15',
-          end: '2018-03-14 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-15 16:15',
-          end: '2018-03-15 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-21 16:15',
-          end: '2018-03-21 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-22 16:15',
-          end: '2018-03-22 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-28 16:15',
-          end: '2018-03-28 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Robotics',
-          start: '2018-03-29 16:15',
-          end: '2018-03-29 17:15',
-          url: '/programs/robotics'
-        },
-        
-        {
-          title: 'Running Club',
-          start: '2018-03-07 17:00',
-          end: '2018-03-07 18:00',
-          url: '/programs/running-club'
-        },
-        
-        {
-          title: 'Running Club',
-          start: '2018-03-14 17:00',
-          end: '2018-03-14 18:00',
-          url: '/programs/running-club'
-        },
-        
-        {
-          title: 'Running Club',
-          start: '2018-03-21 17:00',
-          end: '2018-03-21 18:00',
-          url: '/programs/running-club'
-        },
-        
-        {
-          title: 'Running Club',
-          start: '2018-03-28 17:00',
-          end: '2018-03-28 18:00',
-          url: '/programs/running-club'
-        },
-        
-      ]
-    });
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/vendor/frow.css" />
 
-  });
+  <!-- Slick Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 
-</script>
+  <!-- Snipcart Stylesheets -->
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
 
-<style>
+  
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-    font-size: 14px;
-  }
-  #calendar {
-    width: 95%;
-    margin: 0 auto;
-    background: #fff;
-    opacity: 0.75;
-    position: relative;
-  }
-  .calendar_wrapper {
-      /* height: 100vh; */
-      background-image: url('/assets/img/texture_background.jpg');
-      background-position: center center;
-      background-repeat: repeat;
-      background-size: auto;
-      padding-bottom: 6em;
-  }
-  .fc-event {
-      background-color: #193531;
-  }
-  .calendar_route {
-      /* position: fixed; */
-      position: relative;
-      /* top: 4vh;
-      left: 30px; */
-      background: #000;
-      /* padding: 7px 12px; */
-      /* padding: 3px 7px; */
-      padding: 10px 7px;
-      font-size: 12px;
-      font-family: 'Muli',sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 3em;
-      width: 130px;
-      margin-left: 1.5em;
-  }
-  .calendar_route a {
-      color: #fff;
-      text-decoration: none;
-      padding-bottom: 1px;
-  }
-  .calendar_route a:hover {
-      border-bottom: 1px solid;
-  }
-  .textured_bg {
-      background-position: center center;
-      background-repeat: repeat;
-      background-size: auto;
-
-  }
-  .calendar_title_wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-      /* padding: 2em 0 5em; */
-      padding: 4em 0;
-      width: 90%;
-  }
-  .calendar_title {
-      text-transform: uppercase;
-      font-family: 'Muli',sans-serif;
-      font-weight: 900;
-      /* font-size: 44px; */
-      font-size: 32px;
-      line-height: 1;
-  }
-  .calendar_subtitle {
-      /* padding-top: 10px; */
-      padding-top: 15px;
-      /* font-size: 20px; */
-      font-size: 18px;
-      /* width: 55%; */
-      width: 100%;
-      line-height: 1.4;
-      font-family: 'Karla',sans-serif;
-  }
-
-  @media screen and (min-width: 500px) {
-      #calendar {
-          max-width: 500px;
-      }
-      .calendar_title_wrapper {
-          max-width: 500px;
-      }
-  }
-  @media screen and (min-width: 768px) {
-      #calendar {
-          max-width: 700px;
-      }
-      .calendar_title_wrapper {
-          max-width: 700px;
-      }
-      .calendar_subtitle {
-          width: 75%;
-      }
-      .calendar_route {
-          font-size: 14px;
-          padding: 7px 12px;
-      }
-  }
-  @media screen and (min-width: 992px) {
-      #calendar {
-          max-width: 900px;
-      }
-      .calendar_title_wrapper {
-          max-width: 900px;
-          width: 100%;
-      }
-      .calendar_subtitle {
-          width: 55%;
-      }
-  }
-  @media screen and (min-width: 1366px) {
-      .calendar_route {
-          position: fixed;
-          top: 3em;
-          left: 30px;
-          margin: 0;
-      }
-      .calendar_title_wrapper {
-          padding: 3em 0 5em;
-      }
-  }
-  @media screen and (min-width: 1440px) {
-      #calendar {
-          max-width: 1000px;
-      }
-      .calendar_title_wrapper {
-          max-width: 1000px;
-          width: 100%;
-      }
-  }
-
-</style>
 </head>
-<body>
-    <div class="se-pre-con"></div>
 
-    <div class="calendar_wrapper">
-        <div class="calendar_title_wrapper">
-            <div class="calendar_title">
-                GWCC Calendar
+
+    <body>
+  	    <div class="se-pre-con"></div>
+
+        <div class="textured_bg">
+            <header class="site_header outer_wrapper ">
+
+    <div class="frow justify-between">
+        <div class="header_logo" id="top">
+            <a href="/"><div class="header_logo_img black_logo"></div></a>
+        </div>
+
+        <div class="menu">
+            <div id="menu-container" class="menu-btn">
+                <button id="overlay-menu" type="button" class="menuButton"><img src="/assets/img/icon_menu_v2.png" class="menu_img" /></button>
             </div>
-            <div class="calendar_subtitle">
-                Check below to keep up with all the activities happening in and around the Greenmount West Community Center.
+
+            <div class="site_header_wrapper">
+                <div class="overlay overlay-data noScroll">
+                    <div class="single_template_outer_wrapper">
+                        <div class="frow justify-between">
+                            <div class="overlay_logo">
+                                <div class="frow justify-start">
+                                    <div class="overlay_logo_img">
+                                        <img src="/assets/img/gwcc-logo.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="overlay-close"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="overlay_menu_group">
+
+                        <nav>
+                            <div class="menu_group">
+                                <div class="menu_group_title">
+                                    what we do
+                                </div>
+                                <ul>
+                                    <div id="programs_menu_container" class="programs_menu_btn">
+    <button id="js_programs_overlay_menu" type="button" class="programs_menu_button">
+        <li>programs &#9660;</a></li>
+    </button>
+</div>
+<div class="programs_overlay programs_overlay_data noScroll">
+    <div class="single_template_outer_wrapper">
+        <button type="button" class="programs_overlay_close"></button>
+    </div>
+    <div class="programs_content_group">
+        <div class="programs_content_header_wrapper">
+            <div class="frow justify-between">
+                <div class="programs_content_header">
+                    Programs
+                    <div class="programs_content_copy">
+                        The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:
+                    </div>
+                </div>
+                <div class="programs_content_bg"></div>
             </div>
         </div>
-        <div class="frow centered">
-            <div id='calendar'></div>
-        </div>
-        <div class="calendar_route">
-            <a href="/">Back to Home</a>
+        <div class="frow justify-between">
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/clay-creations/">Clay Creations</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Through fun ceramic projects the youth will learn basic ceramic methods such as molding and alternating shapes while making usable pots and fanciful sculptures.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/clay-creations/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/dancing/">Dancing</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Multiple dance genres are taught, practiced and eventually, performed.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/dancing/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/digital-lab/">Digital Lab</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (All Ages)
+                </div>
+                <div class="programs_content_summary">
+                    Visit our computer room to do your homework for an online class or surf the web for recipes. Expand your mind with the world wide web.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/digital-lab/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/drumming/">Drumming</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    West African Djembe drumming is an ancient art that is fun! The youth learn easy drumming patterns, phrases and rhythmic sounds, while also learning about their culture and history.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/drumming/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/fitness-wellness/">Fitness + Wellness</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Increase your knowledge of nutrition & healthy eating while engaging in physical activity for increase healthy living.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/fitness-wellness/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/gw-podcast/">GW Podcast</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    The GWCC Podcast gives members of the community the opportunity to tell their stories, interview others and hear their voices.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/gw-podcast/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/martial-arts/">Martial Arts</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    With a focus on teaching discipline & developing character, martial arts is a fun way for the youth to gain self-respect, self-control and self-confidence.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/martial-arts/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/music/">Music</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Want your child to learn how to make beats or produce music? This is the program for them.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/music/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/noisy-ventures/">Noisy Ventures</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth)
+                </div>
+                <div class="programs_content_summary">
+                    In Noisy Ventures, our youth have the opportunity to develop their own businesses within the community.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/noisy-ventures/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/photography/">Photography</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Learn the basics of photography & film&mdash; composition, digital camera use, editing with software and more!
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/photography/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/robotics/">Robotics</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Build confidence while exploring the essential of science, technology, engineering and mathematical concepts through hands-on learning.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/robotics/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/running-club/">Running Club</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    In Running Club you can train for fun or to be apart of the Lit City Relays, as we race around the community.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/running-club/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/senior-connections/">Senior Connections</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Adults Only)
+                </div>
+                <div class="programs_content_summary">
+                    Cakes & Convos, Bingo and Adult Literacy courses coming back soon!
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/senior-connections/">Click for more info</a>
+                </div>
+            </div>
+            
         </div>
     </div>
-</body>
+
+</div>
+
+                                    <li><a href="/discover">discover</a></li>
+                                    <li><a href="/history">history</a></li>
+                                    <li><a href="/calendar">calendar</a></li>
+                                    <li><a href="/highlights">highlights</a></li>
+                                    <li><a href="http://www.noisytenants.com/work/busstoptracker" target="_blank">bus stop buddies</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_group">
+                                <div class="menu_group_title">
+                                    who we are
+                                </div>
+                                <ul>
+                                    <li><a href="/people/staff">our staff</a></li>
+                                    <li><a href="/community">community</a></li>
+                                    <li><a href="/people/partners">partners</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menu_group">
+                                <div class="menu_group_title">
+                                    Learn GWCC
+                                </div>
+                                <ul>
+                                    <li><a href="/computers-and-library">digital lab</a></li>
+                                    <li><a href="/calendar">calendar</a></li>
+                                    <li><a href="/donate">donate</a></li>
+                                    <li><a href="/policy">policies</a></li>
+                                    <li><a href="https://www.google.com/maps/dir//1634+Guilford+Ave,+Baltimore,+MD+21202/@39.3086914,-76.6147125,17z/data=!4m17!1m7!3m6!1s0x89c804eb578362c1:0xee9b7a61c419df67!2s1634+Guilford+Ave,+Baltimore,+MD+21202!3b1!8m2!3d39.3086873!4d-76.6125238!4m8!1m0!1m5!1m1!1s0x89c804eb578362c1:0xee9b7a61c419df67!2m2!1d-76.6125238!2d39.3086873!3e3">directions</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_desktop  black_menu ">
+                <ul>
+                    <div id="programs_menu_container" class="programs_menu_btn">
+    <button id="js_programs_overlay_menu_desktop" type="button" class="programs_menu_button  black_menu ">
+        <li>programs &#8711;</li>
+    </button>
+</div>
+<div class="programs_overlay programs_overlay_data noScroll">
+    <div class="single_template_outer_wrapper">
+        <button type="button" class="programs_overlay_close_desktop"></button>
+    </div>
+    <div class="programs_content_group">
+        <div class="programs_content_header_wrapper">
+            <div class="frow justify-between">
+                <div class="programs_content_header">
+                    <a href="/programs">Programs</a>
+                    <div class="programs_content_copy">
+                        The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:
+                    </div>
+                </div>
+                <div class="programs_content_bg" style="background-image:url('/assets/img/programs_overlay_cover.png');"></div>
+            </div>
+        </div>
+
+        <div class="frow justify-between">
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/clay-creations/">Clay Creations</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Through fun ceramic projects the youth will learn basic ceramic methods such as molding and alternating shapes while making usable pots and fanciful sculptures.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/clay-creations/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/dancing/">Dancing</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Multiple dance genres are taught, practiced and eventually, performed.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/dancing/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/digital-lab/">Digital Lab</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (All Ages)
+                </div>
+                <div class="programs_content_summary">
+                    Visit our computer room to do your homework for an online class or surf the web for recipes. Expand your mind with the world wide web.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/digital-lab/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/drumming/">Drumming</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    West African Djembe drumming is an ancient art that is fun! The youth learn easy drumming patterns, phrases and rhythmic sounds, while also learning about their culture and history.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/drumming/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/fitness-wellness/">Fitness + Wellness</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Increase your knowledge of nutrition & healthy eating while engaging in physical activity for increase healthy living.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/fitness-wellness/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/gw-podcast/">GW Podcast</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    The GWCC Podcast gives members of the community the opportunity to tell their stories, interview others and hear their voices.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/gw-podcast/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/martial-arts/">Martial Arts</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    With a focus on teaching discipline & developing character, martial arts is a fun way for the youth to gain self-respect, self-control and self-confidence.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/martial-arts/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/music/">Music</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Want your child to learn how to make beats or produce music? This is the program for them.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/music/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/noisy-ventures/">Noisy Ventures</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth)
+                </div>
+                <div class="programs_content_summary">
+                    In Noisy Ventures, our youth have the opportunity to develop their own businesses within the community.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/noisy-ventures/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/photography/">Photography</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Learn the basics of photography & film&mdash; composition, digital camera use, editing with software and more!
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/photography/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/robotics/">Robotics</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    Build confidence while exploring the essential of science, technology, engineering and mathematical concepts through hands-on learning.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/robotics/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/running-club/">Running Club</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Youth Ages 5 - 13)
+                </div>
+                <div class="programs_content_summary">
+                    In Running Club you can train for fun or to be apart of the Lit City Relays, as we race around the community.
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/running-club/">Click for more info</a>
+                </div>
+            </div>
+            
+            <div class="programs_content_single">
+                <div class="programs_content_title">
+                    <a href="/programs/senior-connections/">Senior Connections</a>
+                </div>
+                <div class="programs_content_subtitle">
+                    (Adults Only)
+                </div>
+                <div class="programs_content_summary">
+                    Cakes & Convos, Bingo and Adult Literacy courses coming back soon!
+                </div>
+                <div class="programs_content_link">
+                    <a href="/programs/senior-connections/">Click for more info</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+                    <li><a href="/discover">discover</a></li>
+                    <li><a href="/community">community</a></li>
+                    <li><a href="/highlights">highlights</a></li>
+                    <li><a href="http://www.noisytenants.com/busstoptracker">bus stop buddies</a></li>
+                    <li><a href="/donate" class="box  black_menu "><div>give</div></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- FROW -->
+</header>
+
+
+
+<div class="discover_grid">
+    <div class="page_header_content">
+        <div class="page_title_content">
+            <div class="circle" style="background: #FA879E"></div>
+            <div class="page_title">Calendar</div>
+        </div>
+    </div>
+</div>
+
+
+
+            <div class="calendar_title_wrapper">
+    <div class="calendar_subtitle">
+        Check below to keep up with all the activities happening in and around the Greenmount West Community Center.
+    </div>
+</div>
+<div class="discover_grid">
+    <div data-tockify-component="calendar" data-tockify-calendar="gwccbaltimore"></div>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+    <!-- <br/>
+
+    </br/>
+    <iframe src="https://calendar.google.com/calendar/embed?src=montier.kess%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+</div>
+
+
+            <footer class="site_footer js_scroll_reveal">
+    <section class="footer_solid_bg">
+        <div class="footer_grid">
+            <div class="frow justify-between">
+
+                <div class="footer_logo">
+                    <a href="/">
+                        <div class="footer_logo_img"></div>
+                    </a>
+                </div>
+                <div class="footer_all">
+                    <div class="frow justify-between">
+                        <div class="footer_column left">
+                            <div class="frow justify-between">
+                                <div class="footer_content left">
+                                    <div class="footer_content_title">
+                                        Greenmount West Community Center
+                                    </div>
+                                    <div class="footer_content_subtitle">
+                                        1634 Guilford Avenue<br />
+                                        Baltimore, MD 21202<br />
+                                        <span>
+                                            (entrance on 200 block of East Lanvale Street)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="footer_content right">
+                                    <div class="footer_content_section">
+                                        <div class="footer_content_single">
+                                            <div class="footer_content_header">
+                                                Program Hours
+                                            </div>
+                                            <div class="footer_content_group">
+                                                <span class="icon">
+                                                    <img src="/assets/img/icon_clock.png" />
+                                                </span>
+                                                <div class="footer_content_meta">
+                                                    <ul>
+                                                        <li>
+                                                            Monday, Tuesday, Thursday,<br /> 11 AM - 6 PM
+                                                        </li>
+                                                        <li>
+                                                            Wednesday, 1 PM - 6 PM
+                                                        </li>
+                                                        <li>
+                                                            Saturday, 9 AM - 1 PM
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="footer_content_single">
+                                            <div class="footer_content_header">
+                                                Phone
+                                            </div>
+                                            <div class="footer_content_group">
+                                                <span class="icon">
+                                                    <img src="/assets/img/icon_phone.png" />
+                                                </span>
+                                                <div class="footer_content_meta">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="tel:667-212-5286">(667) 212 - 5286</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_column right">
+                            <div class="frow justify-between">
+                                <div class="links_group">
+                                    <div class="footer_alpha_title">
+                                        gwcc links
+                                    </div>
+
+                                    <div class="frow justify-start">
+                                        <ul class="footer_menu">
+                                            <li>
+                                                <a href="/discover">Discover</a>
+                                            </li>
+                                            <li>
+                                                <a href="/programs">Programs</a>
+                                            </li>
+                                            <li>
+                                                <a href="/community">Community</a>
+                                            </li>
+                                            <li>
+                                                <a href="/highlights">Highlights</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="typeform-share link" href="https://gwcc.typeform.com/to/zPthAI" data-mode="drawer_right" target="_blank">
+                                                Volunteer
+                                                </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.google.com/maps/dir//1634+Guilford+Ave,+Baltimore,+MD+21202/@39.3086914,-76.6147125,17z/data=!4m17!1m7!3m6!1s0x89c804eb578362c1:0xee9b7a61c419df67!2s1634+Guilford+Ave,+Baltimore,+MD+21202!3b1!8m2!3d39.3086873!4d-76.6125238!4m8!1m0!1m5!1m1!1s0x89c804eb578362c1:0xee9b7a61c419df67!2m2!1d-76.6125238!2d39.3086873!3e3">Directions</a>
+                                            </li>
+
+                                        </ul>
+                                        <ul class="footer_menu">
+                                            <li>
+                                                <a href="/computers-and-library">Digital Lab</a>
+                                            </li>
+                                            <li>
+                                                <a href="/calendar">Calendar</a>
+                                            </li>
+                                            <li>
+                                                <a href="/history">History</a>
+                                            </li>
+                                            <li>
+                                                <a href="/people/staff/">People</a>
+                                            </li>
+                                            <li>
+                                                <a href="/policy">Policy</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/donate">Donate</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="social">
+                                    <div class="social_title">
+                                        Connect With Us
+                                    </div>
+                                    <div class="social_group">
+                                        <ul>
+                                            <li>
+                                                <a href="http://www.facebook.com/gwccbaltimore"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.twitter.com/gwccbaltimore"><i class="fab fa-twitter fa-2x"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.youtube.com/user/gwccbaltimore"><i class="fab fa-youtube fa-2x"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.instagram.com/gwccbaltimore"><i class="fab fa-instagram fa-2x"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:admin@greenmountwestcc.org"><i class="far fa-envelope fa-2x"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer_newsletter">
+                                        <!-- Begin MailChimp Signup Form -->
+                                        <link href="http://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                                        <link href="https://fonts.googleapis.com/css?family=Muli:900" rel="stylesheet">
+                                        <style type="text/css">
+                                        	#mc_embed_signup {
+                                                background:#47E7CE;
+                                                clear:left;
+                                                font:14px Muli,Arial,sans-serif;
+                                                font-weight: 900;
+                                            }
+                                            #mc_embed_signup label {
+                                                text-transform: uppercase;
+                                                color: #000;
+                                                margin-bottom: 0;
+                                                text-align: center;
+                                                font-weight: 900;
+                                                font-size: 14px;
+                                                cursor: none;
+                                            }
+                                            #mc_embed_signup input.email {
+                                                width: 77%;
+                                                border-radius: 0;
+                                                border-color: #000;
+                                                display: inline-block;
+                                                background: transparent;
+                                                min-height: 38px;
+                                                outline: none;
+                                                color: #000;
+                                                /* max-width: 235px; */
+                                            }
+                                            #mc_embed_signup input.email[placeholder] {
+                                                color: #000;
+                                            }
+                                            #mc_embed_signup input.button {
+                                                width: 38px;
+                                                height: 38px;
+                                                min-width: auto;
+                                                color: #000;
+                                                background-color: #47E7CE;
+                                                border-radius: 50%;
+                                                border: 2px solid #000;
+                                                display: inline-block;
+                                            }
+                                            #mc_embed_signup input.button:hover {
+                                                background-color: #000;
+                                                color: #fff;
+                                            }
+
+                                            @media screen and (min-width:768px) {
+                                                #mc_embed_signup form {
+                                                    padding:0;
+                                                }
+                                                #mc_embed_signup label {
+                                                    text-align: left;
+                                                }
+                                            }
+                                        	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                                        	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                        </style>
+                                        <div id="mc_embed_signup">
+                                        <form action="https://greenmountwestcc.us17.list-manage.com/subscribe/post?u=6e4d0339f828827deeeff0a3e&amp;id=5b0bf33c19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                            <div id="mc_embed_signup_scroll">
+                                        	<label for="mce-EMAIL">Sign up to GWCC Newsletter</label>
+                                        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e4d0339f828827deeeff0a3e_5b0bf33c19" tabindex="-1" value=""></div>
+                                            <div class="clear"><input type="submit" value="➜" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                            </div>
+                                        </form>
+                                        </div>
+
+                                        <!--End mc_embed_signup-->
+                                    </div>
+                                    <div class="footer_nonprofit">
+                                        <div class="message">
+                                            GWCC is a registered 501(c)-3 nonprofit, status is pending.  All donations are tax-deductible.
+                                        </div>
+
+                                        <a class="donate_btn" href="/donate"><div>
+                                            Donate
+                                        </div></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<div class="site_footer_mini">
+    <div class="frow justify-end">
+        <div class="backtotop">
+            <a href="#top">
+                <div class="icon">
+                    <img src="/assets/img/backtop.png" />
+                </div>
+                <div class="icon_text">
+                    Back to<br />top
+                </div>
+            </a>
+        </div>
+        <div class="copyright">
+            <div>
+                &copy; 2018. All Rights Reserved
+            </div>
+        </div>
+
+    </div>
+</div>
+</footer>
+<!-- Javascript CDN -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="M2E5OTgxOTYtYTgyNy00ZDk1LThlOTAtNGNkYTgxYWE5Y2M1NjM2NTUxOTQ1OTA5OTIxMzQ1"></script>
+
+<!-- Highlights Slick Slider -->
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+
+
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.js_scroll_reveal', {
+        reset: true,
+        duration: 900
+    });
+    sr.reveal('.js_home', {
+        reset: true,
+        opacity: 0.5,
+        duration: 700,
+        easing: 'ease-in-out'
+    });
+    sr.reveal('.js_programs_overlay', {
+        duration: 1000
+    });
+    sr.reveal('.js_discover_reveal', {
+        reset: false,
+        easing: 'ease-in',
+        duration: 700
+    });
+</script>
+
+<!-- Scripts -->
+<script type="text/javascript" src="/js/main.js"></script>
+
+        </div>
+
+  </body>
+
 </html>
