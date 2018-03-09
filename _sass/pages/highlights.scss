@@ -17,6 +17,9 @@
     @include tablet {
         padding: 25px 0;
     }
+    @include desktop {
+        height: 80vh;
+    }
 
     .featured {
         background-color: $black;

@@ -90,9 +90,9 @@
 	display: block;
 	margin: auto;
 
-	@include tablet {
-		margin:0;
-	}
+	// @include tablet {
+	// 	margin:0;
+	// }
 
 	div {
 		text-transform: uppercase;
@@ -102,6 +102,41 @@
 		letter-spacing: 1.1px;
 		border: 2px solid;
 		padding: 3px 10px;
+
+		&:hover {
+			background: $black;
+			color: $white;
+			border-color: $black;
+			transition: 0.5s;
+		}
+	}
+}
+.donate_group_btn {
+	color: $black;
+	width: fit-content;
+	display: block;
+	margin: auto;
+
+	div {
+		text-transform: uppercase;
+		font-family: $font-1;
+		font-weight: $muli-black;
+		font-size: 14px;
+		letter-spacing: 1.1px;
+		border: 3px solid;
+		padding: 10px 10px;
+		width: 130px;
+
+		@include palm {
+			width: 170px;
+			padding: 12px 10px;
+		}
+
+		@include laptop  {
+			font-size: 18px;
+			padding: 12px 10px;
+			width: 225px;
+		}
 
 		&:hover {
 			background: $black;

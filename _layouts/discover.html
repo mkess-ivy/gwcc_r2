@@ -42,7 +42,7 @@
                     {% for item in site.data.discover_prime %}
                     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
                     {% if thecycle == 'odd' %}
-                    <div class="discover_prime_single">
+                    <div class="discover_prime_single js_discover_reveal">
                         <div class="frow justify-between">
                             <div class="discover_prime_image" style="background-image: url('{{ item.bg }}');"></div>
                             <div class="discover_prime_meta">
@@ -64,7 +64,7 @@
                     </div>
                     {% endif %}
                     {% if thecycle == 'even' %}
-                    <div class="discover_prime_single">
+                    <div class="discover_prime_single js_discover_reveal">
                         <div class="frow justify-between direction-reverse">
                             <div class="discover_prime_image" style="background-image: url('{{ item.bg }}');"></div>
                             <div class="discover_prime_meta">

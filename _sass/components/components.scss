@@ -144,94 +144,7 @@
     position: relative;
 }
 
-// Give Page
-.give_meta {
-    width:90%;
-    margin:auto;
-}
-.give_quote_group {
-    position: relative;
-    margin: 50px 0 75px;
 
-    @include tablet {
-        max-width: 600px;
-        margin: 50px auto 75px;
-    }
-
-    @include laptop {
-        max-width: 750px;
-    }
-
-    @include desktop {
-        margin: 100px auto;
-    }
-
-    @include widescreen {
-        max-width: 900px;
-    }
-
-    .give_quote {
-        font-size: 20px;
-        font-family: $font-1;
-        font-weight: $muli-black;
-        border: 4px solid $bluegreen;
-        padding: 15px;
-        line-height: 1.2;
-
-        @include tablet {
-            font-size: 32px;
-            padding: 35px;
-        }
-        @include widescreen {
-            font-size: 36px;
-        }
-    }
-    .author {
-        font-size: 14px;
-        padding-top: 25px;
-        text-align: right;
-
-        @include tablet {
-            padding-top: 35px;
-            font-size: 18px;
-        }
-
-        @include tv {
-            font-size: 22px;
-        }
-    }
-    .highlight_quote_bottom {
-        position: absolute;
-        top: 0.25em;
-        left: 0.25em;
-        width: 100%;
-        height: 100%;
-        background: $bluegreen;
-        z-index: -1;
-    }
-}
-.give_alt_group {
-    margin: 150px 15px !important;
-
-    @include small {
-        margin: 150px auto !important;
-    }
-    @include laptop {
-        max-width: 750px !important;
-    }
-    @include desktop {
-        max-width: 950px !important;
-    }
-    @include tv {
-        max-width: 1050px !important;
-    }
-
-    .give_alt_single {
-        @include laptop {
-            width: 45% !important;
-        }
-    }
-}
 
 // Community Page
 
@@ -357,6 +270,7 @@
     }
     @include widescreen {
         width:80%;
+		height: 80vh;
     }
 }
 .map_title {
