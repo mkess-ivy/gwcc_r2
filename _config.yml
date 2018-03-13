@@ -83,7 +83,7 @@ defaults:
     values:
       title: Cortney
       avatar: /assets/img/staff_cortney.jpg
-      position: Youth Worker
+      cc_position: Youth Worker
 
 # GWCC Sponsors
 sponsor1_img: /assets/img/logo_rwd.png

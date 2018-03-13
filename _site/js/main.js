@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     // site preloader
@@ -105,6 +104,5 @@ $(document).ready(function(){
         prevArrow: '<img src="/assets/img/left_caret.png" class="caret_slide_web left" />',
         nextArrow: '<img src="/assets/img/right_caret.png" class="caret_slide_web right" />'
     });
-
 
 }); // Close of jQuery
