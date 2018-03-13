@@ -2,9 +2,6 @@
 layout: bronze
 title: Policy
 permalink: /policy/
-
-[//]: # Page Header
-circle: "#47E7CE"
 ---
 
 <div class="discover_grid">

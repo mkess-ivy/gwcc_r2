@@ -3,8 +3,6 @@ layout: bronze
 title: Computers and Library
 permalink: /computers-and-library/
 
-[//]: # Page Header
-circle: "#47E7CE"
 ---
 
 <div class="cover_group discover_overlay" style="background-image: url('/assets/img/gwcc_publiccomputers.jpg');">

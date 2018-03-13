@@ -3,9 +3,6 @@ layout: bronze
 title: Highlights
 permalink: /highlights/
 
-[//]: # Page Header
-circle: "#47E7CE"
-
 ---
 {% assign my_featured_post = site.posts | where: "featured", true %}
 {% for post in my_featured_post limit:1 %}

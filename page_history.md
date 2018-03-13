@@ -2,9 +2,6 @@
 layout: bronze
 title: History
 permalink: /history/
-
-[//]: # Page Header
-circle: "#47E7CE"
 ---
 
 <div class="history_group discover_overlay" style="background-image: url('/assets/img/history_cover2.jpg');">
