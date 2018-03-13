@@ -1,12 +1,7 @@
 ---
 title: Kyaih'ya
 avatar: /assets/img/staff_kyaih_ya.jpg
-position: Youth Worker
-summary:
-
-[//]: #Team
+cc_position: Youth Worker
 team: staff
-
-[//]: # Sort
 order: 5
 ---

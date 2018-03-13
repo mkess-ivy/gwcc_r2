@@ -1,12 +1,7 @@
 ---
 title: Tajuan
 avatar: /assets/img/staff_tajuan.jpg
-position: Youth Worker
-summary:
-
-[//]: #Team
+cc_position: Youth Worker
 team: staff
-
-[//]: # Sort
-order: 7
+order: 6
 ---

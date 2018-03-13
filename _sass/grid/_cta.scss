@@ -84,15 +84,16 @@
 		}
 	}
 }
+// Footer Donate Button
 .donate_btn {
 	color: $black;
 	width: fit-content;
 	display: block;
 	margin: auto;
 
-	// @include tablet {
-	// 	margin:0;
-	// }
+	@include tablet {
+		margin:0;
+	}
 
 	div {
 		text-transform: uppercase;

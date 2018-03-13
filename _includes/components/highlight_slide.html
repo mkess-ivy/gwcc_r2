@@ -1,7 +1,13 @@
 <div class="highlights__slider-wrapper">
     <div class="highlights__slider">
-        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('/assets/img/highlights_podcast.jpg');"></div>
-        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('/assets/img/history_cover.jpg');"></div>
-        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('/assets/img/gwcc_discover_volunteer.jpg');"></div>
+        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('{{ include.slide1 }}');"></div>
+        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('{{ include.slide2 }}');"></div>
+        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('{{ include.slide3 }}');"></div>
+        {% if include.slide4 %}
+        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('{{ include.slide4 }}');"></div>
+        {% endif %}
+        {% if include.slide5 %}
+        <div class="highlights__slider_bg_img  discover_overlay" style="background-image:url('{{ include.slide5 }}');"></div>
+        {% endif %}
     </div>
 </div>

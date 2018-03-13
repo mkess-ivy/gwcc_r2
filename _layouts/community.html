@@ -35,10 +35,11 @@
                         <div class="category_title">
                             Maker + Gallery Spaces
                         </div>
+                        {% assign resource_category = site.resources | where: "resource_category", "maker_spaces"%}
                         <div class="frow justify-start">
-                        {% include components/community_resource.html
-                            data_space="maker_gallery_spaces"
-                        %}
+                            {% for item in resource_category %}
+                                {% include components/community_resource2.html %}
+                            {% endfor %}
                         </div>
                     </div>
 
@@ -46,32 +47,35 @@
                         <div class="category_title">
                             Recreational Spaces
                         </div>
+                        {% assign resource_category = site.resources | where: "resource_category", "recreational_spaces"%}
                         <div class="frow justify-start">
-                        {%  include components/community_resource.html
-                            data_space="recreational_spaces"
-                        %}
+                            {% for item in resource_category %}
+                                {% include components/community_resource2.html %}
+                            {% endfor %}
                         </div>
                     </div>
 
                     <div class="category_group js_discover_reveal">
                         <div class="category_title">
-                            Schools + Transportation Hub
+                            School Spaces
                         </div>
+                        {% assign resource_category = site.resources | where: "resource_category", "school_spaces"%}
                         <div class="frow justify-start">
-                        {% include components/community_resource.html
-                            data_space="school_spaces"
-                        %}
+                            {% for item in resource_category %}
+                                {% include components/community_resource2.html %}
+                            {% endfor %}
                         </div>
                     </div>
 
                     <div class="category_group js_discover_reveal">
                         <div class="category_title">
-                            Community Resources
+                            Community Spaces
                         </div>
+                        {% assign resource_category = site.resources | where: "resource_category", "community_spaces"%}
                         <div class="frow justify-start">
-                            {% include components/community_resource.html
-                                data_space="community_resource_spaces"
-                            %}
+                            {% for item in resource_category %}
+                                {% include components/community_resource2.html %}
+                            {% endfor %}
                         </div>
                     </div>
 

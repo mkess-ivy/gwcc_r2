@@ -35,27 +35,77 @@ collections:
   timeline:
     output: false
 
+  docs:
+    output: false
+
+  resources:
+    output: false
+
+# Default Settings for Collections
+defaults:
+  -
+    scope:
+      path: ""
+      type: "resources"
+    values:
+      name_of_space: Baltimore Design School
+      address: 1500 Barclay Street
+      url: http://baltimoredesignschool.com/
+      resource_category: school_spaces
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      title: Super Heroes
+      highlight_summary: "Re-imagining our superheroes and their superpowers in the Greenmount West Community.  Premiering at GW Lit Relays coming April 2018!"
+      featured: false
+      cover: /assets/img/gwcc_highlights_superheroes.jpg
+      vimeo_video: false
+
+  -
+    scope:
+      path: ""
+      type: "programs"
+    values:
+      title: Dancing
+      audience: Youth Ages 5 - 13
+      program_summary: Multiple dance genres are taught, practiced and eventually, performed.
+      cover_image: /assets/img/programs_dance.jpg
+      days: Mondays + Wednesdays (weekly)
+      time: 4:00 pm - 6:00 pm
+
+  -
+    scope:
+      path: ""
+      type: "team"
+    values:
+      title: Cortney
+      avatar: /assets/img/staff_cortney.jpg
+      position: Youth Worker
+
 # GWCC Sponsors
 sponsor1_img: /assets/img/logo_rwd.png
 sponsor1_text: Robert Deutsch Foundation
-sponsor1_url: https://www.rwdfoundation.org/
+sponsor1_url: https://www.rwdfoundation.org
 
 sponsor2_img: /assets/img/logo_gwca.png
 sponsor2_text: Greenmount West Community Association
-sponsor2_url: http://www.greenmountwest.org/
+sponsor2_url: http://www.greenmountwest.org
 
 sponsor3_img: /assets/img/logo_bma.png
 sponsor3_text: Greenmount West Community Association
-sponsor3_url: https://artbma.org/
+sponsor3_url: https://artbma.org
 
 # Social
-facebook: gwccbaltimore
+facebook: Greenmountwest
 twitter: gwccbaltimore
-youtube: gwccbaltimore
-instagram: gwccbaltimore
+youtube: #
+instagram: Gwccbaltimore
 email: admin@greenmountwestcc.org
 
 # Programs Overlay
 programs_overlay_img: /assets/img/programs_overlay_cover.png
 programs_overlay_title: Programs
-programs_overlay_summary: 'The Greenmount West Community Center, will offer computer classes and wellness classes for adults, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn sufficiency skills, while gaining exposure to positive role models. These programs include:'
+programs_overlay_summary: 'The Greenmount West Community Center will offer computer and wellness classes for adults. Also offering, after-school and summer programs designed to help children build leadership skills, earn good grades, and learn self-sufficiency skills, while gaining exposure to positive role models. These programs include:'

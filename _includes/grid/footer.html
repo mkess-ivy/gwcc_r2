@@ -207,6 +207,17 @@
                                                     text-align: left;
                                                 }
                                             }
+                                            @media screen and (min-width: 1200px) {
+                                                #mc_embed_signup input.email {
+                                                    width: 70%;
+                                                    margin-top: 15px;
+                                                }
+                                                .submit_icon {
+                                                    display: inline-block;
+                                                    padding-left: 10px;
+                                                }
+
+                                            }
                                         	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                                         	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                                         </style>
@@ -217,7 +228,7 @@
                                         	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
                                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e4d0339f828827deeeff0a3e_5b0bf33c19" tabindex="-1" value=""></div>
-                                            <div class="clear"><input type="submit" value="➜" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                            <div class="clear submit_icon"><input type="submit" value="➜" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                             </div>
                                         </form>
                                         </div>
@@ -276,14 +287,10 @@
     {% include gwcc_video.js %}
 {% endif %}
 
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="M2E5OTgxOTYtYTgyNy00ZDk1LThlOTAtNGNkYTgxYWE5Y2M1NjM2NTUxOTQ1OTA5OTIxMzQ1"></script>
-
-<!-- Highlights Slick Slider -->
+<!-- Vendor Scripts -->
 <script type="text/javascript" src="/slick/slick.min.js"></script>
-
-
-<!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.9/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Scroll Reveal -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

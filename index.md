@@ -9,7 +9,7 @@ video_poster: /assets/video/poster.jpg
 [//]: # Main Title Masthead
 masthead_title: A Community Arts Space
 masthead_subtitle: Greenmount West Community Center is a space that’s free + open to the public.
-masthead_summary: Greenmount West Community Center is centrally located in Baltimore, MD — providing resources + programming to all the community’s residents.
+masthead_summary: Centrally located in Baltimore, MD — providing resources + programming to all of the community’s residents.
 
 [//]: # Video Embed
 vimeo_video: true
