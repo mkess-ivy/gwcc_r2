@@ -38,8 +38,15 @@
   <!-- Slick Stylesheets -->
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 
-  <!-- Snipcart Stylesheets -->
-  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115766053-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115766053-1');
+    </script>
 
   
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
@@ -60,6 +67,8 @@
 
   </style>
   
+
+
 
 </head>
 
@@ -1009,7 +1018,7 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
                                                 height: 38px;
                                                 min-width: auto;
                                                 color: #000;
-                                                background-color: #47E7CE;
+                                                background-color: transparent;
                                                 border-radius: 50%;
                                                 border: 2px solid #000;
                                                 display: inline-block;
@@ -1025,19 +1034,18 @@ var popup = new mapboxgl.Popup({ offset: [0, -15] })
                                                 }
                                                 #mc_embed_signup label {
                                                     text-align: left;
-                                                }
-                                            }
-                                            @media screen and (min-width: 1200px) {
-                                                #mc_embed_signup input.email {
-                                                    width: 70%;
-                                                    margin-top: 15px;
+                                                    padding-bottom: 10px;
                                                 }
                                                 .submit_icon {
                                                     display: inline-block;
                                                     padding-left: 10px;
+                                                    width: 25%;
                                                 }
-
+                                                #mc_embed_signup input.email {
+                                                    width: 70%;
+                                                }
                                             }
+
                                         	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                                         	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                                         </style>
