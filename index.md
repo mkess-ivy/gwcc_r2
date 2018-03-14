@@ -13,7 +13,7 @@ masthead_summary: Centrally located in Baltimore, MD — providing resources + p
 
 [//]: # Video Embed
 vimeo_video: true
-video_embed: '242342417'
+video_embed: '259969560'
 video_embed_bg: /assets/img/home_cover.jpg
 
 [//]: # Community Resources (Three Column Section)
